@@ -4,25 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My HTML Page</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Vår 2024</title>
 </head>
 <body>
-    <section id="Aggregrerte data">
-        Placeholder aggregerte data: Siste ukes vinner, totalt tid, distanse, høydemeter, co2?
-    </section>
-    <section id="ukens_resultater">
-        <h2>Ukens resultater (uke 10)</h2>
-        <table border='1'>                         <tr><th>Navn</th>                         <th>Antall aktiviteter</th>                         <th>Varighet (timer)</th>                         <th>Distanse (km)</th>                         <th>Høydemeter</th></tr><tr><td>Thomas Rosenlund</td><td>14</td><td>9</td><td>189.3</td><td>2075</td></tr><tr><td>Ørjan Stene</td><td>6</td><td>8</td><td>144.3</td><td>4266</td></tr><tr><td>Øivind Langeland</td><td>13</td><td>6</td><td>130.4</td><td>1398</td></tr><tr><td>Per Øivind Gaardsrud</td><td>2</td><td>6</td><td>62.8</td><td>1107</td></tr><tr><td>TTR Hdir</td><td>2</td><td>2</td><td>19.0</td><td>100</td></tr><tr><td>Even Espelid</td><td>5</td><td>2</td><td>65.7</td><td>921</td></tr><tr><td>Ingvar Sørlien</td><td>2</td><td>1</td><td>21.9</td><td>368</td></tr></table>
-    </section>
+    <div class="page-wrapper">
+        <div class="header" id="header">
+            <h1 class=>Vår 2024</h1>
+        </div>
+        
+        <div class="tile-aggregated" id="aggregerte_data">
+            <h2>Aggregerte data</h2>
+            <table class='table-aggregated'><tr><td>⏳ 66 timer</td><td>📏 1139.1 km</td><td>🧗 16357 høydemeter</td></tr></table></table>
+        </div>
 
-    <section id="forrige_ukes_resultater">
-        <h2>Forrige ukes resultater (uke 9)</h2>
-        <table border='1'>                                <tr><th>Navn</th>                                <th>Antall aktiviteter</th>                                <th>Varighet (timer)</th>                                <th>Distanse (km)</th>                                <th>Høydemeter</th></tr><tr><td>Thomas Rosenlund</td><td>16</td><td>12</td><td>216.2</td><td>2362</td></tr><tr><td>Øivind Langeland</td><td>20</td><td>11</td><td>205.5</td><td>2058</td></tr><tr><td>Per Øivind Gaardsrud</td><td>3</td><td>7</td><td>56.9</td><td>1702</td></tr><tr><td>Ørjan Stene</td><td>2</td><td>2</td><td>27.1</td><td>0</td></tr></table>
-    </section>
+        <div class="tile" id="ukens_resultater">
+            <h2>Ukens resultater (uke 10)</h2>
+            <table class='table'>                         <tr><th>Navn</th>                         <th>Antall aktiviteter</th>                         <th>Varighet (timer)</th>                         <th>Distanse (km)</th>                         <th>Høydemeter</th></tr><tr><td>⏩ Thomas Rosenlund</td><td>14</td><td>9</td><td>189.3</td><td>2075</td></tr><tr><td>🔺 Ørjan Stene</td><td>6</td><td>8</td><td>144.3</td><td>4266</td></tr><tr><td>🔻 Øivind Langeland</td><td>13</td><td>6</td><td>130.4</td><td>1398</td></tr><tr><td>🔻 Per Øivind Gaardsrud</td><td>2</td><td>6</td><td>62.8</td><td>1107</td></tr><tr><td>⭐ TTR Hdir</td><td>2</td><td>2</td><td>19.0</td><td>100</td></tr><tr><td>⭐ Even Espelid</td><td>5</td><td>2</td><td>65.7</td><td>921</td></tr><tr><td>⭐ Ingvar Sørlien</td><td>2</td><td>1</td><td>21.9</td><td>368</td></tr></table>
+        </div>
 
-    <section id="resultater_hele_perioden">
-        <h2>Resultater hele perioden</h2>
-        <table border='1'>                                 <tr><th>Navn</th>                                 <th>Antall aktiviteter</th>                                 <th>Varighet (timer)</th>                                 <th>Distanse (km)</th>                                 <th>Høydemeter</th></tr><tr><td>Thomas Rosenlund</td><td>30</td><td>21</td><td>405.5</td><td>4437</td></tr><tr><td>Øivind Langeland</td><td>33</td><td>17</td><td>335.9</td><td>3456</td></tr><tr><td>Per Øivind Gaardsrud</td><td>5</td><td>14</td><td>119.7</td><td>2809</td></tr><tr><td>Ørjan Stene</td><td>8</td><td>11</td><td>171.4</td><td>4266</td></tr><tr><td>TTR Hdir</td><td>2</td><td>2</td><td>19.0</td><td>100</td></tr><tr><td>Even Espelid</td><td>5</td><td>2</td><td>65.7</td><td>921</td></tr><tr><td>Ingvar Sørlien</td><td>2</td><td>1</td><td>21.9</td><td>368</td></tr></table>
-    </section>
+        <div class="tile" id="forrige_ukes_resultater">
+            <h2>Forrige ukes resultater (uke 9)</h2>
+            <table class='table'>                                <tr><th>Navn</th>                                <th>Antall aktiviteter</th>                                <th>Varighet (timer)</th>                                <th>Distanse (km)</th>                                <th>Høydemeter</th></tr><tr><td>Thomas Rosenlund</td><td>16</td><td>12</td><td>216.2</td><td>2362</td></tr><tr><td>Øivind Langeland</td><td>20</td><td>11</td><td>205.5</td><td>2058</td></tr><tr><td>Per Øivind Gaardsrud</td><td>3</td><td>7</td><td>56.9</td><td>1702</td></tr><tr><td>Ørjan Stene</td><td>2</td><td>2</td><td>27.1</td><td>0</td></tr></table>
+        </div>
+
+        <div class="tile" id="resultater_hele_perioden">
+            <h2>Resultater hele perioden</h2>
+            <table class='table'>                                 <tr><th>Navn</th>                                 <th>Antall aktiviteter</th>                                 <th>Varighet (timer)</th>                                 <th>Distanse (km)</th>                                 <th>Høydemeter</th></tr><tr><td>Thomas Rosenlund</td><td>30</td><td>21</td><td>405.5</td><td>4437</td></tr><tr><td>Øivind Langeland</td><td>33</td><td>17</td><td>335.9</td><td>3456</td></tr><tr><td>Per Øivind Gaardsrud</td><td>5</td><td>14</td><td>119.7</td><td>2809</td></tr><tr><td>Ørjan Stene</td><td>8</td><td>11</td><td>171.4</td><td>4266</td></tr><tr><td>TTR Hdir</td><td>2</td><td>2</td><td>19.0</td><td>100</td></tr><tr><td>Even Espelid</td><td>5</td><td>2</td><td>65.7</td><td>921</td></tr><tr><td>Ingvar Sørlien</td><td>2</td><td>1</td><td>21.9</td><td>368</td></tr></table>
+        </div>
+    
+    </div>
 </body>
 </html>
