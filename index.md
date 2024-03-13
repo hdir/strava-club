@@ -16,7 +16,7 @@ nav_order: 1
     </div>
     <div class="tile-aggregated" id="aggregerte_data">
         <h2>Aggregerte data</h2>
-        <table class='table-aggregated'><tr><td>⏳ 127:58 (t:m)</td><td>📏 1794.4 km</td><td>🧗 23868 høydemeter</td></tr><tr><td>👥 0 kolleger</td><td>🏁 0 aktiviteter</td><td>🌱 0 kg CO2 spart</td></tr></table>
+        <table class='table-aggregated'><tr><td>👥 13 kolleger</td><td>🏁 155 aktiviteter</td><td>⏳ 127:58 (t:m)</tr><tr><td>📏 1794.4 km</td><td>🧗 23868 høydemeter</td></td><td>🌱 28.71 kg CO2 spart</td></tr></table>
     </div>
     <div class="tile" id="ukens_resultater">
         <h2>Ukens resultater (uke 11)</h2>

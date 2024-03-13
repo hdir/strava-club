@@ -51,6 +51,15 @@ def get_tickets(int_tickets):
         visual_tickets = ""
     return visual_tickets 
 
+def count_athletes():
+    unique_athlete_names = set()
+    for entry in data.values():
+        unique_athlete_names.add(entry["athlete_name"])
+    return len(unique_athlete_names)
+
+def calculate_co2_saved(distance):
+    return round(distance*0.016, 2)
+
 
 def create_athlete_summary():
     athlete_summary = {}
@@ -76,21 +85,24 @@ def create_athlete_summary():
     
     return athlete_summary
 
-def create_aggregated_summary(): # aggregate activities missing
+def create_aggregated_summary():
     aggregated_summary = {"moving_time": 0,
                           "distance": 0,
-                          "elevation_gain": 0
+                          "elevation_gain": 0,
+                          "activities": 0,
+                          "athletes": 0,
+                          "co2_saved": 0
                          }
     
 
-    for records in data.values(): 
-        aggregated_summary["moving_time"] += records["moving_time"]
-        aggregated_summary["distance"] += format_distance(records["distance"])
-        aggregated_summary["elevation_gain"] += records["elevation_gain"]
-        #aggregated_summary[3] += activity_counter+1
-    
-    #aggregated_summary[4] += athlete_counter+1
-    #aggregated_summary[5] += athlete_counter+1
+    for record in data.values(): 
+        aggregated_summary["moving_time"] += record["moving_time"]
+        aggregated_summary["distance"] += format_distance(record["distance"])
+        aggregated_summary["elevation_gain"] += record["elevation_gain"]
+        aggregated_summary["activities"] += record["activities"]
+        
+    aggregated_summary["athletes"] = count_athletes()
+    aggregated_summary["co2_saved"] = calculate_co2_saved(aggregated_summary["distance"])
         
     return aggregated_summary
 
@@ -132,12 +144,12 @@ rankings = get_changed_ranking()
 
 # Each table row should come on new line
 aggregerte_resultater_table = f"<table class='table-aggregated'>\
-<tr><td>⏳ {format_duration(aggregated_summary['moving_time'])} (t:m)</td>\
-<td>📏 {round(aggregated_summary['distance'], 1)} km</td>\
-<td>🧗 {aggregated_summary['elevation_gain']} høydemeter</td></tr>\
-<tr><td>👥 0 kolleger</td>\
-<td>🏁 0 aktiviteter</td>\
-<td>🌱 0 kg CO2 spart</td></tr>\
+<tr><td>👥 {aggregated_summary['athletes']} kolleger</td>\
+<td>🏁 {aggregated_summary['activities']} aktiviteter</td>\
+<td>⏳ {format_duration(aggregated_summary['moving_time'])} (t:m)</tr>\
+<tr><td>📏 {round(aggregated_summary['distance'], 1)} km</td>\
+<td>🧗 {aggregated_summary['elevation_gain']} høydemeter</td></td>\
+<td>🌱 {aggregated_summary['co2_saved']} kg CO2 spart</td></tr>\
 </table>"
 
 ukens_resultater_table = "<table class='table'>\
