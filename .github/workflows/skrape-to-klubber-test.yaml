@@ -4,20 +4,13 @@
 # Save this file to '.github/workflows/github-actions-workflow.yaml'
 
 # Name of the workflow
-name: PRODUKSJON Skrape til data og resultat til gh-pages
-
+name: Teste just the docs
 # Get strava user and password into the environment from Github secrets.
 env:
   STRAVA_USER: ${{ secrets.STRAVA_USER }}
   STRAVA_PASSWORD: ${{ secrets.STRAVA_PASSWORD }}
 # Controls on when the workflow will run
 on:
-  # Runs every day at 10, 17 and 23
-  schedule:
-    - cron: '0 10,17,23 * * *'
-    #- cron: '7 10,18,23 * * *'
-    #  - cron: "30 20 * * MON,THU"
-
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -71,7 +64,7 @@ jobs:
           python databehandler.py
           python presentator.py
 
-      - name: Deploy data til repoet
+      - name: Deploy oppdaterte data til repoet
         uses: peaceiris/actions-gh-pages@v3
         with:
           publish_branch: main
@@ -103,10 +96,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           destination_dir: ./TestBuildJTD
-
-#      - name: Deploy gh-pages
-#        uses: peaceiris/actions-gh-pages@v3
-#        with:
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
-#          publish_dir: ./web
-#          destination_dir: ./CurrentBuild

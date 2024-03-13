@@ -7,12 +7,13 @@ import shutil
 from datetime import datetime
 
 # File handling
-FILE_PATH = 'web/results.html'
+FILE_PATH = 'index.md'
+FILE_PATH_DATA = 'data/index.md'
 
 # Make directory for web output
-directory = 'web'
-if not os.path.isdir(directory):
-    os.mkdir(directory)
+#directory = 'web'
+#if not os.path.isdir(directory):
+#    os.mkdir(directory)
 
 #directory = r'web/static'
 ### If folder doesn't exists, create it ##
@@ -147,8 +148,8 @@ aggregerte_resultater_table = f"<table class='table-aggregated'>\
 <td>📏 {round(aggregated_summary[1], 1)} km</td>\
 <td>🧗 {aggregated_summary[2]} høydemeter</td></tr>\
 <tr><td>👥 0 kolleger</td>\
-<tr><td>🏁 0 aktiviteter</td>\
-<tr><td>🌱 0 kg CO2 spart</td></tr>\
+<td>🏁 0 aktiviteter</td>\
+<td>🌱 0 kg CO2 spart</td></tr>\
 </table>"
 
 ukens_resultater_table = "<table class='table'>\
@@ -205,51 +206,39 @@ for athlete_name, summary_data in athlete_summary.items():
 resultater_hele_perioden_table += "</table>"
 
 # HTML content with the summarized table
-html_content = f"""
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=1024">
-    <link rel="stylesheet" href="static/styles.css">
-    <title>Vår 2024</title>
-</head>
-<body>
-    <div class="page-wrapper">
-        <div class="header" id="header">
-            <h1>Vår 2024 - Resultatside</h1>
-        </div>
-        
-        <div class="tile-info" id="info">
-            <p>
-                Les mer om <a href="https://hdir.github.io/strava-club/CurrentBuild/info.html">aktivitetskampanjen</a> og 
-                bli medlem i <a href="https://www.strava.com/clubs/754665">Helsedirektoratets klubb på Strava</a>
-            </p>
-        </div>
-        
-        <div class="tile-aggregated" id="aggregerte_data">
-            <h2>Aggregerte data</h2>
-            {aggregerte_resultater_table}
-        </div>
+html_content = f"""---
+layout: default
+title: Resultater
+nav_order: 1
+---
 
-        <div class="tile" id="ukens_resultater">
-            <h2>Ukens resultater (uke {int(get_current_week_number())})</h2>
-            {ukens_resultater_table}
-        </div>
-
-        <div class="tile" id="forrige_ukes_resultater">
-            <h2>Forrige ukes resultater (uke {int(get_current_week_number())-1})</h2>
-            {forrige_ukes_resultater_table}
-        </div>
-
-        <div class="tile" id="resultater_hele_perioden">
-            <h2>Resultater hele perioden</h2>
-            {resultater_hele_perioden_table}
-        </div>
-    
+<div class="page-wrapper">
+    <div class="header" id="header">
+        <h1>Vår 2024 - Resultatside</h1>
     </div>
-</body>
-</html>
+    <div class="tile-info" id="info">
+        <p>
+            Les mer om <a href="https://hdir.github.io/strava-club/CurrentBuild/info.html">aktivitetskampanjen</a> og 
+            bli medlem i <a href="https://www.strava.com/clubs/754665">Helsedirektoratets klubb på Strava</a>
+        </p>
+    </div>
+    <div class="tile-aggregated" id="aggregerte_data">
+        <h2>Aggregerte data</h2>
+        {aggregerte_resultater_table}
+    </div>
+    <div class="tile" id="ukens_resultater">
+        <h2>Ukens resultater (uke {int(get_current_week_number())})</h2>
+        {ukens_resultater_table}
+    </div>
+    <div class="tile" id="forrige_ukes_resultater">
+        <h2>Forrige ukes resultater (uke {int(get_current_week_number())-1})</h2>
+        {forrige_ukes_resultater_table}
+    </div>
+    <div class="tile" id="resultater_hele_perioden">
+        <h2>Resultater hele perioden</h2>
+        {resultater_hele_perioden_table}
+    </div>
+</div>
 """
 
 
@@ -257,5 +246,8 @@ html_content = f"""
 # Write the HTML content to the file
 with open(FILE_PATH, 'w', encoding='utf-8') as html_file:
     html_file.write(html_content)
+# debugging
+#with open(FILE_PATH_DATA, 'w', encoding='utf-8') as html_file:
+#    html_file.write(html_content)
 
 print(f"HTML file created at: {FILE_PATH}")

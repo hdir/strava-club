@@ -1,0 +1,74 @@
+club_id,club_name,club_activity_type,club_location,leaderboard_week,leaderboard_date_start,leaderboard_date_end,rank,athlete_id,athlete_name,activities,moving_time,distance,distance_longest,average_speed,elevation_gain
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,1,11938285,Marcus Axelsson,14,0.0,505900.0,109100.0,8.972222222222221,4994.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,2,12553139,Kjell Alfred Otterlei,18,0.0,503300.0,64599.99999999999,10.527777777777777,3854.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,3,9961,Aaron Long,7,0.0,431400.0,94900.0,6.361111111111111,6452.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,4,596884,Kjetil Farup,12,0.0,326200.0,86000.0,11.0,2783.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,5,6570082,Nikolas Jansen,6,0.0,276700.0,82000.0,10.416666666666666,3088.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,6,1105494,Thomas Engebretsen,7,0.0,242600.0,48000.0,7.472222222222221,1160.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,7,13184,Erik Nordlie,7,0.0,213600.0,40900.0,8.13888888888889,1968.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,8,288479,Thomas Rosenlund,13,0.0,202900.0,39200.0,7.027777777777778,2295.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,9,1193306,Kim Skotte,3,0.0,189000.0,90200.0,8.38888888888889,2066.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,10,2858853,Jostein Magerøy,6,0.0,153800.0,50400.0,6.805555555555555,1967.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,11,2706826,Morten Salvesen,8,0.0,146600.0,40400.0,7.25,1229.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,12,209758,Hans Flensted-Jensen,4,0.0,143700.0,50000.0,5.777777777777778,1972.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,13,11501148,Eirik Nordli,4,0.0,122300.0,38800.0,6.888888888888889,1880.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,14,151772,Stephan von der Lippe,11,0.0,117700.0,23900.0,7.222222222222222,1749.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,15,426076,Rolf-Arne Halvorsen,4,0.0,117600.0,36700.0,8.166666666666666,0.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,16,793647,John Are Hårstad-Evjen,2,0.0,91000.0,64000.0,9.86111111111111,827.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,17,1286405,Hans-Jørgen Breder,4,0.0,87200.0,49100.0,4.027777777777778,940.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,18,15081110,Kristian Hoff Petersen,8,0.0,81200.0,10400.0,5.944444444444444,697.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,19,2325036,Kenneth Zachariassen,3,0.0,79500.0,40300.0,9.722222222222221,1042.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,20,7723035,Emilsom Matioli,2,0.0,77100.0,40300.0,10.027777777777779,363.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,21,1959114,Maciej Ciara,2,0.0,74500.0,40100.0,9.944444444444443,595.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,22,14098526,Torgeir Svenningsen,3,0.0,63500.0,32200.000000000004,8.11111111111111,794.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,23,2570300,Martin Leer Sandstad,2,0.0,61400.0,36400.0,8.444444444444445,798.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,24,927303,Espen Skagen,1,0.0,46700.0,46700.0,6.416666666666667,649.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,25,7453144,Øystein Brekke,5,0.0,44500.0,9900.0,4.388888888888889,547.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,26,1348605,Øyvind Berg,1,0.0,35200.0,35200.0,9.0,111.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,27,2901664,Richard Jansen,4,0.0,28100.0,7500.0,5.138888888888888,669.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,28,2184632,Christian Kongsgård,1,0.0,27800.0,27800.0,7.388888888888889,237.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,29,2576543,Justin F,1,0.0,24400.0,24400.0,7.527777777777778,401.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,30,991534,Tim Bennett,1,0.0,24100.0,24100.0,8.222222222222223,0.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,31,2188669,Ulf-Gunnar Mikalsen,1,0.0,8300.0,8300.0,7.833333333333333,38.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,1,12553139,Kjell Alfred Otterlei,4,0.0,111400.0,43200.0,10.777777777777777,562.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,2,596884,Kjetil Farup,4,0.0,104000.0,58200.0,10.416666666666666,794.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,3,11938285,Marcus Axelsson,5,0.0,90900.0,32200.000000000004,9.138888888888888,863.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,4,2858853,Jostein Magerøy,3,0.0,90600.0,50400.0,7.0,887.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,5,14098526,Torgeir Svenningsen,3,0.0,89200.0,41500.0,8.027777777777777,430.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,6,1286405,Hans-Jørgen Breder,2,0.0,88700.0,88700.0,5.027777777777778,738.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,7,288479,Thomas Rosenlund,6,0.0,86400.0,31400.0,7.305555555555555,960.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,8,11501148,Eirik Nordli,2,0.0,69400.0,36300.0,8.222222222222223,698.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,9,209758,Hans Flensted-Jensen,2,0.0,64700.0,40400.0,6.944444444444445,801.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,10,6570082,Nikolas Jansen,4,0.0,60600.0,22300.0,9.222222222222223,961.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,11,1348605,Øyvind Berg,1,0.0,50500.0,50500.0,8.88888888888889,475.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,12,13184,Erik Nordlie,2,0.0,49500.0,32800.0,9.166666666666666,0.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,13,15081110,Kristian Hoff Petersen,4,0.0,41400.0,10800.0,5.805555555555555,365.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,14,2706826,Morten Salvesen,3,0.0,40600.0,18200.0,6.194444444444445,710.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,15,1959114,Maciej Ciara,2,0.0,37200.0,33100.0,8.25,377.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,16,2188669,Ulf-Gunnar Mikalsen,4,0.0,36800.0,11600.0,6.361111111111111,498.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,17,151772,Stephan von der Lippe,3,0.0,32600.0,18200.0,8.083333333333334,398.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,18,1017179,Anders Emil Salvesen,1,0.0,31700.0,31700.0,6.861111111111111,285.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,19,793647,John Are Hårstad-Evjen,1,0.0,23400.0,23400.0,9.916666666666668,344.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,20,2325036,Kenneth Zachariassen,1,0.0,20000.0,20000.0,9.222222222222223,237.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,21,7453144,Øystein Brekke,2,0.0,19100.0,9500.0,5.861111111111112,206.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,22,2901664,Richard Jansen,2,0.0,13900.0,7000.0,5.333333333333333,327.0
+116781,Tryvann CK Private Club,Cycling,"Oslo, Oslo, Norge",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,23,9961,Aaron Long,1,0.0,9000.0,9000.0,4.361111111111111,31.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,1,288479,Thomas Rosenlund,16,40140.0,202900.0,,,2295.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,2,133260,Øivind Langeland,18,37860.0,199400.0,,,2135.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,3,15305367,Per Øivind Gaardsrud,3,33120.0,84300.0,,,1645.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,4,8849482,Ørjan Stene,6,32280.0,144300.0,,,4266.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,5,3450542,Per Ludvig Skjerven,5,21060.0,33000.0,,,821.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,6,4040211,Jonas Bergan,4,15480.0,50300.0,,,221.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,7,2407379,Ingvar Sørlien,3,11580.0,46100.0,,,786.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,8,16855015,Jeppe Ugland,4,11520.0,27900.0,,,331.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,9,4778110,Even Espelid,5,9960.0,65700.0,,,921.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,10,132836745,TTR Hdir,2,7320.0,19000.0,,,100.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-04 to 2024-03-10,2024-03-04,2024-03-10,11,6207106,Ragnhild Holst,2,2160.0,4800.0,,,37.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,1,288479,Thomas Rosenlund,7,15720.0,86400.0,,,960.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,2,8849482,Ørjan Stene,3,10860.0,73600.0,,,281.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,3,133260,Øivind Langeland,7,10740.0,60900.0,,,595.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,4,16855015,Jeppe Ugland,3,9000.0,23900.0,,,315.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,5,3450542,Per Ludvig Skjerven,1,4920.0,0.0,,,69.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,6,2407379,Ingvar Sørlien,1,2400.0,7200.0,,,94.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,7,4778110,Even Espelid,2,2280.0,13800.0,,,214.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-03-11 to 2024-03-17,2024-03-11,2024-03-17,8,15951168,Thomas Grimeland,1,720.0,1300.0,,,15.0
