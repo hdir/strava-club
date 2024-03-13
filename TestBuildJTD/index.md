@@ -19,7 +19,7 @@
         
         <div class="tile-aggregated" id="aggregerte_data">
             <h2>Aggregerte data</h2>
-            <table class='table-aggregated'><tr><td>⏳ 127:36 (t:m)</td><td>📏 1794.4 km</td><td>🧗 23868 høydemeter</td></tr><tr><td>👥 0 kolleger</td><tr><td>🏁 0 aktiviteter</td><tr><td>🌱 0 kg CO2 spart</td></tr></table>
+            <table class='table-aggregated'><tr><td>⏳ 127:36 (t:m)</td><td>📏 1794.4 km</td><td>🧗 23868 høydemeter</td></tr><tr><td>👥 0 kolleger</td><td>🏁 0 aktiviteter</td><td>🌱 0 kg CO2 spart</td></tr></table>
         </div>
 
         <div class="tile" id="ukens_resultater">
