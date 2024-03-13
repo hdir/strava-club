@@ -102,7 +102,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-          destination_dir: ./TestBuildJTD
+          destination_dir: ./CurrentBuild
 
 #      - name: Deploy gh-pages
 #        uses: peaceiris/actions-gh-pages@v3
