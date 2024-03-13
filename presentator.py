@@ -2,26 +2,11 @@
 """Module to create html page of data from Strava web scraper"""
 
 import json
-import os
-import shutil
 from datetime import datetime
 
 # File handling
 FILE_PATH = 'index.md'
-FILE_PATH_DATA = 'data/index.md'
-
-# Make directory for web output
-#directory = 'web'
-#if not os.path.isdir(directory):
-#    os.mkdir(directory)
-
-#directory = r'web/static'
-### If folder doesn't exists, create it ##
-#if not os.path.isdir(directory):
-#    os.makedirs(directory)
-
-# Copy static css to web directory - not needed, original is in web/static
-#shutil.copyfile('./static/styles.css', './web/static/styles.css')
+FILE_PATH_DATA = 'data/index.md' #Trengs denne lenger?
 
 # Load the JSON content from the file
 with open('data/result/results.json', 'r') as json_file:
@@ -92,13 +77,16 @@ def create_athlete_summary():
     return athlete_summary
 
 def create_aggregated_summary(): # aggregate activities missing
-    aggregated_summary = [0,0,0]
-    #activity_counter = 0
+    aggregated_summary = {"moving_time": 0,
+                          "distance": 0,
+                          "elevation_gain": 0
+                         }
+    
 
-    for records in data.values(): #skriv om til dict
-        aggregated_summary[0] += records["moving_time"]
-        aggregated_summary[1] += format_distance(records["distance"])
-        aggregated_summary[2] += records["elevation_gain"]
+    for records in data.values(): 
+        aggregated_summary["moving_time"] += records["moving_time"]
+        aggregated_summary["distance"] += format_distance(records["distance"])
+        aggregated_summary["elevation_gain"] += records["elevation_gain"]
         #aggregated_summary[3] += activity_counter+1
     
     #aggregated_summary[4] += athlete_counter+1
@@ -142,11 +130,11 @@ rankings = get_changed_ranking()
 
 
 
-# Create HTML tables for each section - note, this way of doing this creates whitespace in html
+# Each table row should come on new line
 aggregerte_resultater_table = f"<table class='table-aggregated'>\
-<tr><td>⏳ {format_duration(aggregated_summary[0])} (t:m)</td>\
-<td>📏 {round(aggregated_summary[1], 1)} km</td>\
-<td>🧗 {aggregated_summary[2]} høydemeter</td></tr>\
+<tr><td>⏳ {format_duration(aggregated_summary['moving_time'])} (t:m)</td>\
+<td>📏 {round(aggregated_summary['distance'], 1)} km</td>\
+<td>🧗 {aggregated_summary['elevation_gain']} høydemeter</td></tr>\
 <tr><td>👥 0 kolleger</td>\
 <td>🏁 0 aktiviteter</td>\
 <td>🌱 0 kg CO2 spart</td></tr>\
