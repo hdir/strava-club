@@ -1,81 +1,67 @@
 {"0": {
-    "doc": "Home",
-    "title": "Just the start",
-    "content": "Landingsside . ",
-    "url": "/strava-club/TestBuildJTD/#just-the-start",
-    
-    "relUrl": "/#just-the-start"
-  },"1": {
-    "doc": "Home",
-    "title": "Home",
-    "content": " ",
-    "url": "/strava-club/TestBuildJTD/",
-    
-    "relUrl": "/"
-  },"2": {
     "doc": "Informasjonsside",
     "title": "Vår 2024 - Informasjonsside",
     "content": " ",
     "url": "/strava-club/TestBuildJTD/docs/info.html",
     
     "relUrl": "/docs/info.html"
-  },"3": {
+  },"1": {
     "doc": "Informasjonsside",
     "title": "Informasjon om kampanjen",
     "content": ". | Bli medlem i Helsedirektoratets klubb på Strava. | Registrere aktiviteter i strava, enten automatisk eller manuelt i Strava appen(*). | Vinn fine premier 🥇 | . Beskrivelse av konkurransereglene: . | All aktivitet telles i sammendraget. | Ett lodd tildeles hver uke for de som har mer enn 150 minutter aktivitet i uken. | To lodd tildeles for de som har mer enn 300 minutter aktivitet i uken. | Alle lodd er med alle trekningene. Man kan maksimalt bli tildelt 16 lodd i løpet av konkurranseperioden som går over åtte uker. | Det er en trekning etter to uker og tre trekninger ved konkurransens slutt. | . (*) ved manuell registrering i Strava appen deles ingen lokasjonsdata med Strava eller Strava sine brukere. Ved automatisk registrering med GPS spor i app/device kan lokasjonsdata beskyttes ved å bruke en privat Strava konto. ",
     "url": "/strava-club/TestBuildJTD/docs/info.html",
     
     "relUrl": "/docs/info.html"
-  },"4": {
+  },"2": {
     "doc": "Informasjonsside",
     "title": "Informasjonsside",
     "content": " ",
     "url": "/strava-club/TestBuildJTD/docs/info.html",
     
     "relUrl": "/docs/info.html"
-  },"5": {
+  },"3": {
     "doc": "Resultater",
     "title": "Vår 2024 - Resultatside",
     "content": " ",
     "url": "/strava-club/TestBuildJTD/docs/results.html",
     
     "relUrl": "/docs/results.html"
-  },"6": {
+  },"4": {
     "doc": "Resultater",
     "title": "Informasjon om kampanjen",
     "content": "Les mer om Vår 2024 her og bli medlem i Helsedirektoratets klubb på Strava. ",
     "url": "/strava-club/TestBuildJTD/docs/results.html",
     
     "relUrl": "/docs/results.html"
-  },"7": {
+  },"5": {
     "doc": "Resultater",
     "title": "Aggregerte data",
     "content": "| ⏳ 109:56 (t:m) | 📏 1567.2 km | 🧗 21462 høydemeter | . ",
     "url": "/strava-club/TestBuildJTD/docs/results.html",
     
     "relUrl": "/docs/results.html"
-  },"8": {
+  },"6": {
     "doc": "Resultater",
     "title": "Ukens resultater (uke 11)",
     "content": "| Navn | Antall aktiviteter | Varighet (t:m) | Distanse (km) | Høydemeter | . | 🔺 Ørjan Stene | 3 | 03:01 🎫 | 73.6 | 281 | . | 🔻 Thomas Rosenlund | 5 | 02:52 🎫 | 46.9 | 394 | . | 🔻 Øivind Langeland | 3 | 00:44 | 16.8 | 110 | . | 🔺 Jeppe Ugland | 1 | 01:00 | 12.0 | 157 | . | 🔺 Ingvar Sørlien | 1 | 00:40 | 7.2 | 94 | . | 🔻 Even Espelid | 1 | 00:18 | 6.9 | 87 | . ",
     "url": "/strava-club/TestBuildJTD/docs/results.html",
     
     "relUrl": "/docs/results.html"
-  },"9": {
+  },"7": {
     "doc": "Resultater",
     "title": "Forrige ukes resultater (uke 10)",
     "content": "| Navn | Antall aktiviteter | Varighet (t:m) | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 16 | 11:09 🎫🎫 | 202.9 | 2295 | . | Øivind Langeland | 18 | 10:31 🎫🎫 | 199.4 | 2135 | . | Ørjan Stene | 6 | 08:58 🎫🎫 | 144.3 | 4266 | . | Per Øivind Gaardsrud | 3 | 09:12 🎫🎫 | 84.3 | 1645 | . | Even Espelid | 5 | 02:46 🎫 | 65.7 | 921 | . | Jonas Bergan | 4 | 04:18 🎫 | 50.3 | 221 | . | Ingvar Sørlien | 3 | 03:13 🎫 | 46.1 | 786 | . | Per Ludvig Skjerven | 5 | 05:51 🎫🎫 | 33.0 | 821 | . | Jeppe Ugland | 4 | 03:12 🎫 | 27.9 | 331 | . | TTR Hdir | 2 | 02:02 | 19.0 | 100 | . | Ragnhild Holst | 2 | 00:36 | 4.8 | 37 | . ",
     "url": "/strava-club/TestBuildJTD/docs/results.html",
     
     "relUrl": "/docs/results.html"
-  },"10": {
+  },"8": {
     "doc": "Resultater",
     "title": "Resultater hele perioden",
     "content": "| Navn | Antall aktiviteter | Varighet | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 37 | 26:15 | 466.0 | 5051 | . | Øivind Langeland | 41 | 22:27 | 421.7 | 4303 | . | Ørjan Stene | 11 | 14:39 | 245.0 | 4547 | . | Per Øivind Gaardsrud | 6 | 16:55 | 141.2 | 3347 | . | Even Espelid | 6 | 03:04 | 72.6 | 1008 | . | Jonas Bergan | 4 | 04:18 | 50.3 | 221 | . | Ingvar Sørlien | 4 | 03:53 | 53.3 | 880 | . | Per Ludvig Skjerven | 9 | 11:35 | 53.4 | 1480 | . | Jeppe Ugland | 5 | 04:12 | 39.9 | 488 | . | TTR Hdir | 2 | 02:02 | 19.0 | 100 | . | Ragnhild Holst | 2 | 00:36 | 4.8 | 37 | . ",
     "url": "/strava-club/TestBuildJTD/docs/results.html",
     
     "relUrl": "/docs/results.html"
-  },"11": {
+  },"9": {
     "doc": "Resultater",
     "title": "Resultater",
     "content": " ",
