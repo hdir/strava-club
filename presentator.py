@@ -146,9 +146,9 @@ rankings = get_changed_ranking()
 aggregerte_resultater_table = f"<table class='table-aggregated'>\
 <tr><td>👥 {aggregated_summary['athletes']} kolleger</td>\
 <td>🏁 {aggregated_summary['activities']} aktiviteter</td>\
-<td>⏳ {format_duration(aggregated_summary['moving_time'])} (t:m)</tr>\
+<td>⏳ {format_duration(aggregated_summary['moving_time'])} (t:m)</td></tr>\
 <tr><td>📏 {round(aggregated_summary['distance'], 1)} km</td>\
-<td>🧗 {aggregated_summary['elevation_gain']} høydemeter</td></td>\
+<td>🧗 {aggregated_summary['elevation_gain']} høydemeter</td>\
 <td>🌱 {aggregated_summary['co2_saved']} kg CO2 spart</td></tr>\
 </table>"
 
