@@ -75,14 +75,16 @@ def create_athlete_summary():
                 'activities': 0,
                 'distance': 0,
                 'moving_time': 0,
-                'elevation_gain': 0
+                'elevation_gain': 0,
+                'tickets': 0
             }
 
         athlete_summary[athlete_name]['activities'] += value['activities']
         athlete_summary[athlete_name]['distance'] += value['distance']
         athlete_summary[athlete_name]['moving_time'] += value['moving_time']
         athlete_summary[athlete_name]['elevation_gain'] += value['elevation_gain']
-    
+        athlete_summary[athlete_name]['tickets'] += value['tickets']
+
     return athlete_summary
 
 def create_aggregated_summary():
@@ -192,6 +194,7 @@ resultater_hele_perioden_table = "<table class='table'>\
 <tr><th>Navn</th>\
 <th>Antall aktiviteter</th>\
 <th>Varighet (t:m)</th>\
+<th>Lodd</th>\
 <th>Distanse (km)</th>\
 <th>Høydemeter</th></tr>"
 
@@ -200,6 +203,7 @@ for athlete_name, summary_data in athlete_summary.items():
         f"<tr><td>{athlete_name}</td>"
         f"<td>{summary_data['activities']}</td>"
         f"<td>{format_duration(summary_data['moving_time'])}</td>"
+        f"<td>{summary_data['tickets']}</td>"
         f"<td>{format_distance(summary_data['distance'])}</td>"
         f"<td>{summary_data['elevation_gain']}</td></tr>"
     )
