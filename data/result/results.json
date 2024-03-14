@@ -137,10 +137,10 @@
   "11-133260": {
     "week_number": 11,
     "athlete_name": "\u00d8ivind Langeland",
-    "activities": 10,
-    "moving_time": 13800,
-    "distance": 71600,
-    "elevation_gain": 692,
+    "activities": 11,
+    "moving_time": 14640,
+    "distance": 77200,
+    "elevation_gain": 704,
     "tickets": 1
   },
   "10-4040211": {
@@ -209,10 +209,10 @@
   "11-15951168": {
     "week_number": 11,
     "athlete_name": "Thomas Grimeland",
-    "activities": 3,
-    "moving_time": 5160,
-    "distance": 8200,
-    "elevation_gain": 92,
+    "activities": 4,
+    "moving_time": 6720,
+    "distance": 10800,
+    "elevation_gain": 99,
     "tickets": 0
   },
   "10-71873694": {
@@ -227,10 +227,10 @@
   "11-71873694": {
     "week_number": 11,
     "athlete_name": "Hans Christian Sundsfjord",
-    "activities": 2,
-    "moving_time": 5580,
-    "distance": 0,
-    "elevation_gain": 0,
+    "activities": 3,
+    "moving_time": 8220,
+    "distance": 13000,
+    "elevation_gain": 186,
     "tickets": 0
   },
   "11-4040211": {
@@ -259,5 +259,23 @@
     "distance": 7400,
     "elevation_gain": 197,
     "tickets": 0
+  },
+  "10-9396005": {
+    "week_number": 10,
+    "athlete_name": "Bj\u00f8rn Intelhus",
+    "activities": 10,
+    "moving_time": 34680,
+    "distance": 207100,
+    "elevation_gain": 3899,
+    "tickets": 2
+  },
+  "11-9396005": {
+    "week_number": 11,
+    "athlete_name": "Bj\u00f8rn Intelhus",
+    "activities": 4,
+    "moving_time": 10920,
+    "distance": 76700,
+    "elevation_gain": 924,
+    "tickets": 1
   }
 }
