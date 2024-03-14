@@ -108,16 +108,20 @@ lag_resultater_hele_perioden_table = "<table class='table'>\
 <th>Aktiviteter</th>\
 <th>Varighet (t:m)</th>\
 <th>Distanse (km)</th>\
-<th>Høydemeter</th></tr>"
+<th>Høydemeter</th>\
+<th>Lodd</th>\
+<th>Deltakere</th></tr>"
 
 for lagnr, summary_data in team_summary.items():
+    deltakere = lag[lagnr]['athlete_names']
     lag_resultater_hele_perioden_table += (
         f"<tr><td>{lagnr}</td>"
         f"<td>{summary_data['activities']}</td>"
         f"<td>{format_duration(summary_data['moving_time'])}</td>"
-        f"<td>{summary_data['tickets']}</td>"
         f"<td>{format_distance(summary_data['distance'])}</td>"
         f"<td>{summary_data['elevation_gain']}</td></tr>"
+        f"<td>{summary_data['tickets']}</td></tr>"
+        f"<td>{lag[lagnr]['athlete_names']}</td></tr>"
     )
 lag_resultater_hele_perioden_table += "</table>"
 
@@ -130,7 +134,7 @@ nav_order: 3
 
 # Vår 2024 - Lagkonkurransen
 
-Informasjon om [aktivitetskampanjen](docs/info.md). For å delta må du også bli medlem i [Helsedirektoratets klubb på Strava](https://www.strava.com/clubs/754665).
+Informasjon om [aktivitetskampanjen](docs/info.md). For å delta må du også bli medlem i [Helsedirektoratets klubb på Strava](https://www.strava.com/clubs/754665). Lag settes opp manuelt, kontakt arrangøren.
 
 <div class="tile-aggregated" id="aggregerte_data">
     <h2>Aggregerte lagdata</h2>
