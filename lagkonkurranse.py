@@ -76,9 +76,19 @@ def create_team_summary():
     
     # Create a dictionary to store the accumulated data for each team
     # Accumulate data for for each team across all weeks
+
     for key, value in lag.items():
         athlete_names = value["athlete_names"]
         lag_nr = value["lagnr"]
+        if lag_nr not in team_summary:
+            team_summary[lag_nr] = {
+                'activities': 0,
+                'distance': 0,
+                'moving_time': 0,
+                'elevation_gain': 0,
+                'tickets': 0
+            }
+
         for key, value in data.items():
             athlete_name = value["athlete_name"]
             # Hent data for alle athleter som hører til laget
@@ -87,6 +97,7 @@ def create_team_summary():
                 team_summary[lag_nr]['distance'] += value['distance']
                 team_summary[lag_nr]['moving_time'] += value['moving_time']
                 team_summary[lag_nr]['elevation_gain'] += value['elevation_gain']
+                team_summary[lag_nr]['tickets'] += value['tickets']
 
     return team_summary
 
