@@ -212,32 +212,25 @@ title: Resultater
 nav_order: 1
 ---
 
-<div class="page-wrapper">
-    <div class="header" id="header">
-        <h1>Vår 2024 - Resultatside</h1>
-    </div>
-    <div class="tile-info" id="info">
-        <p>
-            Les mer om <a href="https://hdir.github.io/strava-club/CurrentBuild/info.html">aktivitetskampanjen</a> og 
-            bli medlem i <a href="https://www.strava.com/clubs/754665">Helsedirektoratets klubb på Strava</a>
-        </p>
-    </div>
-    <div class="tile-aggregated" id="aggregerte_data">
-        <h2>Aggregerte data</h2>
-        {aggregerte_resultater_table}
-    </div>
-    <div class="tile" id="ukens_resultater">
-        <h2>Ukens resultater (uke {int(get_current_week_number())})</h2>
-        {ukens_resultater_table}
-    </div>
-    <div class="tile" id="forrige_ukes_resultater">
-        <h2>Forrige ukes resultater (uke {int(get_current_week_number())-1})</h2>
-        {forrige_ukes_resultater_table}
-    </div>
-    <div class="tile" id="resultater_hele_perioden">
-        <h2>Resultater hele perioden</h2>
-        {resultater_hele_perioden_table}
-    </div>
+# Vår 2024 - Resultater
+
+Informasjon om [aktivitetskampanjen](docs/info.md). For å delta må du også bli medlem i [Helsedirektoratets klubb på Strava](https://www.strava.com/clubs/754665).
+
+<div class="tile-aggregated" id="aggregerte_data">
+    <h2>Aggregerte data</h2>
+    {aggregerte_resultater_table}
+</div>
+<div class="tile" id="ukens_resultater">
+    <h2>Ukens resultater (uke {int(get_current_week_number())})</h2>
+    {ukens_resultater_table}
+</div>
+<div class="tile" id="forrige_ukes_resultater">
+    <h2>Forrige ukes resultater (uke {int(get_current_week_number())-1})</h2>
+    {forrige_ukes_resultater_table}
+</div>
+<div class="tile" id="resultater_hele_perioden">
+    <h2>Resultater hele perioden</h2>
+    {resultater_hele_perioden_table}
 </div>
 """
 
