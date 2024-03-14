@@ -15,10 +15,7 @@ with open('data/result/results.json', 'r') as json_file:
             unsorted_data.items(), key=lambda item: item[1]["distance"], reverse=True))
 
 with open('data/result/lag.json', 'r') as json_file:
-    unsorted_data = json.load(json_file)
-    lag = dict(
-        sorted(
-            unsorted_data.items(), key=lambda item: item[1]["distance"], reverse=True))
+    lag = json.load(json_file)
 
 def get_current_week_number():
     """Function to get current week number"""
