@@ -16,14 +16,17 @@ Application_DataObject(csvres, "club_leaderboard.csv")
 Application_DataObject(csvdelt, "club_members.csv")
 Application_Component(behandler, "Databehandler")
 Application_DataObject(resjson, "result.json")
+Application_DataObject(info, "info.md")
+Application_Service(jtd, "Just-the-docs")
 'Application_DataObject(csvtot, "totalresultat.json")
 'Application_DataObject(akk, "club_accumulated.json")
 '}
 
 Business_Service(bpresent, "Presentere")
 Application_Component(present, "Presentatør")
+Application_DataObject(results, "index.md")
 rectangle "gh-pages\nbranch" {
-  Application_DataObject(html, "index.md")
+  Application_DataObject(websider, "Websider")
 }
 
 'note "All kildekoden\nligger i main branch" as kildekode
@@ -47,9 +50,13 @@ csvdelt -right-> behandler
 behandler -right-> resjson
 resjson -left-> behandler
 resjson -right-> present
+resjson -down[hidden]- info
+results -down-> jtd
 'csvtot -right-> present
 'akk -right-> present
 bpresent -down- present
-present -right-> html
+present -right-> results
+info -right-> jtd
+jtd -right-> websider
 
 @enduml
