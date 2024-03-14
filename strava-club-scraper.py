@@ -2356,7 +2356,7 @@ club_members_df = strava_club_members(
 )
 
 # Save as .csv
-club_members_df.to_csv(path_or_buf='skrap/club_members.csv', sep=',', na_rep='', header=True, index=False, index_label=None, encoding='utf-8')
+club_members_df.to_csv(path_or_buf='data/skrap/club_members.csv', sep=',', na_rep='', header=True, index=False, index_label=None, encoding='utf-8')
 
 # Update Google Sheets sheet
 #club_members_df = strava_club_to_google_sheets(
