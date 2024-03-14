@@ -83,8 +83,8 @@
   "10-4778110": {
     "week_number": 10,
     "athlete_name": "Even Espelid",
-    "activities": 5,
-    "moving_time": 9960,
+    "activities": 6,
+    "moving_time": 12660,
     "distance": 65700,
     "elevation_gain": 921,
     "tickets": 1
@@ -128,20 +128,20 @@
   "11-288479": {
     "week_number": 11,
     "athlete_name": "Thomas Rosenlund",
-    "activities": 12,
-    "moving_time": 27480,
-    "distance": 146800,
-    "elevation_gain": 1474,
+    "activities": 13,
+    "moving_time": 31800,
+    "distance": 178200,
+    "elevation_gain": 1904,
     "tickets": 2
   },
   "11-133260": {
     "week_number": 11,
     "athlete_name": "\u00d8ivind Langeland",
-    "activities": 12,
-    "moving_time": 15780,
-    "distance": 82600,
-    "elevation_gain": 790,
-    "tickets": 1
+    "activities": 13,
+    "moving_time": 20340,
+    "distance": 114000,
+    "elevation_gain": 1141,
+    "tickets": 2
   },
   "10-4040211": {
     "week_number": 10,
@@ -173,10 +173,10 @@
   "11-8849482": {
     "week_number": 11,
     "athlete_name": "\u00d8rjan Stene",
-    "activities": 5,
-    "moving_time": 19680,
-    "distance": 140200,
-    "elevation_gain": 725,
+    "activities": 6,
+    "moving_time": 27300,
+    "distance": 188600,
+    "elevation_gain": 1307,
     "tickets": 2
   },
   "11-2407379": {
@@ -191,11 +191,11 @@
   "11-4778110": {
     "week_number": 11,
     "athlete_name": "Even Espelid",
-    "activities": 6,
-    "moving_time": 6960,
+    "activities": 9,
+    "moving_time": 16860,
     "distance": 41500,
     "elevation_gain": 641,
-    "tickets": 0
+    "tickets": 1
   },
   "11-3450542": {
     "week_number": 11,
@@ -209,11 +209,11 @@
   "11-15951168": {
     "week_number": 11,
     "athlete_name": "Thomas Grimeland",
-    "activities": 5,
-    "moving_time": 8400,
-    "distance": 13500,
-    "elevation_gain": 161,
-    "tickets": 0
+    "activities": 6,
+    "moving_time": 11220,
+    "distance": 17700,
+    "elevation_gain": 223,
+    "tickets": 1
   },
   "10-71873694": {
     "week_number": 10,
@@ -272,10 +272,10 @@
   "11-9396005": {
     "week_number": 11,
     "athlete_name": "Bj\u00f8rn Intelhus",
-    "activities": 4,
-    "moving_time": 10920,
-    "distance": 76700,
-    "elevation_gain": 924,
+    "activities": 5,
+    "moving_time": 14220,
+    "distance": 92600,
+    "elevation_gain": 1528,
     "tickets": 1
   }
 }
