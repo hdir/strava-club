@@ -160,7 +160,7 @@ aggregerte_resultater_table = f"<table class='table-aggregated'>\
 
 ukens_resultater_table = "<table class='table'>\
 <tr><th>Navn</th>\
-<th>Antall aktiviteter</th>\
+<th>Aktiviteter</th>\
 <th>Varighet (t:m)</th>\
 <th>Distanse (km)</th>\
 <th>Høydemeter</th></tr>"
@@ -178,7 +178,7 @@ ukens_resultater_table += "</table>"
 
 forrige_ukes_resultater_table = "<table class='table'>\
 <tr><th>Navn</th>\
-<th>Antall aktiviteter</th>\
+<th>Aktiviteter</th>\
 <th>Varighet (t:m)</th>\
 <th>Distanse (km)</th>\
 <th>Høydemeter</th></tr>"
