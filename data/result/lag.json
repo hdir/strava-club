@@ -1,0 +1,17 @@
+{
+   "Lag arkitektur": {
+     "lagnr": 1,
+     "athlete_ids": ["288479","133260","133260"],
+     "athlete_names": ["Thomas Rosenlund","\u00d8ivind Langeland","Thomas Grimeland"]
+   },
+   "Lag standardisering": {
+      "lagnr": 2,
+      "athlete_ids":["2407379","2094125"],
+      "athlete_names": ["Ingvar S\u00f8rlien","Annebeth Askevold"]
+   },
+    "Lag ehelse": {
+       "lagnr": 3,
+       "athlete_ids": ["8849482","3450542", "1810801"],
+       "athlete_names": ["\u00d8rjan Stene","Per Ludvig Skjerven","Janne Hougen"]
+     }
+}

@@ -2,26 +2,11 @@
 """Module to create html page of data from Strava web scraper"""
 
 import json
-import os
-import shutil
 from datetime import datetime
 
 # File handling
 FILE_PATH = 'index.md'
-FILE_PATH_DATA = 'data/index.md'
-
-# Make directory for web output
-#directory = 'web'
-#if not os.path.isdir(directory):
-#    os.mkdir(directory)
-
-#directory = r'web/static'
-### If folder doesn't exists, create it ##
-#if not os.path.isdir(directory):
-#    os.makedirs(directory)
-
-# Copy static css to web directory - not needed, original is in web/static
-#shutil.copyfile('./static/styles.css', './web/static/styles.css')
+FILE_PATH_DATA = 'data/index.md' #Trengs denne lenger?
 
 # Load the JSON content from the file
 with open('data/result/results.json', 'r') as json_file:
@@ -66,6 +51,15 @@ def get_tickets(int_tickets):
         visual_tickets = ""
     return visual_tickets 
 
+def count_athletes():
+    unique_athlete_names = set()
+    for entry in data.values():
+        unique_athlete_names.add(entry["athlete_name"])
+    return len(unique_athlete_names)
+
+def calculate_co2_saved(distance):
+    return round(distance*0.016, 2)
+
 
 def create_athlete_summary():
     athlete_summary = {}
@@ -81,28 +75,36 @@ def create_athlete_summary():
                 'activities': 0,
                 'distance': 0,
                 'moving_time': 0,
-                'elevation_gain': 0
+                'elevation_gain': 0,
+                'tickets': 0
             }
 
         athlete_summary[athlete_name]['activities'] += value['activities']
         athlete_summary[athlete_name]['distance'] += value['distance']
         athlete_summary[athlete_name]['moving_time'] += value['moving_time']
         athlete_summary[athlete_name]['elevation_gain'] += value['elevation_gain']
-    
+        athlete_summary[athlete_name]['tickets'] += value['tickets']
+
     return athlete_summary
 
-def create_aggregated_summary(): # aggregate activities missing
-    aggregated_summary = [0,0,0]
-    #activity_counter = 0
-
-    for records in data.values(): #skriv om til dict
-        aggregated_summary[0] += records["moving_time"]
-        aggregated_summary[1] += format_distance(records["distance"])
-        aggregated_summary[2] += records["elevation_gain"]
-        #aggregated_summary[3] += activity_counter+1
+def create_aggregated_summary():
+    aggregated_summary = {"moving_time": 0,
+                          "distance": 0,
+                          "elevation_gain": 0,
+                          "activities": 0,
+                          "athletes": 0,
+                          "co2_saved": 0
+                         }
     
-    #aggregated_summary[4] += athlete_counter+1
-    #aggregated_summary[5] += athlete_counter+1
+
+    for record in data.values(): 
+        aggregated_summary["moving_time"] += record["moving_time"]
+        aggregated_summary["distance"] += format_distance(record["distance"])
+        aggregated_summary["elevation_gain"] += record["elevation_gain"]
+        aggregated_summary["activities"] += record["activities"]
+        
+    aggregated_summary["athletes"] = count_athletes()
+    aggregated_summary["co2_saved"] = calculate_co2_saved(aggregated_summary["distance"])
         
     return aggregated_summary
 
@@ -124,7 +126,9 @@ def get_changed_ranking():
             current_rank = ranking_current_week.index(value["athlete_name"])
             previous_rank = ranking_previous_week.index(value["athlete_name"])
 
-            if current_rank < previous_rank:
+            if previous_rank - current_rank > 1:
+                rankings.update({value["athlete_name"]: "🔥"})
+            elif current_rank < previous_rank:
                 rankings.update({value["athlete_name"]: "🔺"})
             elif current_rank > previous_rank:
                 rankings.update({value["athlete_name"]: "🔻"})
@@ -142,14 +146,14 @@ rankings = get_changed_ranking()
 
 
 
-# Create HTML tables for each section - note, this way of doing this creates whitespace in html
+# Each table row should come on new line
 aggregerte_resultater_table = f"<table class='table-aggregated'>\
-<tr><td>⏳ {format_duration(aggregated_summary[0])} (t:m)</td>\
-<td>📏 {round(aggregated_summary[1], 1)} km</td>\
-<td>🧗 {aggregated_summary[2]} høydemeter</td></tr>\
-<tr><td>👥 0 kolleger</td>\
-<td>🏁 0 aktiviteter</td>\
-<td>🌱 0 kg CO2 spart</td></tr>\
+<tr><td>👥 {aggregated_summary['athletes']} kolleger</td>\
+<td>🏁 {aggregated_summary['activities']} aktiviteter</td>\
+<td>⏳ {format_duration(aggregated_summary['moving_time'])} (t:m)</td></tr>\
+<tr><td>📏 {round(aggregated_summary['distance'], 1)} km</td>\
+<td>🧗 {aggregated_summary['elevation_gain']} høydemeter</td>\
+<td>🌱 {aggregated_summary['co2_saved']} kg CO2 spart</td></tr>\
 </table>"
 
 ukens_resultater_table = "<table class='table'>\
@@ -190,8 +194,9 @@ forrige_ukes_resultater_table += "</table>"
 
 resultater_hele_perioden_table = "<table class='table'>\
 <tr><th>Navn</th>\
-<th>Antall aktiviteter</th>\
+<th>Aktiviteter</th>\
 <th>Varighet (t:m)</th>\
+<th>Lodd</th>\
 <th>Distanse (km)</th>\
 <th>Høydemeter</th></tr>"
 
@@ -200,6 +205,7 @@ for athlete_name, summary_data in athlete_summary.items():
         f"<tr><td>{athlete_name}</td>"
         f"<td>{summary_data['activities']}</td>"
         f"<td>{format_duration(summary_data['moving_time'])}</td>"
+        f"<td>{summary_data['tickets']}</td>"
         f"<td>{format_distance(summary_data['distance'])}</td>"
         f"<td>{summary_data['elevation_gain']}</td></tr>"
     )
@@ -212,32 +218,25 @@ title: Resultater
 nav_order: 1
 ---
 
-<div class="page-wrapper">
-    <div class="header" id="header">
-        <h1>Vår 2024 - Resultatside</h1>
-    </div>
-    <div class="tile-info" id="info">
-        <p>
-            Les mer om <a href="https://hdir.github.io/strava-club/CurrentBuild/info.html">aktivitetskampanjen</a> og 
-            bli medlem i <a href="https://www.strava.com/clubs/754665">Helsedirektoratets klubb på Strava</a>
-        </p>
-    </div>
-    <div class="tile-aggregated" id="aggregerte_data">
-        <h2>Aggregerte data</h2>
-        {aggregerte_resultater_table}
-    </div>
-    <div class="tile" id="ukens_resultater">
-        <h2>Ukens resultater (uke {int(get_current_week_number())})</h2>
-        {ukens_resultater_table}
-    </div>
-    <div class="tile" id="forrige_ukes_resultater">
-        <h2>Forrige ukes resultater (uke {int(get_current_week_number())-1})</h2>
-        {forrige_ukes_resultater_table}
-    </div>
-    <div class="tile" id="resultater_hele_perioden">
-        <h2>Resultater hele perioden</h2>
-        {resultater_hele_perioden_table}
-    </div>
+# Vår 2024 - Resultater
+
+Informasjon om [aktivitetskampanjen](docs/info.md). For å delta må du også bli medlem i [Helsedirektoratets klubb på Strava](https://www.strava.com/clubs/754665).
+
+<div class="tile-aggregated" id="aggregerte_data">
+    <h2>Aggregerte data</h2>
+    {aggregerte_resultater_table}
+</div>
+<div class="tile" id="ukens_resultater">
+    <h2>Ukens resultater (uke {int(get_current_week_number())})</h2>
+    {ukens_resultater_table}
+</div>
+<div class="tile" id="forrige_ukes_resultater">
+    <h2>Forrige ukes resultater (uke {int(get_current_week_number())-1})</h2>
+    {forrige_ukes_resultater_table}
+</div>
+<div class="tile" id="resultater_hele_perioden">
+    <h2>Resultater hele perioden</h2>
+    {resultater_hele_perioden_table}
 </div>
 """
 
