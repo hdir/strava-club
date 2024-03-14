@@ -23,7 +23,7 @@ Application_DataObject(resjson, "result.json")
 Business_Service(bpresent, "Presentere")
 Application_Component(present, "Presentatør")
 rectangle "gh-pages\nbranch" {
-  Application_DataObject(html, "Webside")
+  Application_DataObject(html, "index.md")
 }
 
 'note "All kildekoden\nligger i main branch" as kildekode
@@ -45,6 +45,7 @@ csvdelt -right-> behandler
 'resjson -down[hidden]- csvtot
 'csvtot -down[hidden]- akk
 behandler -right-> resjson
+resjson -left-> behandler
 resjson -right-> present
 'csvtot -right-> present
 'akk -right-> present
