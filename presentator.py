@@ -126,7 +126,9 @@ def get_changed_ranking():
             current_rank = ranking_current_week.index(value["athlete_name"])
             previous_rank = ranking_previous_week.index(value["athlete_name"])
 
-            if current_rank < previous_rank:
+            if previous_rank - current_rank > 1:
+                rankings.update({value["athlete_name"]: "🔥"})
+            elif current_rank < previous_rank:
                 rankings.update({value["athlete_name"]: "🔺"})
             elif current_rank > previous_rank:
                 rankings.update({value["athlete_name"]: "🔻"})
@@ -192,7 +194,7 @@ forrige_ukes_resultater_table += "</table>"
 
 resultater_hele_perioden_table = "<table class='table'>\
 <tr><th>Navn</th>\
-<th>Antall aktiviteter</th>\
+<th>Aktiviteter</th>\
 <th>Varighet (t:m)</th>\
 <th>Lodd</th>\
 <th>Distanse (km)</th>\
