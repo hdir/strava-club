@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lagkonkurransen
+title: PROTOTYPE Lagkonkurransen
 nav_order: 3
 ---
 
