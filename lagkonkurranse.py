@@ -77,11 +77,11 @@ def create_team_summary():
     # Create a dictionary to store the accumulated data for each team
     # Accumulate data for for each team across all weeks
 
-    for key, value in lag.items():
-        athlete_names = value["athlete_names"]
-        lag_nr = value["lagnr"]
+    for laget, lag_items in lag.items():
+        athlete_names = lag_items["athlete_names"]
+        lag_nr = lag_items["lagnr"]
         if lag_nr not in team_summary:
-            team_summary[lag_nr] = {
+            team_summary[laget] = {
                 'activities': 0,
                 'distance': 0,
                 'moving_time': 0,
@@ -93,11 +93,11 @@ def create_team_summary():
             athlete_name = value["athlete_name"]
             # Hent data for alle athleter som hører til laget
             if athlete_name in athlete_names:
-                team_summary[lag_nr]['activities'] += value['activities']
-                team_summary[lag_nr]['distance'] += value['distance']
-                team_summary[lag_nr]['moving_time'] += value['moving_time']
-                team_summary[lag_nr]['elevation_gain'] += value['elevation_gain']
-                team_summary[lag_nr]['tickets'] += value['tickets']
+                team_summary[laget]['activities'] += value['activities']
+                team_summary[laget]['distance'] += value['distance']
+                team_summary[laget]['moving_time'] += value['moving_time']
+                team_summary[laget]['elevation_gain'] += value['elevation_gain']
+                team_summary[laget]['tickets'] += value['tickets']
 
     return team_summary
 
@@ -113,17 +113,32 @@ lag_resultater_hele_perioden_table = "<table class='table'>\
 <th>Deltakere</th></tr>"
 
 for lagnr, summary_data in team_summary.items():
-    deltakere = lag[lagnr]['athlete_names']
+    #deltakere = lag[lagnr]['athlete_names']
     lag_resultater_hele_perioden_table += (
         f"<tr><td>{lagnr}</td>"
         f"<td>{summary_data['activities']}</td>"
         f"<td>{format_duration(summary_data['moving_time'])}</td>"
         f"<td>{format_distance(summary_data['distance'])}</td>"
-        f"<td>{summary_data['elevation_gain']}</td></tr>"
+        f"<td>{summary_data['elevation_gain']}</td>"
         f"<td>{summary_data['tickets']}</td></tr>"
-        f"<td>{lag[lagnr]['athlete_names']}</td></tr>"
+        #f"<td>{lag[lagnr]['athlete_names']}</td></tr>"
     )
 lag_resultater_hele_perioden_table += "</table>"
+
+list_lagene = "<table class='table'>\
+<tr><th>Lag</th>\
+<th>Deltaker</th>\
+<th>Deltaker</th>\
+<th>Deltaker</th>\
+<th>Deltaker</th>\
+<th>Deltaker</th></tr>"
+
+for laget, lag_items in lag.items():
+    list_lagene += (
+        f"<tr><td>{laget}</td>"
+        f"<td>{lag_items['athlete_names']}</td></tr>"
+    )
+list_lagene += "</table>"
 
 # HTML content with the summarized table
 html_content = f"""---
@@ -139,6 +154,10 @@ Informasjon om [aktivitetskampanjen](docs/info.md). For å delta må du også bl
 <div class="tile-aggregated" id="aggregerte_data">
     <h2>Aggregerte lagdata</h2>
     {lag_resultater_hele_perioden_table}
+</div>
+<div class="tile-aggregated" id="lagene_liste">
+    <h2>Lagene</h2>
+    {list_lagene}
 </div>
 """
 
