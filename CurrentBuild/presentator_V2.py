@@ -2,10 +2,11 @@
 """Module to create html page of data from Strava web scraper"""
 
 import json
+import textwrap
 from datetime import datetime
 
 # Configuration of global variables
-RESULTS_FILE = "data/result/results.json"
+RESULTS_FILE = "data/result/testdata_results.json"
 INDEX_FILE = 'index-beta.md'
 
 
@@ -36,9 +37,9 @@ class Toolbox():
 
     def format_distance(self, distance_meters):
         """Method to convert meters to km"""
-        km = float(distance_meters/1000)
+        distance_km = float(distance_meters/1000)
 
-        return km
+        return distance_km
 
     def get_tickets(self, int_tickets):
         """Method to convert tickets int to tickets emoji"""
@@ -65,7 +66,7 @@ class Datastore():
     def read_master_data(self):
         """Method to read json data from file"""
         with open(RESULTS_FILE, 'r', encoding='utf-8') as file:
-            self.datastore = json.load(file)
+            self.master_data = json.load(file)
     
     # Consider method to sort
 
@@ -132,7 +133,7 @@ class Results():
             aggregated_summary["distance"] += toolbox.format_distance(record["distance"])
             aggregated_summary["elevation_gain"] += record["elevation_gain"]
             aggregated_summary["activities"] += record["activities"]
-            
+            #consider moving toolbox call to html creation for consistency
         aggregated_summary["athletes"] = self.total_athletes
         aggregated_summary["co2_saved"] = toolbox.calculate_co2_saved(aggregated_summary["distance"])
             
@@ -173,17 +174,134 @@ class Results():
 
 class Template():
     """Class to produce md-files for displaying results"""
-    def __init__(self, outfile):
-        pass
-        # self.datastore = {}
+    def __init__(self, results_object, outfile):
+        self.results = results_object
+        self.outfile = outfile
+        self.create_html_file()
+
+    def create_aggregated_results_table(self):
+        aggregated_results_table = f"<table class='table-aggregated'>\
+        <tr><td>👥 {self.results.aggregated_summary['athletes']} kolleger</td>\
+        <td>🏁 {self.results.aggregated_summary['activities']} aktiviteter</td>\
+        <td>⏳ {toolbox.format_duration(self.results.aggregated_summary['moving_time'])} (t:m)</td></tr>\
+        <tr><td>📏 {round(self.results.aggregated_summary['distance'], 1)} km</td>\
+        <td>🧗 {self.results.aggregated_summary['elevation_gain']} høydemeter</td>\
+        <td>🌱 {self.results.aggregated_summary['co2_saved']} kg CO2 spart</td></tr>\
+        </table>"
+
+        return aggregated_results_table
+
+    def create_current_week_results_table(self):
+        current_week_results_table = "<table class='table'>\
+        <tr><th>Navn</th>\
+        <th>Aktiviteter</th>\
+        <th>Varighet (t:m)</th>\
+        <th>Distanse (km)</th>\
+        <th>Høydemeter</th></tr>"
+        #consider switching to values
+        
+        for key, value in datastore.master_data.items():
+            if int(value["week_number"]) == int(toolbox.get_current_week_number()):
+                current_week_results_table += (
+                    f"<tr><td>{self.results.rankings[value['athlete_name']]} {value['athlete_name']}</td>"
+                    f"<td>{value['activities']}</td>"
+                    f"<td>{toolbox.format_duration(value['moving_time'])} {toolbox.get_tickets(value['tickets'])}</td>"
+                    f"<td>{toolbox.format_distance(value['distance'])}</td>"
+                    f"<td>{value['elevation_gain']}</td></tr>"
+                )
+        current_week_results_table += "</table>"
+        
+        return current_week_results_table
+    
+    def create_previous_week_results_table(self):
+        previous_week_results_table = "<table class='table'>\
+        <tr><th>Navn</th>\
+        <th>Aktiviteter</th>\
+        <th>Varighet (t:m)</th>\
+        <th>Distanse (km)</th>\
+        <th>Høydemeter</th></tr>"
+
+        for key, value in datastore.master_data.items():
+            if int(value["week_number"]) == int(toolbox.get_current_week_number())-1:
+                previous_week_results_table += (
+                    f"<tr><td>{value['athlete_name']}</td>"
+                    f"<td>{value['activities']}</td>"
+                    f"<td>{toolbox.format_duration(value['moving_time'])} {toolbox.get_tickets(value['tickets'])}</td>"
+                    f"<td>{toolbox.format_distance(value['distance'])}</td>"
+                    f"<td>{value['elevation_gain']}</td></tr>"
+                )
+        previous_week_results_table += "</table>"
+
+        return previous_week_results_table
+
+    def create_complete_results_table(self):
+        complete_results_table = "<table class='table'>\
+        <tr><th>Navn</th>\
+        <th>Aktiviteter</th>\
+        <th>Varighet (t:m)</th>\
+        <th>Lodd</th>\
+        <th>Distanse (km)</th>\
+        <th>Høydemeter</th></tr>"
+
+        for athlete_name, summary_data in self.results.athlete_summary.items():
+            complete_results_table += (
+                f"<tr><td>{athlete_name}</td>"
+                f"<td>{summary_data['activities']}</td>"
+                f"<td>{toolbox.format_duration(summary_data['moving_time'])}</td>"
+                f"<td>{summary_data['tickets']}</td>"
+                f"<td>{toolbox.format_distance(summary_data['distance'])}</td>"
+                f"<td>{summary_data['elevation_gain']}</td></tr>"
+            )
+        complete_results_table += "</table>"
+
+        return complete_results_table
+    
+    # Add code below to adjust headers based on payload
+    def assemble_html_content(self):
+        html_content = textwrap.dedent(f"""\
+        ---
+        layout: default
+        title: Resultater
+        nav_order: 1
+        ---
+
+        # Vår 2024 - Resultater
+
+        Informasjon om [aktivitetskampanjen](docs/info.md). For å delta må du også bli medlem i [Helsedirektoratets klubb på Strava](https://www.strava.com/clubs/754665).
+
+        <div id="aggregated data">
+            <h2>Aggregerte data</h2>
+            {self.create_aggregated_results_table()}
+        </div>
+        <div id="current_week_results">
+            <h2>Ukens resultater (uke {int(toolbox.get_current_week_number())})</h2>
+            {self.create_current_week_results_table()}
+        </div>
+        <div id="previous_week_results">
+            <h2>Forrige ukes resultater (uke {int(toolbox.get_current_week_number())-1})</h2>
+            {self.create_previous_week_results_table()}
+        </div>
+        <div id="complete_results">
+            <h2>Resultater hele perioden</h2>
+            {self.create_complete_results_table()}
+        </div>
+        """)
+
+        return html_content
+
+    def create_html_file(self):
+        with open(self.outfile, 'w', encoding='utf-8') as html_file:
+            html_file.write(self.assemble_html_content())
+
+        print(f"HTML file created at: {self.outfile}")
 
 
 if __name__ == "__main__":
 
     #Toolbox can have a method to loop through full dataset to provide subset dataset for teams
     #And then a loop below, to create multiple Result objects and corresponding outfiles (template class) 
-    toolbox = Toolbox()
     datastore = Datastore()
+    toolbox = Toolbox()
     
     results_all_teams = Results(datastore.master_data)
-    outfile_index = Template(INDEX_FILE)
+    outfile_index = Template(results_all_teams, INDEX_FILE)
