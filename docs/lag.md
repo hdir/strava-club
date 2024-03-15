@@ -14,5 +14,5 @@ Informasjon om [aktivitetskampanjen](docs/info.md). For å delta må du også bl
 </div>
 <div class="tile-aggregated" id="lagene_liste">
     <h2>Lagene</h2>
-    <table class='table'><tr><th>Lag</th><th>Deltaker</th><th>Deltaker</th><th>Deltaker</th><th>Deltaker</th><th>Deltaker</th></tr><tr><td>Lag arkitektur</td><td>['Thomas Rosenlund', 'Øivind Langeland', 'Thomas Grimeland']</td></tr><tr><td>Lag standardisering</td><td>['Ingvar Sørlien', 'Annebeth Askevold']</td></tr><tr><td>Lag ehelse</td><td>['Ørjan Stene', 'Per Ludvig Skjerven', 'Janne Hougen']</td></tr></table>
+    <table class='table'><tr><th>Lag</th><th>Deltakere</th></tr><tr><td>Lag arkitektur</td><td>['Thomas Rosenlund', 'Øivind Langeland', 'Thomas Grimeland']</td></tr><tr><td>Lag standardisering</td><td>['Ingvar Sørlien', 'Annebeth Askevold']</td></tr><tr><td>Lag ehelse</td><td>['Ørjan Stene', 'Per Ludvig Skjerven', 'Janne Hougen']</td></tr></table>
 </div>
