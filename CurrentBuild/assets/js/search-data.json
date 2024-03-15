@@ -63,19 +63,26 @@
     "relUrl": "/docs/info.html"
   },"9": {
     "doc": "Lagkonkurransen",
-    "title": "Vår 2024 - Lagkonkurransen",
+    "title": "PROTOTYPE Vår 2024 - Lagkonkurransen",
     "content": "Informasjon om aktivitetskampanjen. For å delta må du også bli medlem i Helsedirektoratets klubb på Strava. Lag settes opp manuelt, kontakt arrangøren. ",
-    "url": "/strava-club/CurrentBuild/docs/lag.html#v%C3%A5r-2024---lagkonkurransen",
+    "url": "/strava-club/CurrentBuild/docs/lag.html#prototype-v%C3%A5r-2024---lagkonkurransen",
     
-    "relUrl": "/docs/lag.html#vår-2024---lagkonkurransen"
+    "relUrl": "/docs/lag.html#prototype-vår-2024---lagkonkurransen"
   },"10": {
     "doc": "Lagkonkurransen",
     "title": "Aggregerte lagdata",
-    "content": "| Lag | Aktiviteter | Varighet (t:m) | Distanse (km) | Høydemeter | Lodd | Deltakere | . | 1 | 96 | 58:08 | 1045.4 | 10966 | . | 11 | &lt;/tr&gt; | 2 | 4 | 03:53 | 53.3 | 880 | . | 1 | &lt;/tr&gt; | 3 | 26 | 31:55 | 385.4 | 6966 | . | 9 | &lt;/tr&gt; ",
+    "content": "| Lag | Aktiviteter | Varighet (t:m) | Distanse (km) | Høydemeter | Lodd | Deltakere | . | Lag arkitektur | 96 | 58:08 | 1045.4 | 10966 | 11 | . | Lag standardisering | 4 | 03:53 | 53.3 | 880 | 1 | . | Lag ehelse | 26 | 31:55 | 385.4 | 6966 | 9 | . ",
     "url": "/strava-club/CurrentBuild/docs/lag.html",
     
     "relUrl": "/docs/lag.html"
   },"11": {
+    "doc": "Lagkonkurransen",
+    "title": "Lagene",
+    "content": "| Lag | Deltaker | Deltaker | Deltaker | Deltaker | Deltaker | . | Lag arkitektur | ['Thomas Rosenlund', 'Øivind Langeland', 'Thomas Grimeland'] | . | Lag standardisering | ['Ingvar Sørlien', 'Annebeth Askevold'] | . | Lag ehelse | ['Ørjan Stene', 'Per Ludvig Skjerven', 'Janne Hougen'] | . ",
+    "url": "/strava-club/CurrentBuild/docs/lag.html",
+    
+    "relUrl": "/docs/lag.html"
+  },"12": {
     "doc": "Lagkonkurransen",
     "title": "Lagkonkurransen",
     "content": " ",
