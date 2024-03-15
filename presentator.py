@@ -66,8 +66,7 @@ def create_athlete_summary():
 
     # Create a dictionary to store the accumulated data for each athlete
     # Accumulate data for each athlete across all weeks
-    #use .values() instead, dont need key
-    for key, value in data.items():
+    for value in data.values():
         athlete_name = value["athlete_name"]
 
         if athlete_name not in athlete_summary:
@@ -84,7 +83,10 @@ def create_athlete_summary():
         athlete_summary[athlete_name]['moving_time'] += value['moving_time']
         athlete_summary[athlete_name]['elevation_gain'] += value['elevation_gain']
         athlete_summary[athlete_name]['tickets'] += value['tickets']
-
+        
+    #Consider moving this to function when refactoring
+    athlete_summary = dict(sorted(athlete_summary.items(), key=lambda item: item[1]['distance'], reverse=True))
+    
     return athlete_summary
 
 def create_aggregated_summary():
@@ -158,7 +160,7 @@ aggregerte_resultater_table = f"<table class='table-aggregated'>\
 
 ukens_resultater_table = "<table class='table'>\
 <tr><th>Navn</th>\
-<th>Antall aktiviteter</th>\
+<th>Aktiviteter</th>\
 <th>Varighet (t:m)</th>\
 <th>Distanse (km)</th>\
 <th>Høydemeter</th></tr>"
@@ -176,7 +178,7 @@ ukens_resultater_table += "</table>"
 
 forrige_ukes_resultater_table = "<table class='table'>\
 <tr><th>Navn</th>\
-<th>Antall aktiviteter</th>\
+<th>Aktiviteter</th>\
 <th>Varighet (t:m)</th>\
 <th>Distanse (km)</th>\
 <th>Høydemeter</th></tr>"
