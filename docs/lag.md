@@ -4,7 +4,7 @@ title: Lagkonkurransen
 nav_order: 3
 ---
 
-# Vår 2024 - Lagkonkurransen
+# PROTOTYPE Vår 2024 - Lagkonkurransen
 
 Informasjon om [aktivitetskampanjen](docs/info.md). For å delta må du også bli medlem i [Helsedirektoratets klubb på Strava](https://www.strava.com/clubs/754665). Lag settes opp manuelt, kontakt arrangøren.
 
