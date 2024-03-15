@@ -127,10 +127,6 @@ lag_resultater_hele_perioden_table += "</table>"
 
 list_lagene = "<table class='table'>\
 <tr><th>Lag</th>\
-<th>Deltaker</th>\
-<th>Deltaker</th>\
-<th>Deltaker</th>\
-<th>Deltaker</th>\
 <th>Deltaker</th></tr>"
 
 for laget, lag_items in lag.items():
