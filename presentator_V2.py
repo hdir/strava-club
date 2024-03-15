@@ -2,6 +2,7 @@
 """Module to create html page of data from Strava web scraper"""
 
 import json
+import textwrap
 from datetime import datetime
 
 # Configuration of global variables
@@ -257,7 +258,7 @@ class Template():
     
     # Add code below to adjust headers based on payload
     def assemble_html_content(self):
-        html_content = f"""\n
+        html_content = textwrap.dedent(f"""\
         ---
         layout: default
         title: Resultater
@@ -268,23 +269,23 @@ class Template():
 
         Informasjon om [aktivitetskampanjen](docs/info.md). For å delta må du også bli medlem i [Helsedirektoratets klubb på Strava](https://www.strava.com/clubs/754665).
 
-        <div class="tile-aggregated" id="aggregerte_data">
+        <div id="aggregated data">
             <h2>Aggregerte data</h2>
             {self.create_aggregated_results_table()}
         </div>
-        <div class="tile" id="ukens_resultater">
+        <div id="current_week_results">
             <h2>Ukens resultater (uke {int(toolbox.get_current_week_number())})</h2>
             {self.create_current_week_results_table()}
         </div>
-        <div class="tile" id="forrige_ukes_resultater">
+        <div id="previous_week_results">
             <h2>Forrige ukes resultater (uke {int(toolbox.get_current_week_number())-1})</h2>
             {self.create_previous_week_results_table()}
         </div>
-        <div class="tile" id="resultater_hele_perioden">
+        <div id="complete_results">
             <h2>Resultater hele perioden</h2>
             {self.create_complete_results_table()}
         </div>
-        """
+        """)
 
         return html_content
 
