@@ -9,8 +9,10 @@ RESULTS_FILE = "data/result/results.json"
 INDEX_FILE = 'index-beta.md'
 
 
-class ToolBox():
+class Toolbox():
     """Class with methods to be used calculating and processing results"""
+    def __init__(self):
+        pass
 
     def get_current_week_number(self):
         """Method to get current week number"""
@@ -109,14 +111,14 @@ class Results():
             athlete_summary[athlete_name]['moving_time'] += value['moving_time']
             athlete_summary[athlete_name]['elevation_gain'] += value['elevation_gain']
             athlete_summary[athlete_name]['tickets'] += value['tickets']
-        #Must add self to variables    
+        
         #Consider moving this to function when refactoring
         athlete_summary = dict(sorted(athlete_summary.items(), key=lambda item: item[1]['distance'], reverse=True))
         
         return athlete_summary
 
     def create_aggregated_summary(self):
-        """Method to create aggregated summary provided dataset"""
+        """Method to create aggregated summary forprovided dataset"""
         aggregated_summary = {"moving_time": 0,
                             "distance": 0,
                             "elevation_gain": 0,
@@ -127,12 +129,12 @@ class Results():
         
         for record in self.dataset.values(): 
             aggregated_summary["moving_time"] += record["moving_time"]
-            aggregated_summary["distance"] += ToolBox.format_distance(record["distance"])
+            aggregated_summary["distance"] += toolbox.format_distance(record["distance"])
             aggregated_summary["elevation_gain"] += record["elevation_gain"]
             aggregated_summary["activities"] += record["activities"]
             
         aggregated_summary["athletes"] = self.total_athletes
-        aggregated_summary["co2_saved"] = ToolBox.calculate_co2_saved(aggregated_summary["distance"])
+        aggregated_summary["co2_saved"] = toolbox.calculate_co2_saved(aggregated_summary["distance"])
             
         return aggregated_summary
     
@@ -144,13 +146,13 @@ class Results():
         
         for value in self.dataset.values():
 
-            if value["week_number"] == int(get_current_week_number()):
+            if value["week_number"] == int(toolbox.get_current_week_number()):
                 ranking_current_week.append(value["athlete_name"])
 
-            if value["week_number"] == int(get_current_week_number())-1:
+            if value["week_number"] == int(toolbox.get_current_week_number())-1:
                 ranking_previous_week.append(value["athlete_name"])
         
-        for value in data.values():
+        for value in self.dataset.values():
             if value["athlete_name"] in ranking_current_week and value["athlete_name"] in ranking_previous_week:
                 current_rank = ranking_current_week.index(value["athlete_name"])
                 previous_rank = ranking_previous_week.index(value["athlete_name"])
@@ -168,14 +170,20 @@ class Results():
 
         return rankings
 
+
 class Template():
     """Class to produce md-files for displaying results"""
     def __init__(self, outfile):
-        #self.datastore = {}
+        pass
+        # self.datastore = {}
+
 
 if __name__ == "__main__":
 
-    toobox = ToolBox()
+    #Toolbox can have a method to loop through full dataset to provide subset dataset for teams
+    #And then a loop below, to create multiple Result objects and corresponding outfiles (template class) 
+    toolbox = Toolbox()
     datastore = Datastore()
+    
     results_all_teams = Results(datastore.master_data)
     outfile_index = Template(INDEX_FILE)
