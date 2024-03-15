@@ -139,7 +139,7 @@ list_lagene += "</table>"
 # HTML content with the summarized table
 html_content = f"""---
 layout: default
-title: Lagkonkurransen
+title: PROTOTYPE Lagkonkurransen
 nav_order: 3
 ---
 
