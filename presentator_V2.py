@@ -6,7 +6,7 @@ import textwrap
 from datetime import datetime
 
 # Configuration of global variables
-RESULTS_FILE = "data/result/results.json"
+RESULTS_FILE = "data/result/testdata_results.json"
 INDEX_FILE = 'index-beta.md'
 
 

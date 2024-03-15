@@ -9,7 +9,7 @@ nav_order: 1
 Informasjon om [aktivitetskampanjen](docs/info.md). For å delta må du også bli medlem i [Helsedirektoratets klubb på Strava](https://www.strava.com/clubs/754665).
 
 <div id="aggregated data">
-    <h2>Aggregerte datsa</h2>
+    <h2>Aggregerte data</h2>
     <table class='table-aggregated'>        <tr><td>👥 17 kolleger</td>        <td>🏁 215 aktiviteter</td>        <td>⏳ 188:40 (t:m)</td></tr>        <tr><td>📏 2785.1 km</td>        <td>🧗 40039 høydemeter</td>        <td>🌱 44.56 kg CO2 spart</td></tr>        </table>
 </div>
 <div id="current_week_results">

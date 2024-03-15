@@ -6,7 +6,8 @@
     "moving_time": 44040,
     "distance": 216200,
     "elevation_gain": 2362,
-    "tickets": 2
+    "tickets": 2,
+    "team": "Blå"
   },
   "09-133260": {
     "week_number": 9,
@@ -15,7 +16,8 @@
     "moving_time": 40320,
     "distance": 205500,
     "elevation_gain": 2058,
-    "tickets": 2
+    "tickets": 2,
+    "team": "Gul"
   },
   "09-15305367": {
     "week_number": 9,
@@ -24,7 +26,8 @@
     "moving_time": 27780,
     "distance": 56900,
     "elevation_gain": 1702,
-    "tickets": 2
+    "tickets": 2,
+    "team": "Gul"
   },
   "09-8849482": {
     "week_number": 9,
@@ -33,7 +36,8 @@
     "moving_time": 9600,
     "distance": 27100,
     "elevation_gain": 0,
-    "tickets": 1
+    "tickets": 1,
+    "team": "Rød"
   },
   "10-288479": {
     "week_number": 10,
@@ -42,7 +46,8 @@
     "moving_time": 40140,
     "distance": 202900,
     "elevation_gain": 2295,
-    "tickets": 2
+    "tickets": 2,
+    "team": "Blå"
   },
   "10-8849482": {
     "week_number": 10,
@@ -51,7 +56,8 @@
     "moving_time": 32280,
     "distance": 144300,
     "elevation_gain": 4266,
-    "tickets": 2
+    "tickets": 2,
+    "team": "Rød"
   },
   "10-133260": {
     "week_number": 10,
@@ -60,7 +66,8 @@
     "moving_time": 37860,
     "distance": 199400,
     "elevation_gain": 2135,
-    "tickets": 2
+    "tickets": 2,
+    "team": "Gul"
   },
   "10-15305367": {
     "week_number": 10,
@@ -69,7 +76,8 @@
     "moving_time": 33120,
     "distance": 84300,
     "elevation_gain": 1645,
-    "tickets": 2
+    "tickets": 2,
+    "team": "Gul"
   },
   "10-132836745": {
     "week_number": 10,
@@ -78,7 +86,8 @@
     "moving_time": 7320,
     "distance": 19000,
     "elevation_gain": 100,
-    "tickets": 0
+    "tickets": 0,
+    "team": ""
   },
   "10-4778110": {
     "week_number": 10,
@@ -87,7 +96,8 @@
     "moving_time": 12660,
     "distance": 65700,
     "elevation_gain": 921,
-    "tickets": 1
+    "tickets": 1,
+    "team": "Blå"
   },
   "09-3450542": {
     "week_number": 9,
@@ -96,7 +106,8 @@
     "moving_time": 20640,
     "distance": 20400,
     "elevation_gain": 659,
-    "tickets": 2
+    "tickets": 2,
+    "team": "Blå"
   },
   "10-3450542": {
     "week_number": 10,
@@ -105,7 +116,8 @@
     "moving_time": 21060,
     "distance": 33000,
     "elevation_gain": 821,
-    "tickets": 2
+    "tickets": 2,
+    "team": "Blå"
   },
   "10-2407379": {
     "week_number": 10,
@@ -114,7 +126,8 @@
     "moving_time": 11580,
     "distance": 46100,
     "elevation_gain": 786,
-    "tickets": 1
+    "tickets": 1,
+    "team": "Rød"
   },
   "10-6207106": {
     "week_number": 10,
@@ -123,7 +136,8 @@
     "moving_time": 2160,
     "distance": 4800,
     "elevation_gain": 37,
-    "tickets": 0
+    "tickets": 0,
+    "team": "Gul"
   },
   "11-288479": {
     "week_number": 11,
@@ -132,7 +146,8 @@
     "moving_time": 35700,
     "distance": 206000,
     "elevation_gain": 2278,
-    "tickets": 2
+    "tickets": 2,
+    "team": "Blå"
   },
   "11-133260": {
     "week_number": 11,
@@ -141,7 +156,8 @@
     "moving_time": 22380,
     "distance": 125000,
     "elevation_gain": 1239,
-    "tickets": 2
+    "tickets": 2,
+    "team": "Gul"
   },
   "10-4040211": {
     "week_number": 10,
@@ -150,7 +166,8 @@
     "moving_time": 15480,
     "distance": 50300,
     "elevation_gain": 221,
-    "tickets": 1
+    "tickets": 1,
+    "team": "Gul"
   },
   "10-16855015": {
     "week_number": 10,
@@ -159,7 +176,8 @@
     "moving_time": 11520,
     "distance": 27900,
     "elevation_gain": 331,
-    "tickets": 1
+    "tickets": 1,
+    "team": "Rød"
   },
   "11-16855015": {
     "week_number": 11,
@@ -168,7 +186,8 @@
     "moving_time": 13260,
     "distance": 38000,
     "elevation_gain": 435,
-    "tickets": 1
+    "tickets": 1,
+    "team": "Rød"
   },
   "11-8849482": {
     "week_number": 11,
@@ -177,7 +196,8 @@
     "moving_time": 27300,
     "distance": 188600,
     "elevation_gain": 1307,
-    "tickets": 2
+    "tickets": 2,
+    "team": "Rød"
   },
   "11-2407379": {
     "week_number": 11,
@@ -186,7 +206,8 @@
     "moving_time": 2400,
     "distance": 7200,
     "elevation_gain": 94,
-    "tickets": 0
+    "tickets": 0,
+    "team": "Rød"
   },
   "11-4778110": {
     "week_number": 11,
@@ -195,7 +216,8 @@
     "moving_time": 16860,
     "distance": 41500,
     "elevation_gain": 641,
-    "tickets": 1
+    "tickets": 1,
+    "team": "Blå"
   },
   "11-3450542": {
     "week_number": 11,
@@ -204,7 +226,8 @@
     "moving_time": 9840,
     "distance": 5500,
     "elevation_gain": 137,
-    "tickets": 1
+    "tickets": 1,
+    "team": "Blå"
   },
   "11-15951168": {
     "week_number": 11,
@@ -213,7 +236,8 @@
     "moving_time": 13500,
     "distance": 21100,
     "elevation_gain": 273,
-    "tickets": 1
+    "tickets": 1,
+    "team": "Blå"
   },
   "10-71873694": {
     "week_number": 10,
@@ -222,7 +246,8 @@
     "moving_time": 5580,
     "distance": 12000,
     "elevation_gain": 0,
-    "tickets": 0
+    "tickets": 0,
+    "team": "Grønn"
   },
   "11-71873694": {
     "week_number": 11,
@@ -231,7 +256,8 @@
     "moving_time": 10740,
     "distance": 25900,
     "elevation_gain": 360,
-    "tickets": 1
+    "tickets": 1,
+    "team": "Grønn"
   },
   "11-4040211": {
     "week_number": 11,
@@ -240,7 +266,8 @@
     "moving_time": 6600,
     "distance": 23000,
     "elevation_gain": 0,
-    "tickets": 0
+    "tickets": 0,
+    "team": "Gul"
   },
   "10-1810801": {
     "week_number": 10,
@@ -249,7 +276,8 @@
     "moving_time": 2340,
     "distance": 7500,
     "elevation_gain": 182,
-    "tickets": 0
+    "tickets": 0,
+    "team": "Grønn"
   },
   "11-1810801": {
     "week_number": 11,
@@ -258,7 +286,8 @@
     "moving_time": 4020,
     "distance": 7900,
     "elevation_gain": 201,
-    "tickets": 0
+    "tickets": 0,
+    "team": "Grønn"
   },
   "10-9396005": {
     "week_number": 10,
@@ -267,7 +296,8 @@
     "moving_time": 34680,
     "distance": 207100,
     "elevation_gain": 3899,
-    "tickets": 2
+    "tickets": 2,
+    "team": "Grønn"
   },
   "11-9396005": {
     "week_number": 11,
@@ -276,7 +306,8 @@
     "moving_time": 18960,
     "distance": 121300,
     "elevation_gain": 1818,
-    "tickets": 2
+    "tickets": 2,
+    "team": "Grønn"
   },
   "10-21496061": {
     "week_number": 10,
@@ -285,7 +316,8 @@
     "moving_time": 53640,
     "distance": 267900,
     "elevation_gain": 5984,
-    "tickets": 2
+    "tickets": 2,
+    "team": "Blå"
   },
   "10-3905395": {
     "week_number": 10,
@@ -294,7 +326,8 @@
     "moving_time": 9360,
     "distance": 0,
     "elevation_gain": 0,
-    "tickets": 1
+    "tickets": 1,
+    "team": "Gul"
   },
   "11-21496061": {
     "week_number": 11,
@@ -303,7 +336,8 @@
     "moving_time": 12420,
     "distance": 67700,
     "elevation_gain": 823,
-    "tickets": 1
+    "tickets": 1,
+    "team": "Blå"
   },
   "11-3905395": {
     "week_number": 11,
@@ -312,6 +346,7 @@
     "moving_time": 12060,
     "distance": 8100,
     "elevation_gain": 29,
-    "tickets": 1
+    "tickets": 1,
+    "team": "Gul"
   }
 }
