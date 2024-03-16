@@ -56,14 +56,14 @@ class Toolbox():
     def calculate_co2_saved(self, distance_km):
         """Method to calculate saved co2 pr km"""
         return round(distance_km*0.016, 2)
-    
+
     def get_teams(self):
         unique_teams = set()
 
         for value in datastore.master_data.values():
             if value["team"] != "":
                 unique_teams.add(value["team"])
-        
+
         return unique_teams
 
 
@@ -72,12 +72,12 @@ class Datastore():
     def __init__(self):
         self.master_data = {}
         self.read_master_data()
-    
+
     def read_master_data(self):
         """Method to read json data from file"""
         with open(RESULTS_FILE, 'r', encoding='utf-8') as file:
             self.master_data = json.load(file)
-        
+
         # MOVE SORTING TO METHOD TOOLBOX
         self.master_data = dict(sorted(self.master_data.items(), key=lambda item: item[1]['distance'], reverse=True))
 
@@ -93,12 +93,12 @@ class Results():
     def count_athletes(self):
         """Method to count unique athletes in provided dataset"""
         unique_athlete_names = set()
-        
+
         for entry in self.dataset.values():
             unique_athlete_names.add(entry["athlete_name"])
-        
+
         return len(unique_athlete_names)
-    
+
     def create_athlete_summary(self):
         """Method to create summary for athletes in provided dataset"""
         athlete_summary = {}
@@ -122,10 +122,10 @@ class Results():
             athlete_summary[athlete_name]['moving_time'] += value['moving_time']
             athlete_summary[athlete_name]['elevation_gain'] += value['elevation_gain']
             athlete_summary[athlete_name]['tickets'] += value['tickets']
-        
+
         # MOVE SORTING TO METHOD TOOLBOX
         athlete_summary = dict(sorted(athlete_summary.items(), key=lambda item: item[1]['distance'], reverse=True))
-        
+
         return athlete_summary
 
     def create_aggregated_summary(self):
@@ -137,7 +137,7 @@ class Results():
                             "athletes": 0,
                             "co2_saved": 0
                             }
-        
+
         for record in self.dataset.values(): 
             aggregated_summary["moving_time"] += record["moving_time"]
             aggregated_summary["distance"] += toolbox.format_distance(record["distance"])
@@ -146,15 +146,15 @@ class Results():
             #consider moving toolbox call to html creation for consistency
         aggregated_summary["athletes"] = self.total_athletes
         aggregated_summary["co2_saved"] = toolbox.calculate_co2_saved(aggregated_summary["distance"])
-            
+
         return aggregated_summary
-    
+
     def get_changed_ranking(self):
         """Method to get rankings for athletes in provided dataset"""
         ranking_current_week = []
         ranking_previous_week = []
         rankings = {}
-        
+
         for value in self.dataset.values():
 
             if value["week_number"] == int(toolbox.get_current_week_number()):
@@ -162,7 +162,7 @@ class Results():
 
             if value["week_number"] == int(toolbox.get_current_week_number())-1:
                 ranking_previous_week.append(value["athlete_name"])
-        
+
         for value in self.dataset.values():
             if value["athlete_name"] in ranking_current_week and value["athlete_name"] in ranking_previous_week:
                 current_rank = ranking_current_week.index(value["athlete_name"])
@@ -192,89 +192,105 @@ class Template():
         self.create_html_file()
 
     def create_aggregated_results_table(self):
-        aggregated_results_table = f"<table class='table-aggregated'>\
-        <tr><td>👥 {self.results.aggregated_summary['athletes']} kolleger</td>\
-        <td>🏁 {self.results.aggregated_summary['activities']} aktiviteter</td>\
-        <td>⏳ {toolbox.format_duration(self.results.aggregated_summary['moving_time'])} (t:m)</td></tr>\
-        <tr><td>📏 {round(self.results.aggregated_summary['distance'], 1)} km</td>\
-        <td>🧗 {self.results.aggregated_summary['elevation_gain']} høydemeter</td>\
-        <td>🌱 {self.results.aggregated_summary['co2_saved']} kg CO2 spart</td></tr>\
-        </table>"
+        aggregated_results_table = f"""<table class='table-aggregated'>
+                <tr>
+                    <td>👥 {self.results.aggregated_summary['athletes']} kolleger</td>
+                    <td>🏁 {self.results.aggregated_summary['activities']} aktiviteter</td>
+                    <td>⏳ {toolbox.format_duration(self.results.aggregated_summary['moving_time'])} (t:m)</td></tr>
+                <tr>
+                    <td>📏 {round(self.results.aggregated_summary['distance'], 1)} km</td>
+                    <td>🧗 {self.results.aggregated_summary['elevation_gain']} høydemeter</td>
+                    <td>🌱 {self.results.aggregated_summary['co2_saved']} kg CO2 spart</td></tr>
+            </table>"""
 
         return aggregated_results_table
 
     def create_current_week_results_table(self):
-        current_week_results_table = "<table class='table'>\
-        <tr><th>Navn</th>\
-        <th>Aktiviteter</th>\
-        <th>Varighet (t:m)</th>\
-        <th>Distanse (km)</th>\
-        <th>Høydemeter</th></tr>"
+        current_week_results_table = """<table class='table'>
+                <tr><th>Navn</th>
+                    <th>Aktiviteter</th>
+                    <th>Varighet (t:m)</th>
+                    <th>Distanse (km)</th>
+                    <th>Høydemeter</th>
+                </tr>
+                """
+
         #consider switching to values
-        
         for key, value in self.dataset.items():
             if int(value["week_number"]) == int(toolbox.get_current_week_number()):
-                current_week_results_table += (
-                    f"<tr><td>{self.results.rankings[value['athlete_name']]} {value['athlete_name']}</td>"
-                    f"<td>{value['activities']}</td>"
-                    f"<td>{toolbox.format_duration(value['moving_time'])} {toolbox.get_tickets(value['tickets'])}</td>"
-                    f"<td>{toolbox.format_distance(value['distance'])}</td>"
-                    f"<td>{value['elevation_gain']}</td></tr>"
-                )
+                current_week_results_table += (f"""<tr>
+                    <td>{self.results.rankings[value['athlete_name']]} {value['athlete_name']}</td>
+                    <td>{value['activities']}</td>
+                    <td>{toolbox.format_duration(value['moving_time'])} {toolbox.get_tickets(value['tickets'])}</td>
+                    <td>{toolbox.format_distance(value['distance'])}</td>
+                    <td>{value['elevation_gain']}</td>
+                    </tr>
+                    """
+                                               )
         current_week_results_table += "</table>"
-        
-        return current_week_results_table
-    
-    def create_previous_week_results_table(self):
-        previous_week_results_table = "<table class='table'>\
-        <tr><th>Navn</th>\
-        <th>Aktiviteter</th>\
-        <th>Varighet (t:m)</th>\
-        <th>Distanse (km)</th>\
-        <th>Høydemeter</th></tr>"
 
+        return current_week_results_table
+
+    def create_previous_week_results_table(self):
+        previous_week_results_table = """<table class='table'>
+                <tr><th>Navn</th>
+                    <th>Aktiviteter</th>
+                    <th>Varighet (t:m)</th>
+                    <th>Distanse (km)</th>
+                    <th>Høydemeter</th>
+                </tr>
+                """
+        
+        #consider switching to values
         for key, value in self.dataset.items():
             if int(value["week_number"]) == int(toolbox.get_current_week_number())-1:
-                previous_week_results_table += (
-                    f"<tr><td>{value['athlete_name']}</td>"
-                    f"<td>{value['activities']}</td>"
-                    f"<td>{toolbox.format_duration(value['moving_time'])} {toolbox.get_tickets(value['tickets'])}</td>"
-                    f"<td>{toolbox.format_distance(value['distance'])}</td>"
-                    f"<td>{value['elevation_gain']}</td></tr>"
-                )
+                previous_week_results_table += (f"""<tr>
+                    <td>{value['athlete_name']}</td>
+                    <td>{value['activities']}</td>
+                    <td>{toolbox.format_duration(value['moving_time'])} {toolbox.get_tickets(value['tickets'])}</td>
+                    <td>{toolbox.format_distance(value['distance'])}</td>
+                    <td>{value['elevation_gain']}</td>
+                </tr>
+                    """
+                                                )
         previous_week_results_table += "</table>"
 
         return previous_week_results_table
 
     def create_complete_results_table(self):
-        complete_results_table = "<table class='table'>\
-        <tr><th>Navn</th>\
-        <th>Aktiviteter</th>\
-        <th>Varighet (t:m)</th>\
-        <th>Lodd</th>\
-        <th>Distanse (km)</th>\
-        <th>Høydemeter</th></tr>"
+        complete_results_table = """<table class='table'>
+                <tr>
+                    <th>Navn</th>
+                    <th>Aktiviteter</th>
+                    <th>Varighet (t:m)</th>
+                    <th>Lodd</th>
+                    <th>Distanse (km)</th>
+                    <th>Høydemeter</th>
+                </tr>
+                """
 
         for athlete_name, summary_data in self.results.athlete_summary.items():
-            complete_results_table += (
-                f"<tr><td>{athlete_name}</td>"
-                f"<td>{summary_data['activities']}</td>"
-                f"<td>{toolbox.format_duration(summary_data['moving_time'])}</td>"
-                f"<td>{summary_data['tickets']}</td>"
-                f"<td>{toolbox.format_distance(summary_data['distance'])}</td>"
-                f"<td>{summary_data['elevation_gain']}</td></tr>"
-            )
+            complete_results_table += (f"""<tr>
+                    <td>{athlete_name}</td>
+                    <td>{summary_data['activities']}</td>
+                    <td>{toolbox.format_duration(summary_data['moving_time'])}</td>
+                    <td>{summary_data['tickets']}</td>
+                    <td>{toolbox.format_distance(summary_data['distance'])}</td>
+                    <td>{summary_data['elevation_gain']}</td>
+                </tr>
+                """
+                                       )
         complete_results_table += "</table>"
 
         return complete_results_table
-    
-    # Add code below to adjust headers based on payload
+
+
     def assemble_html_content(self):
         if self.team_name == "Alle deltakere":
             heading_specific = self.team_name
         else:
             heading_specific = f'Lag {self.team_name}'
-        
+
         html_content = textwrap.dedent(f"""\
         ---
         layout: default
@@ -318,19 +334,25 @@ if __name__ == "__main__":
     datastore = Datastore()
     toolbox = Toolbox()
     
+    # error-handling to stop code from running if dict is empty
+    # function to not use previous week in the first week of action, must also stop ranking
     # Create objects for all athletes across teams
     results_all_teams = Results(datastore.master_data)
     outfile_index = Template("Alle deltakere", datastore.master_data, results_all_teams, INDEX_FILE)
 
+    # Finalize cleaning of html above
+    # Include a test for numbers of people in a team, must be at least two
+    # dont start loop if get_teams returns empty 
+    # Stop from running if previous week is lower than launchdate
     # Create objects for each team
     if TEAMS_FEATURE == "ON":
         for team_name in toolbox.get_teams():    
             team_data = {}
+            
             for keys, values in datastore.master_data.items():
-            # Check if the value of "tickets" is equal to 0
                 if values["team"] == team_name:
-                    # If so, copy the entire key-value pair to the new dictionary
                     team_data[keys] = values    
+            
             team_results = Results(team_data)
             team_outfile = Template(team_name, team_data, team_results, f'team_{team_name}.md')    
 
