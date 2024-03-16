@@ -8,6 +8,7 @@ from datetime import datetime
 # Configuration of global variables
 RESULTS_FILE = "data/result/testdata_results.json"
 INDEX_FILE = 'index-beta.md'
+TEAMS_FEATURE = "ON"
 
 
 class Toolbox():
@@ -322,14 +323,15 @@ if __name__ == "__main__":
     outfile_index = Template("Alle deltakere", datastore.master_data, results_all_teams, INDEX_FILE)
 
     # Create objects for each team
-    for team_name in toolbox.get_teams():    
-        team_data = {}
-        for keys, values in datastore.master_data.items():
-        # Check if the value of "tickets" is equal to 0
-            if values["team"] == team_name:
-                # If so, copy the entire key-value pair to the new dictionary
-                team_data[keys] = values    
-        team_results = Results(team_data)
-        team_outfile = Template(team_name, team_data, team_results, f'team_{team_name}.md')    
+    if TEAMS_FEATURE == "ON":
+        for team_name in toolbox.get_teams():    
+            team_data = {}
+            for keys, values in datastore.master_data.items():
+            # Check if the value of "tickets" is equal to 0
+                if values["team"] == team_name:
+                    # If so, copy the entire key-value pair to the new dictionary
+                    team_data[keys] = values    
+            team_results = Results(team_data)
+            team_outfile = Template(team_name, team_data, team_results, f'team_{team_name}.md')    
 
         
