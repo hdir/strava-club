@@ -31,7 +31,7 @@ class Toolbox():
             hours = f"{hours:02d}:{minutes:02d}"
 
         except ZeroDivisionError as error:
-            hours = 0   
+            hours = 0
             print(f'An error occured formating time: {error}')
 
         return hours
@@ -66,6 +66,11 @@ class Toolbox():
 
         return unique_teams
 
+    def sort_dictionary(self, dictionary_to_sort, sortkey):
+        sorted_dict = dict(sorted(dictionary_to_sort.items(), key=lambda item: item[1][sortkey], reverse=True))
+
+        return sorted_dict
+
 
 class Datastore():
     """Class to temporarily store copy of master data"""
@@ -78,8 +83,7 @@ class Datastore():
         with open(RESULTS_FILE, 'r', encoding='utf-8') as file:
             self.master_data = json.load(file)
 
-        # MOVE SORTING TO METHOD TOOLBOX
-        self.master_data = dict(sorted(self.master_data.items(), key=lambda item: item[1]['distance'], reverse=True))
+        self.master_data = toolbox.sort_dictionary(self.master_data, "distance")
 
 class Results():
     """Class to calculate and temporarily store results for provided dataset"""
@@ -103,8 +107,6 @@ class Results():
         """Method to create summary for athletes in provided dataset"""
         athlete_summary = {}
 
-        # Create a dictionary to store the accumulated data for each athlete
-        # Accumulate data for each athlete across all weeks
         for value in self.dataset.values():
             athlete_name = value["athlete_name"]
 
@@ -123,8 +125,7 @@ class Results():
             athlete_summary[athlete_name]['elevation_gain'] += value['elevation_gain']
             athlete_summary[athlete_name]['tickets'] += value['tickets']
 
-        # MOVE SORTING TO METHOD TOOLBOX
-        athlete_summary = dict(sorted(athlete_summary.items(), key=lambda item: item[1]['distance'], reverse=True))
+        athlete_summary = toolbox.sort_dictionary(athlete_summary, "distance")
 
         return athlete_summary
 
@@ -331,8 +332,9 @@ class Template():
 
 if __name__ == "__main__":
 
-    datastore = Datastore()
     toolbox = Toolbox()
+    datastore = Datastore()
+    
     
     # error-handling to stop code from running if dict is empty
     # function to not use previous week in the first week of action, must also stop ranking
@@ -340,7 +342,7 @@ if __name__ == "__main__":
     results_all_teams = Results(datastore.master_data)
     outfile_index = Template("Alle deltakere", datastore.master_data, results_all_teams, INDEX_FILE)
 
-    # Finalize cleaning of html above
+
     # Include a test for numbers of people in a team, must be at least two
     # dont start loop if get_teams returns empty 
     # Stop from running if previous week is lower than launchdate
