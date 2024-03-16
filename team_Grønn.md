@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Resultater
+title: Resultater Lag Grønn
 nav_order: 1
 ---
 

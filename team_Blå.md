@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Resultater
+title: Resultater Lag Blå
 nav_order: 1
 ---
 

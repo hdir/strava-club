@@ -278,7 +278,7 @@ class Template():
         html_content = textwrap.dedent(f"""\
         ---
         layout: default
-        title: Resultater
+        title: Resultater {heading_specific}
         nav_order: 1
         ---
 

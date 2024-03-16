@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Resultater
+title: Resultater Alle deltakere
 nav_order: 1
 ---
 

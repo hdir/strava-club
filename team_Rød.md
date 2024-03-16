@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Resultater
+title: Resultater Lag Rød
 nav_order: 1
 ---
 
