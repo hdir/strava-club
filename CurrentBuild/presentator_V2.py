@@ -8,6 +8,7 @@ from datetime import datetime
 # Configuration of global variables
 RESULTS_FILE = "data/result/testdata_results.json"
 INDEX_FILE = 'index-beta.md'
+TEAMS_FEATURE = "ON"
 
 
 class Toolbox():
@@ -55,6 +56,15 @@ class Toolbox():
     def calculate_co2_saved(self, distance_km):
         """Method to calculate saved co2 pr km"""
         return round(distance_km*0.016, 2)
+    
+    def get_teams(self):
+        unique_teams = set()
+
+        for value in datastore.master_data.values():
+            if value["team"] != "":
+                unique_teams.add(value["team"])
+        
+        return unique_teams
 
 
 class Datastore():
@@ -67,9 +77,9 @@ class Datastore():
         """Method to read json data from file"""
         with open(RESULTS_FILE, 'r', encoding='utf-8') as file:
             self.master_data = json.load(file)
-    
-    # Consider method to sort
-
+        
+        # MOVE SORTING TO METHOD TOOLBOX
+        self.master_data = dict(sorted(self.master_data.items(), key=lambda item: item[1]['distance'], reverse=True))
 
 class Results():
     """Class to calculate and temporarily store results for provided dataset"""
@@ -113,7 +123,7 @@ class Results():
             athlete_summary[athlete_name]['elevation_gain'] += value['elevation_gain']
             athlete_summary[athlete_name]['tickets'] += value['tickets']
         
-        #Consider moving this to function when refactoring
+        # MOVE SORTING TO METHOD TOOLBOX
         athlete_summary = dict(sorted(athlete_summary.items(), key=lambda item: item[1]['distance'], reverse=True))
         
         return athlete_summary
@@ -174,7 +184,9 @@ class Results():
 
 class Template():
     """Class to produce md-files for displaying results"""
-    def __init__(self, results_object, outfile):
+    def __init__(self, team_name, dataset, results_object, outfile):
+        self.team_name = team_name
+        self.dataset = dataset
         self.results = results_object
         self.outfile = outfile
         self.create_html_file()
@@ -200,7 +212,7 @@ class Template():
         <th>Høydemeter</th></tr>"
         #consider switching to values
         
-        for key, value in datastore.master_data.items():
+        for key, value in self.dataset.items():
             if int(value["week_number"]) == int(toolbox.get_current_week_number()):
                 current_week_results_table += (
                     f"<tr><td>{self.results.rankings[value['athlete_name']]} {value['athlete_name']}</td>"
@@ -221,7 +233,7 @@ class Template():
         <th>Distanse (km)</th>\
         <th>Høydemeter</th></tr>"
 
-        for key, value in datastore.master_data.items():
+        for key, value in self.dataset.items():
             if int(value["week_number"]) == int(toolbox.get_current_week_number())-1:
                 previous_week_results_table += (
                     f"<tr><td>{value['athlete_name']}</td>"
@@ -258,14 +270,19 @@ class Template():
     
     # Add code below to adjust headers based on payload
     def assemble_html_content(self):
+        if self.team_name == "Alle deltakere":
+            heading_specific = self.team_name
+        else:
+            heading_specific = f'Lag {self.team_name}'
+        
         html_content = textwrap.dedent(f"""\
         ---
         layout: default
-        title: Resultater
+        title: Resultater {heading_specific}
         nav_order: 1
         ---
 
-        # Vår 2024 - Resultater
+        # Vår 2024 - Resultater: {heading_specific}
 
         Informasjon om [aktivitetskampanjen](docs/info.md). For å delta må du også bli medlem i [Helsedirektoratets klubb på Strava](https://www.strava.com/clubs/754665).
 
@@ -298,10 +315,23 @@ class Template():
 
 if __name__ == "__main__":
 
-    #Toolbox can have a method to loop through full dataset to provide subset dataset for teams
-    #And then a loop below, to create multiple Result objects and corresponding outfiles (template class) 
     datastore = Datastore()
     toolbox = Toolbox()
     
+    # Create objects for all athletes across teams
     results_all_teams = Results(datastore.master_data)
-    outfile_index = Template(results_all_teams, INDEX_FILE)
+    outfile_index = Template("Alle deltakere", datastore.master_data, results_all_teams, INDEX_FILE)
+
+    # Create objects for each team
+    if TEAMS_FEATURE == "ON":
+        for team_name in toolbox.get_teams():    
+            team_data = {}
+            for keys, values in datastore.master_data.items():
+            # Check if the value of "tickets" is equal to 0
+                if values["team"] == team_name:
+                    # If so, copy the entire key-value pair to the new dictionary
+                    team_data[keys] = values    
+            team_results = Results(team_data)
+            team_outfile = Template(team_name, team_data, team_results, f'team_{team_name}.md')    
+
+        
