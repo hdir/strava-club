@@ -272,10 +272,10 @@
   "11-9396005": {
     "week_number": 11,
     "athlete_name": "Bj\u00f8rn Intelhus",
-    "activities": 7,
-    "moving_time": 18960,
-    "distance": 121300,
-    "elevation_gain": 1818,
+    "activities": 8,
+    "moving_time": 29760,
+    "distance": 221800,
+    "elevation_gain": 2196,
     "tickets": 2
   },
   "10-21496061": {
@@ -308,8 +308,8 @@
   "11-3905395": {
     "week_number": 11,
     "athlete_name": "Erlend B\u00f8",
-    "activities": 3,
-    "moving_time": 12060,
+    "activities": 4,
+    "moving_time": 17820,
     "distance": 8100,
     "elevation_gain": 29,
     "tickets": 1
