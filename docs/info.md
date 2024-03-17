@@ -28,6 +28,17 @@ nav_order: 2
                 </ol>
             </p>
             <p>
+                <b>Forklaring av symbolene i resultatoversiktene:</b>
+                <ol>
+                    <li>🎫 Antall lodd tildelt for uken.</li>
+                    <li>⭐ Ny deltaker i aktivitetskampanjen.</li>
+                    <li>🔥 Forbedret rangering siden forrige uke, mer enn én plass opp.</li>
+                    <li>🔺 Forbedret rangering siden forrige uke, én plass opp.</li>
+                    <li>⏩ Ingen endring i rangering siden forrige uke.</li>
+                    <li>🔻 Ikke fullt så bra rangering som forrige uke.</li>
+                </ol>
+            </p>
+            <p>
                 (*) ved manuell registrering i Strava appen deles ingen lokasjonsdata med Strava eller Strava sine brukere.
                 Ved automatisk registrering med GPS spor i app/device kan lokasjonsdata beskyttes ved å bruke en privat Strava konto.
             </p>
