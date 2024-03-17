@@ -6,9 +6,10 @@ import textwrap
 from datetime import datetime
 
 # Configuration of global variables
-RESULTS_FILE = "data/result/testdata_results.json"
+RESULTS_FILE = "data/result/testdata_results_empty.json"
 INDEX_FILE = 'index-beta.md'
-TEAMS_FEATURE = "ON"
+TEAMS_FEATURE = False
+CAMPAIGN_WEEK_START = 11
 
 
 class Toolbox():
@@ -58,6 +59,7 @@ class Toolbox():
         return round(distance_km*0.016, 2)
 
     def get_teams(self):
+        """Method to create a list of teams based on content in datastore"""
         unique_teams = set()
 
         for value in datastore.master_data.values():
@@ -67,6 +69,7 @@ class Toolbox():
         return unique_teams
 
     def sort_dictionary(self, dictionary_to_sort, sortkey):
+        """Method to sort a dictionary based on a given key"""
         sorted_dict = dict(sorted(dictionary_to_sort.items(), key=lambda item: item[1][sortkey], reverse=True))
 
         return sorted_dict
@@ -84,6 +87,24 @@ class Datastore():
             self.master_data = json.load(file)
 
         self.master_data = toolbox.sort_dictionary(self.master_data, "distance")
+
+    def purge_non_campaign_activities(self):
+        """Method to delete records outside campaign from datastore (only memory)"""
+        records_to_delete = []
+        records_before_purge = len(self.master_data)
+
+        print(f'There are {records_before_purge} records in results.json')
+
+        for key, value in self.master_data.items():
+            if value["week_number"] < CAMPAIGN_WEEK_START:
+                records_to_delete.append(key)
+
+        for key in records_to_delete:
+            del self.master_data[key]
+
+        print(f'{records_before_purge - len(self.master_data)}'
+              f' were outside campaign period and have been deleted')
+
 
 class Results():
     """Class to calculate and temporarily store results for provided dataset"""
@@ -130,21 +151,21 @@ class Results():
         return athlete_summary
 
     def create_aggregated_summary(self):
-        """Method to create aggregated summary forprovided dataset"""
+        """Method to create aggregated summary for provided dataset"""
         aggregated_summary = {"moving_time": 0,
-                            "distance": 0,
-                            "elevation_gain": 0,
-                            "activities": 0,
-                            "athletes": 0,
-                            "co2_saved": 0
-                            }
+                              "distance": 0,
+                              "elevation_gain": 0,
+                              "activities": 0,
+                              "athletes": 0,
+                              "co2_saved": 0
+                              }
 
-        for record in self.dataset.values(): 
+        for record in self.dataset.values():
             aggregated_summary["moving_time"] += record["moving_time"]
             aggregated_summary["distance"] += toolbox.format_distance(record["distance"])
             aggregated_summary["elevation_gain"] += record["elevation_gain"]
             aggregated_summary["activities"] += record["activities"]
-            #consider moving toolbox call to html creation for consistency
+
         aggregated_summary["athletes"] = self.total_athletes
         aggregated_summary["co2_saved"] = toolbox.calculate_co2_saved(aggregated_summary["distance"])
 
@@ -185,14 +206,15 @@ class Results():
 
 class Template():
     """Class to produce md-files for displaying results"""
-    def __init__(self, team_name, dataset, results_object, outfile):
-        self.team_name = team_name
+    def __init__(self, name_of_team, dataset, results_object, outfile):
+        self.team_name = name_of_team
         self.dataset = dataset
         self.results = results_object
         self.outfile = outfile
         self.create_html_file()
 
     def create_aggregated_results_table(self):
+        """Method to create html table for aggregated results"""
         aggregated_results_table = f"""<table class='table-aggregated'>
                 <tr>
                     <td>👥 {self.results.aggregated_summary['athletes']} kolleger</td>
@@ -207,6 +229,7 @@ class Template():
         return aggregated_results_table
 
     def create_current_week_results_table(self):
+        """Method to create html table for current week results"""
         current_week_results_table = """<table class='table'>
                 <tr><th>Navn</th>
                     <th>Aktiviteter</th>
@@ -216,8 +239,7 @@ class Template():
                 </tr>
                 """
 
-        #consider switching to values
-        for key, value in self.dataset.items():
+        for value in self.dataset.values():
             if int(value["week_number"]) == int(toolbox.get_current_week_number()):
                 current_week_results_table += (f"""<tr>
                     <td>{self.results.rankings[value['athlete_name']]} {value['athlete_name']}</td>
@@ -225,14 +247,15 @@ class Template():
                     <td>{toolbox.format_duration(value['moving_time'])} {toolbox.get_tickets(value['tickets'])}</td>
                     <td>{toolbox.format_distance(value['distance'])}</td>
                     <td>{value['elevation_gain']}</td>
-                    </tr>
-                    """
+                </tr>
+                """
                                                )
         current_week_results_table += "</table>"
 
         return current_week_results_table
 
     def create_previous_week_results_table(self):
+        """Method to create html table for previous week results"""
         previous_week_results_table = """<table class='table'>
                 <tr><th>Navn</th>
                     <th>Aktiviteter</th>
@@ -241,9 +264,8 @@ class Template():
                     <th>Høydemeter</th>
                 </tr>
                 """
-        
-        #consider switching to values
-        for key, value in self.dataset.items():
+
+        for value in self.dataset.values():
             if int(value["week_number"]) == int(toolbox.get_current_week_number())-1:
                 previous_week_results_table += (f"""<tr>
                     <td>{value['athlete_name']}</td>
@@ -252,13 +274,14 @@ class Template():
                     <td>{toolbox.format_distance(value['distance'])}</td>
                     <td>{value['elevation_gain']}</td>
                 </tr>
-                    """
+                """
                                                 )
         previous_week_results_table += "</table>"
 
         return previous_week_results_table
 
     def create_complete_results_table(self):
+        """Method to create html table for complete results"""
         complete_results_table = """<table class='table'>
                 <tr>
                     <th>Navn</th>
@@ -285,8 +308,8 @@ class Template():
 
         return complete_results_table
 
-
     def assemble_html_content(self):
+        """Method to assemble html content to one block"""
         if self.team_name == "Alle deltakere":
             heading_specific = self.team_name
         else:
@@ -324,6 +347,7 @@ class Template():
         return html_content
 
     def create_html_file(self):
+        """Method to write html block to file"""
         with open(self.outfile, 'w', encoding='utf-8') as html_file:
             html_file.write(self.assemble_html_content())
 
@@ -334,28 +358,28 @@ if __name__ == "__main__":
 
     toolbox = Toolbox()
     datastore = Datastore()
-    
-    
-    # error-handling to stop code from running if dict is empty
-    # function to not use previous week in the first week of action, must also stop ranking
+
+    print(f"Teams feature is {TEAMS_FEATURE}")
+
+    if not datastore.master_data:
+        print(f"Dictionary in file is empty: {RESULTS_FILE}")
+    else:
+        datastore.purge_non_campaign_activities()
+
     # Create objects for all athletes across teams
     results_all_teams = Results(datastore.master_data)
     outfile_index = Template("Alle deltakere", datastore.master_data, results_all_teams, INDEX_FILE)
 
-
-    # Include a test for numbers of people in a team, must be at least two
-    # dont start loop if get_teams returns empty 
-    # Stop from running if previous week is lower than launchdate
     # Create objects for each team
-    if TEAMS_FEATURE == "ON":
-        for team_name in toolbox.get_teams():    
+    if TEAMS_FEATURE is True:
+        for team_name in toolbox.get_teams():
             team_data = {}
-            
+
             for keys, values in datastore.master_data.items():
                 if values["team"] == team_name:
-                    team_data[keys] = values    
-            
-            team_results = Results(team_data)
-            team_outfile = Template(team_name, team_data, team_results, f'team_{team_name}.md')    
+                    team_data[keys] = values
 
-        
+            team_results = Results(team_data)
+            team_outfile = Template(team_name, team_data, team_results, f'team_{team_name}.md')
+
+    # Placeholder to produce comparison across teams, use Results and Template class
