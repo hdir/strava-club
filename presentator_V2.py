@@ -9,7 +9,6 @@ from datetime import datetime
 RESULTS_FILE = "data/result/testdata_results_empty.json"
 INDEX_FILE = 'index-beta.md'
 TEAMS_FEATURE = False
-CAMPAIGN_WEEK_START = 11
 
 
 class Toolbox():
@@ -87,23 +86,6 @@ class Datastore():
             self.master_data = json.load(file)
 
         self.master_data = toolbox.sort_dictionary(self.master_data, "distance")
-
-    def purge_non_campaign_activities(self):
-        """Method to delete records outside campaign from datastore (only memory)"""
-        records_to_delete = []
-        records_before_purge = len(self.master_data)
-
-        print(f'There are {records_before_purge} records in results.json')
-
-        for key, value in self.master_data.items():
-            if value["week_number"] < CAMPAIGN_WEEK_START:
-                records_to_delete.append(key)
-
-        for key in records_to_delete:
-            del self.master_data[key]
-
-        print(f'{records_before_purge - len(self.master_data)}'
-              f' were outside campaign period and have been deleted')
 
 
 class Results():
@@ -363,8 +345,6 @@ if __name__ == "__main__":
 
     if not datastore.master_data:
         print(f"Dictionary in file is empty: {RESULTS_FILE}")
-    else:
-        datastore.purge_non_campaign_activities()
 
     # Create objects for all athletes across teams
     results_all_teams = Results(datastore.master_data)
