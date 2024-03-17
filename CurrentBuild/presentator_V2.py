@@ -6,9 +6,10 @@ import textwrap
 from datetime import datetime
 
 # Configuration of global variables
-RESULTS_FILE = "data/result/testdata_results.json"
+RESULTS_FILE = "data/result/testdata_results_empty.json"
 INDEX_FILE = 'index-beta.md'
-TEAMS_FEATURE = "ON"
+TEAMS_FEATURE = False
+CAMPAIGN_WEEK_START = 11
 
 
 class Toolbox():
@@ -31,7 +32,7 @@ class Toolbox():
             hours = f"{hours:02d}:{minutes:02d}"
 
         except ZeroDivisionError as error:
-            hours = 0   
+            hours = 0
             print(f'An error occured formating time: {error}')
 
         return hours
@@ -56,15 +57,22 @@ class Toolbox():
     def calculate_co2_saved(self, distance_km):
         """Method to calculate saved co2 pr km"""
         return round(distance_km*0.016, 2)
-    
+
     def get_teams(self):
+        """Method to create a list of teams based on content in datastore"""
         unique_teams = set()
 
         for value in datastore.master_data.values():
             if value["team"] != "":
                 unique_teams.add(value["team"])
-        
+
         return unique_teams
+
+    def sort_dictionary(self, dictionary_to_sort, sortkey):
+        """Method to sort a dictionary based on a given key"""
+        sorted_dict = dict(sorted(dictionary_to_sort.items(), key=lambda item: item[1][sortkey], reverse=True))
+
+        return sorted_dict
 
 
 class Datastore():
@@ -72,14 +80,31 @@ class Datastore():
     def __init__(self):
         self.master_data = {}
         self.read_master_data()
-    
+
     def read_master_data(self):
         """Method to read json data from file"""
         with open(RESULTS_FILE, 'r', encoding='utf-8') as file:
             self.master_data = json.load(file)
-        
-        # MOVE SORTING TO METHOD TOOLBOX
-        self.master_data = dict(sorted(self.master_data.items(), key=lambda item: item[1]['distance'], reverse=True))
+
+        self.master_data = toolbox.sort_dictionary(self.master_data, "distance")
+
+    def purge_non_campaign_activities(self):
+        """Method to delete records outside campaign from datastore (only memory)"""
+        records_to_delete = []
+        records_before_purge = len(self.master_data)
+
+        print(f'There are {records_before_purge} records in results.json')
+
+        for key, value in self.master_data.items():
+            if value["week_number"] < CAMPAIGN_WEEK_START:
+                records_to_delete.append(key)
+
+        for key in records_to_delete:
+            del self.master_data[key]
+
+        print(f'{records_before_purge - len(self.master_data)}'
+              f' were outside campaign period and have been deleted')
+
 
 class Results():
     """Class to calculate and temporarily store results for provided dataset"""
@@ -93,18 +118,16 @@ class Results():
     def count_athletes(self):
         """Method to count unique athletes in provided dataset"""
         unique_athlete_names = set()
-        
+
         for entry in self.dataset.values():
             unique_athlete_names.add(entry["athlete_name"])
-        
+
         return len(unique_athlete_names)
-    
+
     def create_athlete_summary(self):
         """Method to create summary for athletes in provided dataset"""
         athlete_summary = {}
 
-        # Create a dictionary to store the accumulated data for each athlete
-        # Accumulate data for each athlete across all weeks
         for value in self.dataset.values():
             athlete_name = value["athlete_name"]
 
@@ -122,39 +145,38 @@ class Results():
             athlete_summary[athlete_name]['moving_time'] += value['moving_time']
             athlete_summary[athlete_name]['elevation_gain'] += value['elevation_gain']
             athlete_summary[athlete_name]['tickets'] += value['tickets']
-        
-        # MOVE SORTING TO METHOD TOOLBOX
-        athlete_summary = dict(sorted(athlete_summary.items(), key=lambda item: item[1]['distance'], reverse=True))
-        
+
+        athlete_summary = toolbox.sort_dictionary(athlete_summary, "distance")
+
         return athlete_summary
 
     def create_aggregated_summary(self):
-        """Method to create aggregated summary forprovided dataset"""
+        """Method to create aggregated summary for provided dataset"""
         aggregated_summary = {"moving_time": 0,
-                            "distance": 0,
-                            "elevation_gain": 0,
-                            "activities": 0,
-                            "athletes": 0,
-                            "co2_saved": 0
-                            }
-        
-        for record in self.dataset.values(): 
+                              "distance": 0,
+                              "elevation_gain": 0,
+                              "activities": 0,
+                              "athletes": 0,
+                              "co2_saved": 0
+                              }
+
+        for record in self.dataset.values():
             aggregated_summary["moving_time"] += record["moving_time"]
             aggregated_summary["distance"] += toolbox.format_distance(record["distance"])
             aggregated_summary["elevation_gain"] += record["elevation_gain"]
             aggregated_summary["activities"] += record["activities"]
-            #consider moving toolbox call to html creation for consistency
+
         aggregated_summary["athletes"] = self.total_athletes
         aggregated_summary["co2_saved"] = toolbox.calculate_co2_saved(aggregated_summary["distance"])
-            
+
         return aggregated_summary
-    
+
     def get_changed_ranking(self):
         """Method to get rankings for athletes in provided dataset"""
         ranking_current_week = []
         ranking_previous_week = []
         rankings = {}
-        
+
         for value in self.dataset.values():
 
             if value["week_number"] == int(toolbox.get_current_week_number()):
@@ -162,7 +184,7 @@ class Results():
 
             if value["week_number"] == int(toolbox.get_current_week_number())-1:
                 ranking_previous_week.append(value["athlete_name"])
-        
+
         for value in self.dataset.values():
             if value["athlete_name"] in ranking_current_week and value["athlete_name"] in ranking_previous_week:
                 current_rank = ranking_current_week.index(value["athlete_name"])
@@ -184,97 +206,115 @@ class Results():
 
 class Template():
     """Class to produce md-files for displaying results"""
-    def __init__(self, team_name, dataset, results_object, outfile):
-        self.team_name = team_name
+    def __init__(self, name_of_team, dataset, results_object, outfile):
+        self.team_name = name_of_team
         self.dataset = dataset
         self.results = results_object
         self.outfile = outfile
         self.create_html_file()
 
     def create_aggregated_results_table(self):
-        aggregated_results_table = f"<table class='table-aggregated'>\
-        <tr><td>👥 {self.results.aggregated_summary['athletes']} kolleger</td>\
-        <td>🏁 {self.results.aggregated_summary['activities']} aktiviteter</td>\
-        <td>⏳ {toolbox.format_duration(self.results.aggregated_summary['moving_time'])} (t:m)</td></tr>\
-        <tr><td>📏 {round(self.results.aggregated_summary['distance'], 1)} km</td>\
-        <td>🧗 {self.results.aggregated_summary['elevation_gain']} høydemeter</td>\
-        <td>🌱 {self.results.aggregated_summary['co2_saved']} kg CO2 spart</td></tr>\
-        </table>"
+        """Method to create html table for aggregated results"""
+        aggregated_results_table = f"""<table class='table-aggregated'>
+                <tr>
+                    <td>👥 {self.results.aggregated_summary['athletes']} kolleger</td>
+                    <td>🏁 {self.results.aggregated_summary['activities']} aktiviteter</td>
+                    <td>⏳ {toolbox.format_duration(self.results.aggregated_summary['moving_time'])} (t:m)</td></tr>
+                <tr>
+                    <td>📏 {round(self.results.aggregated_summary['distance'], 1)} km</td>
+                    <td>🧗 {self.results.aggregated_summary['elevation_gain']} høydemeter</td>
+                    <td>🌱 {self.results.aggregated_summary['co2_saved']} kg CO2 spart</td></tr>
+            </table>"""
 
         return aggregated_results_table
 
     def create_current_week_results_table(self):
-        current_week_results_table = "<table class='table'>\
-        <tr><th>Navn</th>\
-        <th>Aktiviteter</th>\
-        <th>Varighet (t:m)</th>\
-        <th>Distanse (km)</th>\
-        <th>Høydemeter</th></tr>"
-        #consider switching to values
-        
-        for key, value in self.dataset.items():
-            if int(value["week_number"]) == int(toolbox.get_current_week_number()):
-                current_week_results_table += (
-                    f"<tr><td>{self.results.rankings[value['athlete_name']]} {value['athlete_name']}</td>"
-                    f"<td>{value['activities']}</td>"
-                    f"<td>{toolbox.format_duration(value['moving_time'])} {toolbox.get_tickets(value['tickets'])}</td>"
-                    f"<td>{toolbox.format_distance(value['distance'])}</td>"
-                    f"<td>{value['elevation_gain']}</td></tr>"
-                )
-        current_week_results_table += "</table>"
-        
-        return current_week_results_table
-    
-    def create_previous_week_results_table(self):
-        previous_week_results_table = "<table class='table'>\
-        <tr><th>Navn</th>\
-        <th>Aktiviteter</th>\
-        <th>Varighet (t:m)</th>\
-        <th>Distanse (km)</th>\
-        <th>Høydemeter</th></tr>"
+        """Method to create html table for current week results"""
+        current_week_results_table = """<table class='table'>
+                <tr><th>Navn</th>
+                    <th>Aktiviteter</th>
+                    <th>Varighet (t:m)</th>
+                    <th>Distanse (km)</th>
+                    <th>Høydemeter</th>
+                </tr>
+                """
 
-        for key, value in self.dataset.items():
+        for value in self.dataset.values():
+            if int(value["week_number"]) == int(toolbox.get_current_week_number()):
+                current_week_results_table += (f"""<tr>
+                    <td>{self.results.rankings[value['athlete_name']]} {value['athlete_name']}</td>
+                    <td>{value['activities']}</td>
+                    <td>{toolbox.format_duration(value['moving_time'])} {toolbox.get_tickets(value['tickets'])}</td>
+                    <td>{toolbox.format_distance(value['distance'])}</td>
+                    <td>{value['elevation_gain']}</td>
+                </tr>
+                """
+                                               )
+        current_week_results_table += "</table>"
+
+        return current_week_results_table
+
+    def create_previous_week_results_table(self):
+        """Method to create html table for previous week results"""
+        previous_week_results_table = """<table class='table'>
+                <tr><th>Navn</th>
+                    <th>Aktiviteter</th>
+                    <th>Varighet (t:m)</th>
+                    <th>Distanse (km)</th>
+                    <th>Høydemeter</th>
+                </tr>
+                """
+
+        for value in self.dataset.values():
             if int(value["week_number"]) == int(toolbox.get_current_week_number())-1:
-                previous_week_results_table += (
-                    f"<tr><td>{value['athlete_name']}</td>"
-                    f"<td>{value['activities']}</td>"
-                    f"<td>{toolbox.format_duration(value['moving_time'])} {toolbox.get_tickets(value['tickets'])}</td>"
-                    f"<td>{toolbox.format_distance(value['distance'])}</td>"
-                    f"<td>{value['elevation_gain']}</td></tr>"
-                )
+                previous_week_results_table += (f"""<tr>
+                    <td>{value['athlete_name']}</td>
+                    <td>{value['activities']}</td>
+                    <td>{toolbox.format_duration(value['moving_time'])} {toolbox.get_tickets(value['tickets'])}</td>
+                    <td>{toolbox.format_distance(value['distance'])}</td>
+                    <td>{value['elevation_gain']}</td>
+                </tr>
+                """
+                                                )
         previous_week_results_table += "</table>"
 
         return previous_week_results_table
 
     def create_complete_results_table(self):
-        complete_results_table = "<table class='table'>\
-        <tr><th>Navn</th>\
-        <th>Aktiviteter</th>\
-        <th>Varighet (t:m)</th>\
-        <th>Lodd</th>\
-        <th>Distanse (km)</th>\
-        <th>Høydemeter</th></tr>"
+        """Method to create html table for complete results"""
+        complete_results_table = """<table class='table'>
+                <tr>
+                    <th>Navn</th>
+                    <th>Aktiviteter</th>
+                    <th>Varighet (t:m)</th>
+                    <th>Lodd</th>
+                    <th>Distanse (km)</th>
+                    <th>Høydemeter</th>
+                </tr>
+                """
 
         for athlete_name, summary_data in self.results.athlete_summary.items():
-            complete_results_table += (
-                f"<tr><td>{athlete_name}</td>"
-                f"<td>{summary_data['activities']}</td>"
-                f"<td>{toolbox.format_duration(summary_data['moving_time'])}</td>"
-                f"<td>{summary_data['tickets']}</td>"
-                f"<td>{toolbox.format_distance(summary_data['distance'])}</td>"
-                f"<td>{summary_data['elevation_gain']}</td></tr>"
-            )
+            complete_results_table += (f"""<tr>
+                    <td>{athlete_name}</td>
+                    <td>{summary_data['activities']}</td>
+                    <td>{toolbox.format_duration(summary_data['moving_time'])}</td>
+                    <td>{summary_data['tickets']}</td>
+                    <td>{toolbox.format_distance(summary_data['distance'])}</td>
+                    <td>{summary_data['elevation_gain']}</td>
+                </tr>
+                """
+                                       )
         complete_results_table += "</table>"
 
         return complete_results_table
-    
-    # Add code below to adjust headers based on payload
+
     def assemble_html_content(self):
+        """Method to assemble html content to one block"""
         if self.team_name == "Alle deltakere":
             heading_specific = self.team_name
         else:
             heading_specific = f'Lag {self.team_name}'
-        
+
         html_content = textwrap.dedent(f"""\
         ---
         layout: default
@@ -307,6 +347,7 @@ class Template():
         return html_content
 
     def create_html_file(self):
+        """Method to write html block to file"""
         with open(self.outfile, 'w', encoding='utf-8') as html_file:
             html_file.write(self.assemble_html_content())
 
@@ -315,23 +356,30 @@ class Template():
 
 if __name__ == "__main__":
 
-    datastore = Datastore()
     toolbox = Toolbox()
-    
+    datastore = Datastore()
+
+    print(f"Teams feature is {TEAMS_FEATURE}")
+
+    if not datastore.master_data:
+        print(f"Dictionary in file is empty: {RESULTS_FILE}")
+    else:
+        datastore.purge_non_campaign_activities()
+
     # Create objects for all athletes across teams
     results_all_teams = Results(datastore.master_data)
     outfile_index = Template("Alle deltakere", datastore.master_data, results_all_teams, INDEX_FILE)
 
     # Create objects for each team
-    if TEAMS_FEATURE == "ON":
-        for team_name in toolbox.get_teams():    
+    if TEAMS_FEATURE is True:
+        for team_name in toolbox.get_teams():
             team_data = {}
-            for keys, values in datastore.master_data.items():
-            # Check if the value of "tickets" is equal to 0
-                if values["team"] == team_name:
-                    # If so, copy the entire key-value pair to the new dictionary
-                    team_data[keys] = values    
-            team_results = Results(team_data)
-            team_outfile = Template(team_name, team_data, team_results, f'team_{team_name}.md')    
 
-        
+            for keys, values in datastore.master_data.items():
+                if values["team"] == team_name:
+                    team_data[keys] = values
+
+            team_results = Results(team_data)
+            team_outfile = Template(team_name, team_data, team_results, f'team_{team_name}.md')
+
+    # Placeholder to produce comparison across teams, use Results and Template class
