@@ -137,10 +137,10 @@
   "11-133260": {
     "week_number": 11,
     "athlete_name": "\u00d8ivind Langeland",
-    "activities": 17,
-    "moving_time": 28140,
-    "distance": 155300,
-    "elevation_gain": 1578,
+    "activities": 18,
+    "moving_time": 32460,
+    "distance": 185500,
+    "elevation_gain": 1902,
     "tickets": 2
   },
   "10-4040211": {
@@ -173,37 +173,37 @@
   "11-8849482": {
     "week_number": 11,
     "athlete_name": "\u00d8rjan Stene",
-    "activities": 7,
-    "moving_time": 33300,
-    "distance": 188600,
-    "elevation_gain": 1307,
+    "activities": 9,
+    "moving_time": 48660,
+    "distance": 204500,
+    "elevation_gain": 2797,
     "tickets": 2
   },
   "11-2407379": {
     "week_number": 11,
     "athlete_name": "Ingvar S\u00f8rlien",
-    "activities": 2,
-    "moving_time": 6780,
-    "distance": 19200,
-    "elevation_gain": 239,
-    "tickets": 0
+    "activities": 3,
+    "moving_time": 17280,
+    "distance": 56500,
+    "elevation_gain": 842,
+    "tickets": 1
   },
   "11-4778110": {
     "week_number": 11,
     "athlete_name": "Even Espelid",
-    "activities": 11,
-    "moving_time": 27660,
-    "distance": 97700,
-    "elevation_gain": 641,
+    "activities": 12,
+    "moving_time": 36240,
+    "distance": 123600,
+    "elevation_gain": 1267,
     "tickets": 2
   },
   "11-3450542": {
     "week_number": 11,
     "athlete_name": "Per Ludvig Skjerven",
-    "activities": 5,
-    "moving_time": 18600,
-    "distance": 16800,
-    "elevation_gain": 503,
+    "activities": 6,
+    "moving_time": 23580,
+    "distance": 30300,
+    "elevation_gain": 902,
     "tickets": 2
   },
   "11-15951168": {
@@ -227,10 +227,10 @@
   "11-71873694": {
     "week_number": 11,
     "athlete_name": "Hans Christian Sundsfjord",
-    "activities": 5,
-    "moving_time": 12840,
-    "distance": 30900,
-    "elevation_gain": 360,
+    "activities": 6,
+    "moving_time": 15120,
+    "distance": 34200,
+    "elevation_gain": 425,
     "tickets": 1
   },
   "11-4040211": {
@@ -318,18 +318,18 @@
     "week_number": 11,
     "athlete_name": "Sven Bruun",
     "activities": 1,
-    "moving_time": 1860,
-    "distance": 2400,
-    "elevation_gain": 7,
+    "moving_time": 2460,
+    "distance": 3600,
+    "elevation_gain": 6,
     "tickets": 0
   },
   "11-15305367": {
     "week_number": 11,
     "athlete_name": "Per \u00d8ivind Gaardsrud",
-    "activities": 1,
-    "moving_time": 5880,
-    "distance": 9200,
-    "elevation_gain": 332,
-    "tickets": 0
+    "activities": 2,
+    "moving_time": 20640,
+    "distance": 40400,
+    "elevation_gain": 1055,
+    "tickets": 2
   }
 }
