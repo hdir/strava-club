@@ -9,6 +9,7 @@ from datetime import datetime
 CSV_FILE = "data/skrap/club_leaderboard.csv"
 RESULTS_FILE = "data/result/results.json"
 CAMPAIGN_WEEK_START = 12
+CAMPAIGN_WEEK_STOP = 13
 
 
 class Transformer:
@@ -18,8 +19,13 @@ class Transformer:
 
     def read_datastore(self):
         """Method to read json data from file"""
-        with open(RESULTS_FILE, 'r', encoding='utf-8') as file:
-            self.datastore = json.load(file)
+        try:
+            with open(RESULTS_FILE, 'r', encoding='utf-8') as file:
+                self.datastore = json.load(file)
+        except FileNotFoundError:
+            print(f"{RESULTS_FILE} not found, creating new")
+            with open(RESULTS_FILE, 'w', encoding='utf-8') as file:
+                json.dump({}, file)
 
     def save_datastore(self):
         """Method to write json data to file"""
@@ -64,7 +70,8 @@ class Transformer:
         print(f'There are {records_before_purge} records in datastore')
 
         for key, value in self.datastore.items():
-            if value["week_number"] < CAMPAIGN_WEEK_START:
+            if value["week_number"] not in range(CAMPAIGN_WEEK_START,
+                                                 CAMPAIGN_WEEK_STOP+1):
                 records_to_delete.append(key)
 
         for key in records_to_delete:
