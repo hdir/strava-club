@@ -1,1 +1,38 @@
-{}
+{
+  "12-288479": {
+    "week_number": 12,
+    "athlete_name": "Thomas Rosenlund",
+    "activities": 1,
+    "moving_time": 2340,
+    "distance": 17300,
+    "elevation_gain": 95,
+    "tickets": 0
+  },
+  "12-21496061": {
+    "week_number": 12,
+    "athlete_name": "Bj\u00f8rn Jarle Wiger",
+    "activities": 1,
+    "moving_time": 2040,
+    "distance": 11800,
+    "elevation_gain": 118,
+    "tickets": 0
+  },
+  "12-15951168": {
+    "week_number": 12,
+    "athlete_name": "Thomas Grimeland",
+    "activities": 1,
+    "moving_time": 1140,
+    "distance": 1900,
+    "elevation_gain": 0,
+    "tickets": 0
+  },
+  "12-133260": {
+    "week_number": 12,
+    "athlete_name": "\u00d8ivind Langeland",
+    "activities": 1,
+    "moving_time": 780,
+    "distance": 5500,
+    "elevation_gain": 12,
+    "tickets": 0
+  }
+}
