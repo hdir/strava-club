@@ -168,7 +168,6 @@ class Results():
             if value["week_number"] == int(toolbox.get_current_week_number())-1:
                 ranking_previous_week.append(value["athlete_name"])
 
-        print(toolbox.get_current_week_number())
         for value in self.dataset.values():
             if int(CAMPAIGN_WEEK_START) == int(toolbox.get_current_week_number()):
                 rankings.update({value["athlete_name"]: ""})
