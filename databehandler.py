@@ -52,11 +52,13 @@ class Transformer:
                     {athlete_weekly_uid: {
                         "week_number": int(week_number),
                         "athlete_name": dictionary["athlete_name"],
+                        "athlete_id": dictionary["athlete_id"],
                         "activities": int(dictionary["activities"]),
                         "moving_time": moving_time,
                         "distance": int(float(dictionary["distance"])),
                         "elevation_gain": int(float(dictionary["elevation_gain"])),
-                        "tickets": int(self.calculate_tickets(moving_time))
+                        "tickets": int(self.calculate_tickets(moving_time)),
+                        "team": ""
                     }})
 
             except (KeyError, ValueError) as error:

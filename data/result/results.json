@@ -1,83 +1,101 @@
 {
-  "12-288479": {
-    "week_number": 12,
-    "athlete_name": "Thomas Rosenlund",
-    "activities": 3,
-    "moving_time": 6900,
-    "distance": 48300,
-    "elevation_gain": 505,
-    "tickets": 0
-  },
-  "12-21496061": {
-    "week_number": 12,
-    "athlete_name": "Bj\u00f8rn Jarle Wiger",
-    "activities": 2,
-    "moving_time": 4380,
-    "distance": 23900,
-    "elevation_gain": 298,
-    "tickets": 0
-  },
-  "12-15951168": {
-    "week_number": 12,
-    "athlete_name": "Thomas Grimeland",
-    "activities": 2,
-    "moving_time": 2760,
-    "distance": 4500,
-    "elevation_gain": 90,
-    "tickets": 0
-  },
-  "12-133260": {
-    "week_number": 12,
-    "athlete_name": "\u00d8ivind Langeland",
-    "activities": 3,
-    "moving_time": 3120,
-    "distance": 17100,
-    "elevation_gain": 109,
-    "tickets": 0
-  },
-  "12-16855015": {
-    "week_number": 12,
-    "athlete_name": "Jeppe Ugland",
-    "activities": 1,
-    "moving_time": 3540,
-    "distance": 12200,
-    "elevation_gain": 173,
-    "tickets": 0
-  },
-  "12-71873694": {
-    "week_number": 12,
-    "athlete_name": "Hans Christian Sundsfjord",
-    "activities": 2,
-    "moving_time": 3480,
-    "distance": 4000,
-    "elevation_gain": 0,
-    "tickets": 0
-  },
   "12-9396005": {
     "week_number": 12,
     "athlete_name": "Bj\u00f8rn Intelhus",
+    "athlete_id": "9396005",
     "activities": 1,
     "moving_time": 7380,
     "distance": 22700,
     "elevation_gain": 1535,
-    "tickets": 0
+    "tickets": 0,
+    "team": ""
+  },
+  "12-288479": {
+    "week_number": 12,
+    "athlete_name": "Thomas Rosenlund",
+    "athlete_id": "288479",
+    "activities": 3,
+    "moving_time": 6900,
+    "distance": 48300,
+    "elevation_gain": 505,
+    "tickets": 0,
+    "team": ""
   },
   "12-4040211": {
     "week_number": 12,
     "athlete_name": "Jonas Bergan",
+    "athlete_id": "4040211",
     "activities": 1,
     "moving_time": 6720,
     "distance": 21100,
     "elevation_gain": 218,
-    "tickets": 0
+    "tickets": 0,
+    "team": ""
+  },
+  "12-21496061": {
+    "week_number": 12,
+    "athlete_name": "Bj\u00f8rn Jarle Wiger",
+    "athlete_id": "21496061",
+    "activities": 2,
+    "moving_time": 4380,
+    "distance": 23900,
+    "elevation_gain": 298,
+    "tickets": 0,
+    "team": ""
+  },
+  "12-16855015": {
+    "week_number": 12,
+    "athlete_name": "Jeppe Ugland",
+    "athlete_id": "16855015",
+    "activities": 1,
+    "moving_time": 3540,
+    "distance": 12200,
+    "elevation_gain": 173,
+    "tickets": 0,
+    "team": ""
+  },
+  "12-71873694": {
+    "week_number": 12,
+    "athlete_name": "Hans Christian Sundsfjord",
+    "athlete_id": "71873694",
+    "activities": 2,
+    "moving_time": 3480,
+    "distance": 4000,
+    "elevation_gain": 0,
+    "tickets": 0,
+    "team": ""
+  },
+  "12-133260": {
+    "week_number": 12,
+    "athlete_name": "\u00d8ivind Langeland",
+    "athlete_id": "133260",
+    "activities": 3,
+    "moving_time": 3120,
+    "distance": 17100,
+    "elevation_gain": 109,
+    "tickets": 0,
+    "team": ""
+  },
+  "12-15951168": {
+    "week_number": 12,
+    "athlete_name": "Thomas Grimeland",
+    "athlete_id": "15951168",
+    "activities": 2,
+    "moving_time": 2760,
+    "distance": 4500,
+    "elevation_gain": 90,
+    "tickets": 0,
+    "team": ""
   },
   "12-4778110": {
     "week_number": 12,
     "athlete_name": "Even Espelid",
+    "athlete_id": "4778110",
     "activities": 1,
     "moving_time": 1800,
     "distance": 0,
     "elevation_gain": 0,
-    "tickets": 0
+    "tickets": 0,
+    "team": ""
   }
 }
