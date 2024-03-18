@@ -306,7 +306,7 @@ class Template():
 
         # Vår 2024 - Resultater: {heading_specific}
 
-        Informasjon om [aktivitetskampanjen](docs/info.md). For å delta må du også bli medlem i [Helsedirektoratets klubb på Strava](https://www.strava.com/clubs/754665).
+        Lite data? Vi simulerte ny aksjonsstart uke 12 (18. mars 2024). Informasjon om [aktivitetskampanjen](docs/info.md). For å delta må du også bli medlem i [Helsedirektoratets klubb på Strava](https://www.strava.com/clubs/754665).
 
         <div id="aggregated data">
             <h2>Aggregerte data</h2>
