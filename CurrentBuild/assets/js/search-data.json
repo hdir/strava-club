@@ -8,14 +8,14 @@
   },"1": {
     "doc": "Resultater Alle deltakere",
     "title": "Aggregerte data",
-    "content": "| 👥 4 kolleger | 🏁 4 aktiviteter | ⏳ 01:45 (t:m) | . | 📏 36.5 km | 🧗 225 høydemeter | 🌱 0.58 kg CO2 spart | . ",
+    "content": "| 👥 6 kolleger | 🏁 10 aktiviteter | ⏳ 05:16 (t:m) | . | 📏 81.5 km | 🧗 720 høydemeter | 🌱 1.3 kg CO2 spart | . ",
     "url": "/strava-club/CurrentBuild/",
     
     "relUrl": "/"
   },"2": {
     "doc": "Resultater Alle deltakere",
     "title": "Ukens resultater (uke 12)",
-    "content": "| Navn | Aktiviteter | Varighet (t:m) | Distanse (km) | Høydemeter | . | ⭐ Thomas Rosenlund | 1 | 00:39 | 17.3 | 95 | . | ⭐ Bjørn Jarle Wiger | 1 | 00:34 | 11.8 | 118 | . | ⭐ Øivind Langeland | 1 | 00:13 | 5.5 | 12 | . | ⭐ Thomas Grimeland | 1 | 00:19 | 1.9 | 0 | . ",
+    "content": "| Navn | Aktiviteter | Varighet (t:m) | Distanse (km) | Høydemeter | . | ⭐ Thomas Rosenlund | 2 | 01:20 | 34.9 | 293 | . | ⭐ Øivind Langeland | 2 | 00:39 | 14.1 | 46 | . | ⭐ Jeppe Ugland | 1 | 00:59 | 12.2 | 173 | . | ⭐ Bjørn Jarle Wiger | 1 | 00:34 | 11.8 | 118 | . | ⭐ Thomas Grimeland | 2 | 00:46 | 4.5 | 90 | . | ⭐ Hans Christian Sundsfjord | 2 | 00:58 | 4.0 | 0 | . ",
     "url": "/strava-club/CurrentBuild/",
     
     "relUrl": "/"
@@ -29,7 +29,7 @@
   },"4": {
     "doc": "Resultater Alle deltakere",
     "title": "Resultater hele perioden",
-    "content": "| Navn | Aktiviteter | Varighet (t:m) | Lodd | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 1 | 00:39 | 0 | 17.3 | 95 | . | Bjørn Jarle Wiger | 1 | 00:34 | 0 | 11.8 | 118 | . | Øivind Langeland | 1 | 00:13 | 0 | 5.5 | 12 | . | Thomas Grimeland | 1 | 00:19 | 0 | 1.9 | 0 | . ",
+    "content": "| Navn | Aktiviteter | Varighet (t:m) | Lodd | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 2 | 01:20 | 0 | 34.9 | 293 | . | Øivind Langeland | 2 | 00:39 | 0 | 14.1 | 46 | . | Jeppe Ugland | 1 | 00:59 | 0 | 12.2 | 173 | . | Bjørn Jarle Wiger | 1 | 00:34 | 0 | 11.8 | 118 | . | Thomas Grimeland | 2 | 00:46 | 0 | 4.5 | 90 | . | Hans Christian Sundsfjord | 2 | 00:58 | 0 | 4.0 | 0 | . ",
     "url": "/strava-club/CurrentBuild/",
     
     "relUrl": "/"
