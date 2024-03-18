@@ -22,6 +22,8 @@ exclude:
 - readme.old
 - strava-club-scraper.py
 - presentator_V2.py
+- requirements.txt
+- lag_konfigurator/
 #- images/
 #- docs/dgi/
 - readme.md
