@@ -69,7 +69,7 @@ jobs:
         run: |
           python strava-club-scraper.py
           python databehandler.py
-          python presentator_v2.py
+          python presentator_V2.py
 
       - name: Deploy data til repoet
         uses: peaceiris/actions-gh-pages@v3
