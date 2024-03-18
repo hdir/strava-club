@@ -56,7 +56,7 @@ class Toolbox():
 
     def calculate_co2_saved(self, distance_km):
         """Method to calculate saved co2 pr km"""
-        return round(distance_km*0.016, 2)
+        return round(distance_km*0.220, 2)
 
     def get_teams(self):
         """Method to create a list of teams based on content in datastore"""
