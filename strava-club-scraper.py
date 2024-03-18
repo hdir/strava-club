@@ -55,12 +55,12 @@ config.read(
 )
 google_api_key = os.path.join(os.getcwd(), 'settings', 'keys.json')  # Google API
 
-directory="skrap"
+directory=r"data/skrap"
 ## If folder doesn't exists, create it ##
 if not os.path.isdir(directory):
     os.mkdir(directory)
 
-directory = r'skrap/history'
+directory = r'data/skrap/history'
 ## If folder doesn't exists, create it ##
 if not os.path.isdir(directory):
     os.makedirs(directory)
