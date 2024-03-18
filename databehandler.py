@@ -8,7 +8,7 @@ from datetime import datetime
 # Configuration of global variables
 CSV_FILE = "data/skrap/club_leaderboard.csv"
 RESULTS_FILE = "data/result/results.json"
-CAMPAIGN_WEEK_START = 5
+CAMPAIGN_WEEK_START = 12
 
 
 class Transformer:

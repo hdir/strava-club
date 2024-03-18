@@ -21,6 +21,7 @@ exclude:
 - presentator.py
 - readme.old
 - strava-club-scraper.py
+- *.py
 #- images/
 #- docs/dgi/
 - readme.md
