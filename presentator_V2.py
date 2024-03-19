@@ -303,14 +303,15 @@ class Template():
             heading_specific = f'Lag {self.team_name}'
 
         if len(INFO_MESSAGE) == 0:
-            INFO_MESSAGE_HTML = ""
+            info_message_html = ""
         else:
-            INFO_MESSAGE_HTML = (f"""<p style="font-size:
-                                 18px;padding: 10px;
-                                 background-color: #f7f7f7">
-                                {INFO_MESSAGE}
-                                </p> 
-                                """)
+            info_message_html = \
+                f"""<p style="font-size:
+                18px;padding: 10px;
+                background-color: #f7f7f7">
+                {INFO_MESSAGE}
+                </p> 
+                """
 
         html_content = textwrap.dedent(f"""\
         ---
@@ -321,7 +322,7 @@ class Template():
 
         # Vår 2024 - Resultater: {heading_specific}
 
-        {INFO_MESSAGE_HTML}
+        {info_message_html}
 
         <b>Informasjon om [aktivitetskampanjen](docs/info.md). For å delta må du bli medlem i [Helsedirektoratets klubb på Strava](https://www.strava.com/clubs/754665).</b>
 
