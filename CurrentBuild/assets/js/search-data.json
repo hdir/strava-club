@@ -8,14 +8,14 @@
   },"1": {
     "doc": "Resultater Alle deltakere",
     "title": "Aggregerte data",
-    "content": "| 👥 10 kolleger | 🏁 25 aktiviteter | ⏳ 16:38 (t:m) | . | 📏 214.7 km | 🧗 3687 høydemeter | 🌱 47.23 kg CO2 spart | . ",
+    "content": "| 👥 10 kolleger | 🏁 30 aktiviteter | ⏳ 18:44 (t:m) | . | 📏 254.9 km | 🧗 4245 høydemeter | 🌱 56.08 kg CO2 spart | . ",
     "url": "/strava-club/CurrentBuild/",
     
     "relUrl": "/"
   },"2": {
     "doc": "Resultater Alle deltakere",
     "title": "Ukens resultater (uke 12)",
-    "content": "| Navn | Aktiviteter | Varighet (t:m) | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 4 | 02:24 | 61.9 | 598 | . | Bjørn Intelhus | 3 | 03:26 🎫 | 51.9 | 1901 | . | Bjørn Jarle Wiger | 2 | 01:13 | 23.9 | 298 | . | Øivind Langeland | 4 | 01:07 | 23.0 | 121 | . | Jonas Bergan | 1 | 01:52 | 21.1 | 218 | . | Jeppe Ugland | 3 | 02:14 | 20.4 | 304 | . | Thomas Grimeland | 4 | 01:27 | 8.5 | 142 | . | Hans Christian Sundsfjord | 2 | 00:58 | 4.0 | 0 | . | Even Espelid | 1 | 00:30 | 0.0 | 0 | . | Per Ludvig Skjerven | 1 | 01:27 | 0.0 | 105 | . ",
+    "content": "| Navn | Aktiviteter | Varighet (t:m) | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 7 | 03:27 🎫 | 83.3 | 890 | . | Bjørn Intelhus | 3 | 03:26 🎫 | 51.9 | 1901 | . | Øivind Langeland | 6 | 02:10 | 41.8 | 387 | . | Bjørn Jarle Wiger | 2 | 01:13 | 23.9 | 298 | . | Jonas Bergan | 1 | 01:52 | 21.1 | 218 | . | Jeppe Ugland | 3 | 02:14 | 20.4 | 304 | . | Thomas Grimeland | 4 | 01:27 | 8.5 | 142 | . | Hans Christian Sundsfjord | 2 | 00:58 | 4.0 | 0 | . | Even Espelid | 1 | 00:30 | 0.0 | 0 | . | Per Ludvig Skjerven | 1 | 01:27 | 0.0 | 105 | . ",
     "url": "/strava-club/CurrentBuild/",
     
     "relUrl": "/"
@@ -29,7 +29,7 @@
   },"4": {
     "doc": "Resultater Alle deltakere",
     "title": "Resultater hele perioden",
-    "content": "| Navn | Aktiviteter | Varighet (t:m) | Lodd | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 4 | 02:24 | 0 | 61.9 | 598 | . | Bjørn Intelhus | 3 | 03:26 | 1 | 51.9 | 1901 | . | Bjørn Jarle Wiger | 2 | 01:13 | 0 | 23.9 | 298 | . | Øivind Langeland | 4 | 01:07 | 0 | 23.0 | 121 | . | Jonas Bergan | 1 | 01:52 | 0 | 21.1 | 218 | . | Jeppe Ugland | 3 | 02:14 | 0 | 20.4 | 304 | . | Thomas Grimeland | 4 | 01:27 | 0 | 8.5 | 142 | . | Hans Christian Sundsfjord | 2 | 00:58 | 0 | 4.0 | 0 | . | Even Espelid | 1 | 00:30 | 0 | 0.0 | 0 | . | Per Ludvig Skjerven | 1 | 01:27 | 0 | 0.0 | 105 | . ",
+    "content": "| Navn | Aktiviteter | Varighet (t:m) | Lodd | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 7 | 03:27 | 1 | 83.3 | 890 | . | Bjørn Intelhus | 3 | 03:26 | 1 | 51.9 | 1901 | . | Øivind Langeland | 6 | 02:10 | 0 | 41.8 | 387 | . | Bjørn Jarle Wiger | 2 | 01:13 | 0 | 23.9 | 298 | . | Jonas Bergan | 1 | 01:52 | 0 | 21.1 | 218 | . | Jeppe Ugland | 3 | 02:14 | 0 | 20.4 | 304 | . | Thomas Grimeland | 4 | 01:27 | 0 | 8.5 | 142 | . | Hans Christian Sundsfjord | 2 | 00:58 | 0 | 4.0 | 0 | . | Even Espelid | 1 | 00:30 | 0 | 0.0 | 0 | . | Per Ludvig Skjerven | 1 | 01:27 | 0 | 0.0 | 105 | . ",
     "url": "/strava-club/CurrentBuild/",
     
     "relUrl": "/"
