@@ -7,9 +7,10 @@ from datetime import datetime
 
 # Configuration of global variables
 RESULTS_FILE = "data/result/results.json"
-INDEX_FILE = 'index.md'
+INDEX_FILE = 'index2.md'
 TEAMS_FEATURE = False
 CAMPAIGN_WEEK_START = 12
+INFO_MESSAGE = "Lite data? Vi simulerte ny aksjonsstart uke 12 (18. mars 2024). Resultatsiden oppdateres fire ganger i døgnet (kl 09, 11, 18 og 00) fra Strava."
 
 
 class Toolbox():
@@ -301,6 +302,16 @@ class Template():
         else:
             heading_specific = f'Lag {self.team_name}'
 
+        if len(INFO_MESSAGE) == 0:
+            INFO_MESSAGE_HTML = ""
+        else:
+            INFO_MESSAGE_HTML = (f"""<p style="font-size:
+                                 18px;padding: 10px;
+                                 background-color: #f7f7f7">
+                                {INFO_MESSAGE}
+                                </p> 
+                                """)
+
         html_content = textwrap.dedent(f"""\
         ---
         layout: default
@@ -310,8 +321,9 @@ class Template():
 
         # Vår 2024 - Resultater: {heading_specific}
 
-        Lite data? Vi simulerte ny aksjonsstart uke 12 (18. mars 2024). Resultatsiden oppdateres fire ganger i døgnet (kl 09, 11, 18 og 00) fra Strava.  
-        Informasjon om [aktivitetskampanjen](docs/info.md). For å delta må du bli medlem i [Helsedirektoratets klubb på Strava](https://www.strava.com/clubs/754665).
+        {INFO_MESSAGE_HTML}
+
+        <b>Informasjon om [aktivitetskampanjen](docs/info.md). For å delta må du bli medlem i [Helsedirektoratets klubb på Strava](https://www.strava.com/clubs/754665).</b>
 
         <div id="aggregated data">
             <h2>Aggregerte data</h2>
