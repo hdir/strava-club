@@ -7,7 +7,7 @@ from datetime import datetime
 
 # Configuration of global variables
 RESULTS_FILE = "data/result/results.json"
-INDEX_FILE = 'index2.md'
+INDEX_FILE = 'index.md'
 TEAMS_FEATURE = False
 CAMPAIGN_WEEK_START = 12
 INFO_MESSAGE = "Lite data? Vi simulerte ny aksjonsstart uke 12 (18. mars 2024). Resultatsiden oppdateres fire ganger i døgnet (kl 09, 11, 18 og 00) fra Strava."
