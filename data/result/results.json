@@ -58,10 +58,10 @@
     "week_number": 12,
     "athlete_name": "Hans Christian Sundsfjord",
     "athlete_id": "71873694",
-    "activities": 4,
-    "moving_time": 5880,
-    "distance": 10100,
-    "elevation_gain": 0,
+    "activities": 5,
+    "moving_time": 8460,
+    "distance": 22900,
+    "elevation_gain": 199,
     "tickets": 0,
     "team": ""
   },
@@ -128,6 +128,17 @@
     "moving_time": 2940,
     "distance": 8200,
     "elevation_gain": 29,
+    "tickets": 0,
+    "team": ""
+  },
+  "12-2407379": {
+    "week_number": 12,
+    "athlete_name": "Ingvar S\u00f8rlien",
+    "athlete_id": "2407379",
+    "activities": 2,
+    "moving_time": 6960,
+    "distance": 19100,
+    "elevation_gain": 247,
     "tickets": 0,
     "team": ""
   }
