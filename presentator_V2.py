@@ -224,7 +224,7 @@ class Template():
                     <td>{self.results.rankings[value['athlete_name']]} {value['athlete_name']}</td>
                     <td>{value['activities']}</td>
                     <td>{toolbox.format_duration(value['moving_time'])} {toolbox.get_tickets(value['tickets'])}</td>
-                    <td>{toolbox.format_distance(value['distance'])}</td>
+                    <td>{round(toolbox.format_distance(value['distance']), 1)}</td>
                     <td>{value['elevation_gain']}</td>
                 </tr>
                 """
@@ -250,7 +250,7 @@ class Template():
                     <td>{value['athlete_name']}</td>
                     <td>{value['activities']}</td>
                     <td>{toolbox.format_duration(value['moving_time'])} {toolbox.get_tickets(value['tickets'])}</td>
-                    <td>{toolbox.format_distance(value['distance'])}</td>
+                    <td>{round(toolbox.format_distance(value['distance']), 1)}</td>
                     <td>{value['elevation_gain']}</td>
                 </tr>
                 """
@@ -278,7 +278,7 @@ class Template():
                     <td>{summary_data['activities']}</td>
                     <td>{toolbox.format_duration(summary_data['moving_time'])}</td>
                     <td>{summary_data['tickets']}</td>
-                    <td>{toolbox.format_distance(summary_data['distance'])}</td>
+                    <td>{round(toolbox.format_distance(summary_data['distance']), 1)}</td>
                     <td>{summary_data['elevation_gain']}</td>
                 </tr>
                 """
