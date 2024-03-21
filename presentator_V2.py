@@ -1,16 +1,11 @@
 #!/usr/bin/env python3
 """Module to create html page of data from Strava web scraper"""
 
+import configparser
+import os
 import json
 import textwrap
 from datetime import datetime
-
-# Configuration of global variables
-RESULTS_FILE = "data/result/results.json"
-INDEX_FILE = 'index.md'
-TEAMS_FEATURE = False
-CAMPAIGN_WEEK_START = 12
-INFO_MESSAGE = "Lite data? Vi simulerte ny aksjonsstart uke 12 (18. mars 2024). Resultatsiden oppdateres fire ganger i døgnet (kl 09, 11, 18 og 00) fra Strava."
 
 
 class Toolbox():
@@ -356,6 +351,18 @@ class Template():
 
 if __name__ == "__main__":
 
+    # Configuration of global variables
+    config = configparser.ConfigParser()
+    config.read(os.path.join(os.getcwd(), 'settings', 'config.ini'),
+                encoding='utf-8')
+
+    RESULTS_FILE = config['CAMPAIGN'].get('RESULTS_FILE')
+    INDEX_FILE = config['CAMPAIGN'].get('INDEX_FILE')
+    TEAMS_FEATURE = config['CAMPAIGN'].getboolean('TEAMS_FEATURE')
+    CAMPAIGN_WEEK_START = config['CAMPAIGN'].getint('CAMPAIGN_WEEK_START')
+    INFO_MESSAGE = config['CAMPAIGN'].get('INFO_MESSAGE')
+
+    # Program run
     toolbox = Toolbox()
     datastore = Datastore()
 
