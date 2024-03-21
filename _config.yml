@@ -24,6 +24,7 @@ exclude:
 - presentator_V2.py
 - requirements.txt
 - lag_konfigurator/
+- data/info.old
 #- images/
 #- docs/dgi/
 - readme.md

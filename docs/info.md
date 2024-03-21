@@ -4,43 +4,37 @@ title: Informasjonsside
 nav_order: 2
 ---
 
-   <div class="page-wrapper">
-        <div class="header" id="header">
-            <h1>Vår 2024 - Informasjonsside</h1>
-        </div>
-        <div class="tile-info" id="info">
-            <h2>Informasjon om kampanjen</h2>
-            <p>
-              <ol>
-                <li>Bli medlem i <a href="https://www.strava.com/clubs/754665">Helsedirektoratets klubb på Strava.</a></li>
-                <li>Registrere aktiviteter i strava, enten automatisk eller manuelt i Strava appen(*).</li>
-                <li>Vinn fine premier 🥇</li>
-              </ol>
-            </p>
-            <p>
-                <b>Beskrivelse av konkurransereglene:</b>
-                <ol>
-                    <li>All aktivitet telles i sammendraget.</li>
-                    <li>Ett lodd tildeles hver uke for de som har mer enn 150 minutter aktivitet i uken.</li>
-                    <li>To lodd tildeles for de som har mer enn 300 minutter aktivitet i uken.</li>
-                    <li>Alle lodd er med alle trekningene. Man kan maksimalt bli tildelt 16 lodd i løpet av konkurranseperioden som går over åtte uker.</li>
-                    <li>Det er en trekning etter to uker og tre trekninger ved konkurransens slutt.</li>
-                </ol>
-            </p>
-            <p>
-                <b>Forklaring av symbolene i resultatoversiktene:</b>
-                <ol>
-                    <li>🎫 Antall lodd tildelt for uken.</li>
-                    <li>⭐ Ny deltaker i aktivitetskampanjen.</li>
-                    <li>🔥 Forbedret rangering siden forrige uke, mer enn én plass opp.</li>
-                    <li>🔺 Forbedret rangering siden forrige uke, én plass opp.</li>
-                    <li>⏩ Ingen endring i rangering siden forrige uke.</li>
-                    <li>🔻 Ikke fullt så bra rangering som forrige uke.</li>
-                </ol>
-            </p>
-            <p>
-                (*) ved manuell registrering i Strava appen deles ingen lokasjonsdata med Strava eller Strava sine brukere.
-                Ved automatisk registrering med GPS spor i app/device kan lokasjonsdata beskyttes ved å bruke en privat Strava konto.
-            </p>
-        </div>
-    </div>
+# Vår 2024 - Informasjonsside
+
+Informasjon om aktivitetskampanjen i helsedirektoratet Vår 2024.
+
+## Informasjon om kampanjen
+
+Kampanjen starter 8. april 2024 og avsluttes 3. mai 2024. Det blir trekning av premier underveis.
+
+1. Bli medlem i [Helsedirektoratets klubb](https://www.strava.com/clubs/754665) på Strava.
+2. Registrere aktiviteter i Strava, enten automatisk eller manuelt i Strava appen(*).
+3. Vinn fine premier 🥇
+
+## Konkurranseregler
+
+* All aktivitet telles i sammendraget.
+* Ett lodd tildeles hver uke for de som har mer enn 150 minutter aktivitet i uken.
+* To lodd tildeles for de som har mer enn 300 minutter aktivitet i uken.
+* Alle lodd er med alle trekningene. Man kan maksimalt bli tildelt 16 lodd i løpet av konkurranseperioden som går over åtte uker.
+* Det er en trekning etter to uker og tre trekninger ved konkurransens slutt.
+
+## Symbolene i resultatlisten
+
+🎫 Antall lodd tildelt for uken.  
+⭐ Ny deltaker i aktivitetskampanjen.  
+🔥 Forbedret rangering siden forrige uke, mer enn én plass opp.  
+🔺 Forbedret rangering siden forrige uke, én plass opp.  
+⏩ Ingen endring i rangering siden forrige uke.  
+🔻 Lavere rangering sammenlignet med forrige uke.  
+
+## Privacy settings i Strava
+
+Ulike privacy settings kan påvirke deltakelsen i konkurransen. I praksis er det slik at aktiviteter må være synlige i klubber og for følgere for at de skal telle i sammendraget. Det betyr at aktiviteter som registreres, men bare er synlige for deg, ikke teller mot aktivitetsmålet i kampanjen. Hvis du vil beskytte din aktivitetsinformasjon men likevel delta i konkurransen anbefaler vi å ha privacy settings - activities satt til followers. Da har du kontroll over hvem som får se aktivitetene dine.
+
+(*) Enkelte ønsker ikke å dele posisjonsdata på Strava, dette kan løses ved å gjøre manuell registrering av aktivitet uten bruk av GPS funksjonalitet for å spore turen. Alternativet er å si at kontoen din er privat, det vil si at bare følgere og klubber får se dine data.  
