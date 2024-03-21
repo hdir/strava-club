@@ -165,23 +165,20 @@ class Results():
                 ranking_previous_week.append(value["athlete_name"])
 
         for value in self.dataset.values():
-            if int(CAMPAIGN_WEEK_START) == int(toolbox.get_current_week_number()):
-                rankings.update({value["athlete_name"]: ""})
-            else:
-                if value["athlete_name"] in ranking_current_week and value["athlete_name"] in ranking_previous_week:
-                    current_rank = ranking_current_week.index(value["athlete_name"])
-                    previous_rank = ranking_previous_week.index(value["athlete_name"])
+            if value["athlete_name"] in ranking_current_week and value["athlete_name"] in ranking_previous_week:
+                current_rank = ranking_current_week.index(value["athlete_name"])
+                previous_rank = ranking_previous_week.index(value["athlete_name"])
 
-                    if previous_rank - current_rank > 1:
-                        rankings.update({value["athlete_name"]: "🔥"})
-                    elif current_rank < previous_rank:
-                        rankings.update({value["athlete_name"]: "🔺"})
-                    elif current_rank > previous_rank:
-                        rankings.update({value["athlete_name"]: "🔻"})
-                    elif current_rank == previous_rank:
-                        rankings.update({value["athlete_name"]: "⏩"})
-                else:
-                    rankings.update({value["athlete_name"]: "⭐"})
+                if previous_rank - current_rank > 1:
+                    rankings.update({value["athlete_name"]: "🔥"})
+                elif current_rank < previous_rank:
+                    rankings.update({value["athlete_name"]: "🔺"})
+                elif current_rank > previous_rank:
+                    rankings.update({value["athlete_name"]: "🔻"})
+                elif current_rank == previous_rank:
+                    rankings.update({value["athlete_name"]: "⏩"})
+            else:
+                rankings.update({value["athlete_name"]: "⭐"})
 
         return rankings
 
