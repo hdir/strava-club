@@ -80,11 +80,11 @@
     "week_number": 12,
     "athlete_name": "Thomas Grimeland",
     "athlete_id": "15951168",
-    "activities": 6,
-    "moving_time": 8760,
-    "distance": 13900,
+    "activities": 7,
+    "moving_time": 10620,
+    "distance": 16900,
     "elevation_gain": 245,
-    "tickets": 0,
+    "tickets": 1,
     "team": ""
   },
   "12-4778110": {
