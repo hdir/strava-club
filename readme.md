@@ -39,3 +39,20 @@ Tar Json filer fra databehandler og presenterer resultatlistene på en pen måte
 **Trigger** Databehandleren startes av et script.
 
 Resultatet legges på gh-pages branch for visning på github.io.
+
+## Starte og slutt av kampanjeperiode
+
+Instruksjoner for arrangører.  
+
+### Kampanjestart
+
+1. Invitere til kampanje i god tid, med instuksjoner om deltakelse, regler og premier.  
+1. Flytte filer i datakatalog til en backupdiestinasjon for eksempel data/kampanje_dato.  
+1. Sette kampanjestart uke i databehandler eller *config.ini*.  
+1. Resultatfilen må eksistere i data/result/results.json, filen må være tom.  
+1. Kjør scriptet for produksjon.  
+2. Sjekke kampanjestart/slutt i *config.ini*.  
+
+## Kampanjeslutt  
+
+TODO

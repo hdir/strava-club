@@ -44,7 +44,7 @@ scraper -up-> csvres
 scraper -right-> csvdelt
 csvres -down[hidden]- csvdelt
 csvres -right-> behandler
-csvdelt -right-> behandler
+csvdelt -right[hidden]-> behandler
 'resjson -down[hidden]- csvtot
 'csvtot -down[hidden]- akk
 behandler -right-> resjson
