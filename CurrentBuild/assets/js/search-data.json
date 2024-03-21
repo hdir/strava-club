@@ -8,14 +8,14 @@
   },"1": {
     "doc": "Resultater Alle deltakere",
     "title": "Aggregerte data",
-    "content": "| 👥 12 kolleger | 🏁 48 aktiviteter | ⏳ 30:22 (t:m) | . | 📏 390.6 km | 🧗 6213 høydemeter | 🌱 85.93 kg CO2 spart | . ",
+    "content": "| 👥 13 kolleger | 🏁 51 aktiviteter | ⏳ 33:01 (t:m) | . | 📏 422.5 km | 🧗 6659 høydemeter | 🌱 92.95 kg CO2 spart | . ",
     "url": "/strava-club/CurrentBuild/",
     
     "relUrl": "/"
   },"2": {
     "doc": "Resultater Alle deltakere",
     "title": "Ukens resultater (uke 12)",
-    "content": "| Navn | Aktiviteter | Varighet (t:m) | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 11 | 06:04 🎫🎫 | 118.6 | 1188 | . | Øivind Langeland | 10 | 04:06 🎫 | 82.8 | 804 | . | Bjørn Intelhus | 4 | 04:34 🎫 | 69.1 | 2610 | . | Jonas Bergan | 2 | 02:47 🎫 | 32.299 | 218 | . | Jeppe Ugland | 4 | 02:59 🎫 | 24.2 | 399 | . | Bjørn Jarle Wiger | 2 | 01:13 | 23.9 | 298 | . | Thomas Grimeland | 6 | 02:26 | 13.9 | 245 | . | Hans Christian Sundsfjord | 4 | 01:38 | 10.1 | 0 | . | Erlend Bø | 1 | 00:49 | 8.2 | 29 | . | Janne Hougen | 1 | 00:41 | 7.5 | 193 | . | Even Espelid | 1 | 00:30 | 0.0 | 0 | . | Per Ludvig Skjerven | 2 | 02:35 🎫 | 0.0 | 229 | . ",
+    "content": "| Navn | Aktiviteter | Varighet (t:m) | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 11 | 06:04 🎫🎫 | 118.6 | 1188 | . | Øivind Langeland | 10 | 04:06 🎫 | 82.8 | 804 | . | Bjørn Intelhus | 4 | 04:34 🎫 | 69.1 | 2610 | . | Jonas Bergan | 2 | 02:47 🎫 | 32.299 | 218 | . | Jeppe Ugland | 4 | 02:59 🎫 | 24.2 | 399 | . | Bjørn Jarle Wiger | 2 | 01:13 | 23.9 | 298 | . | Hans Christian Sundsfjord | 5 | 02:21 | 22.9 | 199 | . | Ingvar Sørlien | 2 | 01:56 | 19.1 | 247 | . | Thomas Grimeland | 6 | 02:26 | 13.9 | 245 | . | Erlend Bø | 1 | 00:49 | 8.2 | 29 | . | Janne Hougen | 1 | 00:41 | 7.5 | 193 | . | Even Espelid | 1 | 00:30 | 0.0 | 0 | . | Per Ludvig Skjerven | 2 | 02:35 🎫 | 0.0 | 229 | . ",
     "url": "/strava-club/CurrentBuild/",
     
     "relUrl": "/"
@@ -29,7 +29,7 @@
   },"4": {
     "doc": "Resultater Alle deltakere",
     "title": "Resultater hele perioden",
-    "content": "| Navn | Aktiviteter | Varighet (t:m) | Lodd | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 11 | 06:04 | 2 | 118.6 | 1188 | . | Øivind Langeland | 10 | 04:06 | 1 | 82.8 | 804 | . | Bjørn Intelhus | 4 | 04:34 | 1 | 69.1 | 2610 | . | Jonas Bergan | 2 | 02:47 | 1 | 32.299 | 218 | . | Jeppe Ugland | 4 | 02:59 | 1 | 24.2 | 399 | . | Bjørn Jarle Wiger | 2 | 01:13 | 0 | 23.9 | 298 | . | Thomas Grimeland | 6 | 02:26 | 0 | 13.9 | 245 | . | Hans Christian Sundsfjord | 4 | 01:38 | 0 | 10.1 | 0 | . | Erlend Bø | 1 | 00:49 | 0 | 8.2 | 29 | . | Janne Hougen | 1 | 00:41 | 0 | 7.5 | 193 | . | Even Espelid | 1 | 00:30 | 0 | 0.0 | 0 | . | Per Ludvig Skjerven | 2 | 02:35 | 1 | 0.0 | 229 | . ",
+    "content": "| Navn | Aktiviteter | Varighet (t:m) | Lodd | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 11 | 06:04 | 2 | 118.6 | 1188 | . | Øivind Langeland | 10 | 04:06 | 1 | 82.8 | 804 | . | Bjørn Intelhus | 4 | 04:34 | 1 | 69.1 | 2610 | . | Jonas Bergan | 2 | 02:47 | 1 | 32.299 | 218 | . | Jeppe Ugland | 4 | 02:59 | 1 | 24.2 | 399 | . | Bjørn Jarle Wiger | 2 | 01:13 | 0 | 23.9 | 298 | . | Hans Christian Sundsfjord | 5 | 02:21 | 0 | 22.9 | 199 | . | Ingvar Sørlien | 2 | 01:56 | 0 | 19.1 | 247 | . | Thomas Grimeland | 6 | 02:26 | 0 | 13.9 | 245 | . | Erlend Bø | 1 | 00:49 | 0 | 8.2 | 29 | . | Janne Hougen | 1 | 00:41 | 0 | 7.5 | 193 | . | Even Espelid | 1 | 00:30 | 0 | 0.0 | 0 | . | Per Ludvig Skjerven | 2 | 02:35 | 1 | 0.0 | 229 | . ",
     "url": "/strava-club/CurrentBuild/",
     
     "relUrl": "/"
@@ -43,18 +43,39 @@
   },"6": {
     "doc": "Informasjonsside",
     "title": "Vår 2024 - Informasjonsside",
-    "content": " ",
-    "url": "/strava-club/CurrentBuild/docs/info.html",
+    "content": "Informasjon om aktivitetskampanjen i helsedirektoratet Vår 2024. ",
+    "url": "/strava-club/CurrentBuild/docs/info.html#v%C3%A5r-2024---informasjonsside",
     
-    "relUrl": "/docs/info.html"
+    "relUrl": "/docs/info.html#vår-2024---informasjonsside"
   },"7": {
     "doc": "Informasjonsside",
     "title": "Informasjon om kampanjen",
-    "content": ". | Bli medlem i Helsedirektoratets klubb på Strava. | Registrere aktiviteter i strava, enten automatisk eller manuelt i Strava appen(*). | Vinn fine premier 🥇 | . Beskrivelse av konkurransereglene: . | All aktivitet telles i sammendraget. | Ett lodd tildeles hver uke for de som har mer enn 150 minutter aktivitet i uken. | To lodd tildeles for de som har mer enn 300 minutter aktivitet i uken. | Alle lodd er med alle trekningene. Man kan maksimalt bli tildelt 16 lodd i løpet av konkurranseperioden som går over åtte uker. | Det er en trekning etter to uker og tre trekninger ved konkurransens slutt. | . Forklaring av symbolene i resultatoversiktene: . | 🎫 Antall lodd tildelt for uken. | ⭐ Ny deltaker i aktivitetskampanjen. | 🔥 Forbedret rangering siden forrige uke, mer enn én plass opp. | 🔺 Forbedret rangering siden forrige uke, én plass opp. | ⏩ Ingen endring i rangering siden forrige uke. | 🔻 Ikke fullt så bra rangering som forrige uke. | . (*) ved manuell registrering i Strava appen deles ingen lokasjonsdata med Strava eller Strava sine brukere. Ved automatisk registrering med GPS spor i app/device kan lokasjonsdata beskyttes ved å bruke en privat Strava konto. ",
-    "url": "/strava-club/CurrentBuild/docs/info.html",
+    "content": "Kampanjen starter 8. april 2024 og avsluttes 3. mai 2024. Det blir trekning av premier underveis. | Bli medlem i Helsedirektoratets klubb på Strava. | Registrere aktiviteter i Strava, enten automatisk eller manuelt i Strava appen(*). | Vinn fine premier 🥇 | . ",
+    "url": "/strava-club/CurrentBuild/docs/info.html#informasjon-om-kampanjen",
     
-    "relUrl": "/docs/info.html"
+    "relUrl": "/docs/info.html#informasjon-om-kampanjen"
   },"8": {
+    "doc": "Informasjonsside",
+    "title": "Konkurranseregler",
+    "content": ". | All aktivitet telles i sammendraget. | Ett lodd tildeles hver uke for de som har mer enn 150 minutter aktivitet i uken. | To lodd tildeles for de som har mer enn 300 minutter aktivitet i uken. | Alle lodd er med alle trekningene. Man kan maksimalt bli tildelt 16 lodd i løpet av konkurranseperioden som går over åtte uker. | Det er en trekning etter to uker og tre trekninger ved konkurransens slutt. | . ",
+    "url": "/strava-club/CurrentBuild/docs/info.html#konkurranseregler",
+    
+    "relUrl": "/docs/info.html#konkurranseregler"
+  },"9": {
+    "doc": "Informasjonsside",
+    "title": "Symbolene i resultatlisten",
+    "content": "🎫 Antall lodd tildelt for uken. ⭐ Ny deltaker i aktivitetskampanjen. 🔥 Forbedret rangering siden forrige uke, mer enn én plass opp. 🔺 Forbedret rangering siden forrige uke, én plass opp. ⏩ Ingen endring i rangering siden forrige uke. 🔻 Lavere rangering sammenlignet med forrige uke. ",
+    "url": "/strava-club/CurrentBuild/docs/info.html#symbolene-i-resultatlisten",
+    
+    "relUrl": "/docs/info.html#symbolene-i-resultatlisten"
+  },"10": {
+    "doc": "Informasjonsside",
+    "title": "Privacy settings i Strava",
+    "content": "Ulike privacy settings kan påvirke deltakelsen i konkurransen. I praksis er det slik at aktiviteter må være synlige i klubber og for følgere for at de skal telle i sammendraget. Det betyr at aktiviteter som registreres, men bare er synlige for deg, ikke teller mot aktivitetsmålet i kampanjen. Hvis du vil beskytte din aktivitetsinformasjon men likevel delta i konkurransen anbefaler vi å ha privacy settings - activities satt til followers. Da har du kontroll over hvem som får se aktivitetene dine. (*) Enkelte ønsker ikke å dele posisjonsdata på Strava, dette kan løses ved å gjøre manuell registrering av aktivitet uten bruk av GPS funksjonalitet for å spore turen. Alternativet er å si at kontoen din er privat, det vil si at bare følgere og klubber får se dine data. ",
+    "url": "/strava-club/CurrentBuild/docs/info.html#privacy-settings-i-strava",
+    
+    "relUrl": "/docs/info.html#privacy-settings-i-strava"
+  },"11": {
     "doc": "Informasjonsside",
     "title": "Informasjonsside",
     "content": " ",
