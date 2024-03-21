@@ -18,7 +18,7 @@ Kampanjen starter 8. april 2024 og avsluttes 3. mai 2024. Det blir trekning av p
 
 ## Konkurranseregler
 
-* All aktivitet telles i sammendraget.
+* All aktivitet teller i sammendraget.
 * Ett lodd tildeles hver uke for de som har mer enn 150 minutter aktivitet i uken.
 * To lodd tildeles for de som har mer enn 300 minutter aktivitet i uken.
 * Alle lodd er med alle trekningene. Man kan maksimalt bli tildelt 16 lodd i løpet av konkurranseperioden som går over åtte uker.
