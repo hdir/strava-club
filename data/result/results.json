@@ -47,10 +47,10 @@
     "week_number": 12,
     "athlete_name": "Jeppe Ugland",
     "athlete_id": "16855015",
-    "activities": 5,
-    "moving_time": 13740,
-    "distance": 34200,
-    "elevation_gain": 544,
+    "activities": 6,
+    "moving_time": 16380,
+    "distance": 42400,
+    "elevation_gain": 591,
     "tickets": 1,
     "team": ""
   },
@@ -102,10 +102,10 @@
     "week_number": 12,
     "athlete_name": "Per Ludvig Skjerven",
     "athlete_id": "3450542",
-    "activities": 2,
-    "moving_time": 9300,
-    "distance": 0,
-    "elevation_gain": 229,
+    "activities": 3,
+    "moving_time": 11520,
+    "distance": 11300,
+    "elevation_gain": 402,
     "tickets": 1,
     "team": ""
   },
@@ -161,6 +161,28 @@
     "moving_time": 5580,
     "distance": 16100,
     "elevation_gain": 0,
+    "tickets": 0,
+    "team": ""
+  },
+  "12-131861201": {
+    "week_number": 12,
+    "athlete_name": "Anna Naume Solem",
+    "athlete_id": "131861201",
+    "activities": 3,
+    "moving_time": 10200,
+    "distance": 29900,
+    "elevation_gain": 326,
+    "tickets": 1,
+    "team": ""
+  },
+  "12-26265081": {
+    "week_number": 12,
+    "athlete_name": "Addi K",
+    "athlete_id": "26265081",
+    "activities": 2,
+    "moving_time": 5700,
+    "distance": 20100,
+    "elevation_gain": 329,
     "tickets": 0,
     "team": ""
   }
