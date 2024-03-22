@@ -8,14 +8,14 @@
   },"1": {
     "doc": "Resultater Alle deltakere",
     "title": "Aggregerte data",
-    "content": "| 👥 14 kolleger | 🏁 65 aktiviteter | ⏳ 43:23 (t:m) | . | 📏 585.3 km | 🧗 8675 høydemeter | 🌱 128.77 kg CO2 spart | . ",
+    "content": "| 👥 15 kolleger | 🏁 69 aktiviteter | ⏳ 46:03 (t:m) | . | 📏 625.4 km | 🧗 8787 høydemeter | 🌱 137.59 kg CO2 spart | . ",
     "url": "/strava-club/CurrentBuild/",
     
     "relUrl": "/"
   },"2": {
     "doc": "Resultater Alle deltakere",
     "title": "Ukens resultater (uke 12)",
-    "content": "| Navn | Aktiviteter | Varighet (t:m) | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 13 | 09:13 🎫🎫 | 181.7 | 2063 | . | Øivind Langeland | 13 | 05:54 🎫🎫 | 124.2 | 1248 | . | Bjørn Intelhus | 6 | 05:58 🎫🎫 | 98.5 | 2962 | . | Hans Christian Sundsfjord | 6 | 02:59 🎫 | 35.1 | 360 | . | Jeppe Ugland | 5 | 03:49 🎫 | 34.2 | 544 | . | Jonas Bergan | 2 | 02:47 🎫 | 32.299 | 218 | . | Bjørn Jarle Wiger | 2 | 01:13 | 23.9 | 298 | . | Ingvar Sørlien | 2 | 01:56 | 19.1 | 247 | . | Thomas Grimeland | 8 | 03:10 🎫 | 18.1 | 260 | . | Janne Hougen | 2 | 01:20 | 8.2 | 198 | . | Erlend Bø | 1 | 00:49 | 8.2 | 29 | . | Sven Bruun | 1 | 00:23 | 1.8 | 19 | . | Even Espelid | 2 | 01:17 | 0.0 | 0 | . | Per Ludvig Skjerven | 2 | 02:35 🎫 | 0.0 | 229 | . ",
+    "content": "| Navn | Aktiviteter | Varighet (t:m) | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 14 | 09:49 🎫🎫 | 198.0 | 2163 | . | Øivind Langeland | 14 | 06:07 🎫🎫 | 129.699 | 1260 | . | Bjørn Intelhus | 6 | 05:58 🎫🎫 | 98.5 | 2962 | . | Hans Christian Sundsfjord | 6 | 02:59 🎫 | 35.1 | 360 | . | Jeppe Ugland | 5 | 03:49 🎫 | 34.2 | 544 | . | Jonas Bergan | 2 | 02:47 🎫 | 32.299 | 218 | . | Bjørn Jarle Wiger | 2 | 01:13 | 23.9 | 298 | . | Thomas Grimeland | 9 | 03:28 🎫 | 20.3 | 260 | . | Ingvar Sørlien | 2 | 01:56 | 19.1 | 247 | . | Vegard Kvilesjø | 1 | 01:33 | 16.1 | 0 | . | Janne Hougen | 2 | 01:20 | 8.2 | 198 | . | Erlend Bø | 1 | 00:49 | 8.2 | 29 | . | Sven Bruun | 1 | 00:23 | 1.8 | 19 | . | Even Espelid | 2 | 01:17 | 0.0 | 0 | . | Per Ludvig Skjerven | 2 | 02:35 🎫 | 0.0 | 229 | . ",
     "url": "/strava-club/CurrentBuild/",
     
     "relUrl": "/"
@@ -29,7 +29,7 @@
   },"4": {
     "doc": "Resultater Alle deltakere",
     "title": "Resultater hele perioden",
-    "content": "| Navn | Aktiviteter | Varighet (t:m) | Lodd | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 13 | 09:13 | 2 | 181.7 | 2063 | . | Øivind Langeland | 13 | 05:54 | 2 | 124.2 | 1248 | . | Bjørn Intelhus | 6 | 05:58 | 2 | 98.5 | 2962 | . | Hans Christian Sundsfjord | 6 | 02:59 | 1 | 35.1 | 360 | . | Jeppe Ugland | 5 | 03:49 | 1 | 34.2 | 544 | . | Jonas Bergan | 2 | 02:47 | 1 | 32.299 | 218 | . | Bjørn Jarle Wiger | 2 | 01:13 | 0 | 23.9 | 298 | . | Ingvar Sørlien | 2 | 01:56 | 0 | 19.1 | 247 | . | Thomas Grimeland | 8 | 03:10 | 1 | 18.1 | 260 | . | Janne Hougen | 2 | 01:20 | 0 | 8.2 | 198 | . | Erlend Bø | 1 | 00:49 | 0 | 8.2 | 29 | . | Sven Bruun | 1 | 00:23 | 0 | 1.8 | 19 | . | Even Espelid | 2 | 01:17 | 0 | 0.0 | 0 | . | Per Ludvig Skjerven | 2 | 02:35 | 1 | 0.0 | 229 | . ",
+    "content": "| Navn | Aktiviteter | Varighet (t:m) | Lodd | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 14 | 09:49 | 2 | 198.0 | 2163 | . | Øivind Langeland | 14 | 06:07 | 2 | 129.699 | 1260 | . | Bjørn Intelhus | 6 | 05:58 | 2 | 98.5 | 2962 | . | Hans Christian Sundsfjord | 6 | 02:59 | 1 | 35.1 | 360 | . | Jeppe Ugland | 5 | 03:49 | 1 | 34.2 | 544 | . | Jonas Bergan | 2 | 02:47 | 1 | 32.299 | 218 | . | Bjørn Jarle Wiger | 2 | 01:13 | 0 | 23.9 | 298 | . | Thomas Grimeland | 9 | 03:28 | 1 | 20.3 | 260 | . | Ingvar Sørlien | 2 | 01:56 | 0 | 19.1 | 247 | . | Vegard Kvilesjø | 1 | 01:33 | 0 | 16.1 | 0 | . | Janne Hougen | 2 | 01:20 | 0 | 8.2 | 198 | . | Erlend Bø | 1 | 00:49 | 0 | 8.2 | 29 | . | Sven Bruun | 1 | 00:23 | 0 | 1.8 | 19 | . | Even Espelid | 2 | 01:17 | 0 | 0.0 | 0 | . | Per Ludvig Skjerven | 2 | 02:35 | 1 | 0.0 | 229 | . ",
     "url": "/strava-club/CurrentBuild/",
     
     "relUrl": "/"
@@ -50,14 +50,14 @@
   },"7": {
     "doc": "Informasjonsside",
     "title": "Informasjon om kampanjen",
-    "content": "Kampanjen starter 8. april 2024 og avsluttes 3. mai 2024. Det blir trekning av premier underveis. | Bli medlem i Helsedirektoratets klubb på Strava. | Registrere aktiviteter i Strava, enten automatisk eller manuelt i Strava appen(*). | Vinn fine premier 🥇 | . ",
+    "content": "Kampanjen starter 15. april 2024 og avsluttes 9. juni 2024. Det blir trekning av premier underveis. | Bli medlem i Helsedirektoratets klubb på Strava. | Registrere aktiviteter i Strava, enten automatisk eller manuelt i Strava appen(*). | Vinn fine premier 🥇 | . ",
     "url": "/strava-club/CurrentBuild/docs/info.html#informasjon-om-kampanjen",
     
     "relUrl": "/docs/info.html#informasjon-om-kampanjen"
   },"8": {
     "doc": "Informasjonsside",
     "title": "Konkurranseregler",
-    "content": ". | All aktivitet teller i sammendraget . | Aktiviteter må registreres fortløpende hver uke, registreringer eldre enn 2 uker blir ikke tellende i konkurransen. | . | Ett lodd tildeles hver uke for de som har mer enn 150 minutter aktivitet i uken. | To lodd tildeles for de som har mer enn 300 minutter aktivitet i uken. | Alle lodd er med alle trekningene. Man kan maksimalt bli tildelt 16 lodd i løpet av konkurranseperioden som går over åtte uker. | Det er en trekning etter to uker og tre trekninger ved konkurransens slutt. | . ",
+    "content": ". | All aktivitet teller . | Aktiviteter må registreres fortløpende hver uke, registreringer eldre enn 2 uker blir ikke tellende i konkurransen. | . | Ett lodd tildeles hver uke for de som har mer enn 150 minutter aktivitet i uken. | To lodd tildeles for de som har mer enn 300 minutter aktivitet i uken. | Alle lodd er med alle trekningene. Man kan maksimalt bli tildelt 16 lodd i løpet av konkurranseperioden som går over åtte uker. | Det er en trekning etter to uker og tre trekninger ved konkurransens slutt. | . ",
     "url": "/strava-club/CurrentBuild/docs/info.html#konkurranseregler",
     
     "relUrl": "/docs/info.html#konkurranseregler"
@@ -70,11 +70,11 @@
     "relUrl": "/docs/info.html#symbolene-i-resultatlisten"
   },"10": {
     "doc": "Informasjonsside",
-    "title": "Privacy controls i Strava",
-    "content": "Ulike privacy settings kan påvirke deltakelsen i konkurransen. I praksis er det slik at aktiviteter må være synlige i klubber og for følgere for at de skal telle i sammendraget. Det betyr at aktiviteter som registreres, men bare er synlige for deg, ikke teller mot aktivitetsmålet i kampanjen. Hvis du vil beskytte din aktivitetsinformasjon men likevel delta i konkurransen anbefaler vi å ha privacy settings - activities satt til followers. Da har du kontroll over hvem som får se aktivitetene dine. (*) Enkelte ønsker ikke å dele posisjonsdata med Strava i det hele tatt. Du kan fremdeles delta i konkurransen ved å gjøre manuell registrering av aktivitet uten bruk av GPS for å spore turen. Alternativet er å si at kontoen din er privat, det vil si at bare følgere og klubber får se dine data/posisjonsdata. ",
-    "url": "/strava-club/CurrentBuild/docs/info.html#privacy-controls-i-strava",
+    "title": "Personverninnstillinger i Strava",
+    "content": "Personverninnstillingene (privacy settings) i Strava kan påvirke deltakelsen i konkurransen. Aktiviteter må være synlige i klubber og for følgere for at de skal telle i sammendraget. Det betyr at aktiviteter som registreres, men bare er synlige for deg, ikke teller mot aktivitetsmålet i kampanjen. Hvis du vil beskytte din aktivitetsinformasjon men likevel delta i konkurransen anbefaler vi å ha “privacy settings - activities” satt til “followers”. Da har du kontroll over hvem som får se aktivitetene dine. (*) Enkelte ønsker ikke å dele posisjonsdata med Strava i det hele tatt. Du kan fremdeles delta i konkurransen ved å gjøre manuell registrering av aktivitet uten bruk av GPS for å spore treningsøkten. Alternativet er å sette kontoen din som privat. Da får bare følgere og klubber se dine data/posisjonsdata. ",
+    "url": "/strava-club/CurrentBuild/docs/info.html#personverninnstillinger-i-strava",
     
-    "relUrl": "/docs/info.html#privacy-controls-i-strava"
+    "relUrl": "/docs/info.html#personverninnstillinger-i-strava"
   },"11": {
     "doc": "Informasjonsside",
     "title": "Informasjonsside",
