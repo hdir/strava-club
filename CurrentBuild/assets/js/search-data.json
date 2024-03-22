@@ -8,14 +8,14 @@
   },"1": {
     "doc": "Resultater Alle deltakere",
     "title": "Aggregerte data",
-    "content": "| 👥 15 kolleger | 🏁 69 aktiviteter | ⏳ 46:03 (t:m) | . | 📏 625.4 km | 🧗 8787 høydemeter | 🌱 137.59 kg CO2 spart | . ",
+    "content": "| 👥 17 kolleger | 🏁 76 aktiviteter | ⏳ 51:49 (t:m) | . | 📏 694.9 km | 🧗 9662 høydemeter | 🌱 152.88 kg CO2 spart | . ",
     "url": "/strava-club/CurrentBuild/",
     
     "relUrl": "/"
   },"2": {
     "doc": "Resultater Alle deltakere",
     "title": "Ukens resultater (uke 12)",
-    "content": "| Navn | Aktiviteter | Varighet (t:m) | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 14 | 09:49 🎫🎫 | 198.0 | 2163 | . | Øivind Langeland | 14 | 06:07 🎫🎫 | 129.699 | 1260 | . | Bjørn Intelhus | 6 | 05:58 🎫🎫 | 98.5 | 2962 | . | Hans Christian Sundsfjord | 6 | 02:59 🎫 | 35.1 | 360 | . | Jeppe Ugland | 5 | 03:49 🎫 | 34.2 | 544 | . | Jonas Bergan | 2 | 02:47 🎫 | 32.299 | 218 | . | Bjørn Jarle Wiger | 2 | 01:13 | 23.9 | 298 | . | Thomas Grimeland | 9 | 03:28 🎫 | 20.3 | 260 | . | Ingvar Sørlien | 2 | 01:56 | 19.1 | 247 | . | Vegard Kvilesjø | 1 | 01:33 | 16.1 | 0 | . | Janne Hougen | 2 | 01:20 | 8.2 | 198 | . | Erlend Bø | 1 | 00:49 | 8.2 | 29 | . | Sven Bruun | 1 | 00:23 | 1.8 | 19 | . | Even Espelid | 2 | 01:17 | 0.0 | 0 | . | Per Ludvig Skjerven | 2 | 02:35 🎫 | 0.0 | 229 | . ",
+    "content": "| Navn | Aktiviteter | Varighet (t:m) | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 14 | 09:49 🎫🎫 | 198.0 | 2163 | . | Øivind Langeland | 14 | 06:07 🎫🎫 | 129.699 | 1260 | . | Bjørn Intelhus | 6 | 05:58 🎫🎫 | 98.5 | 2962 | . | Jeppe Ugland | 6 | 04:33 🎫 | 42.4 | 591 | . | Hans Christian Sundsfjord | 6 | 02:59 🎫 | 35.1 | 360 | . | Jonas Bergan | 2 | 02:47 🎫 | 32.299 | 218 | . | Anna Naume Solem | 3 | 02:50 🎫 | 29.9 | 326 | . | Bjørn Jarle Wiger | 2 | 01:13 | 23.9 | 298 | . | Thomas Grimeland | 9 | 03:28 🎫 | 20.3 | 260 | . | Addi K | 2 | 01:35 | 20.1 | 329 | . | Ingvar Sørlien | 2 | 01:56 | 19.1 | 247 | . | Vegard Kvilesjø | 1 | 01:33 | 16.1 | 0 | . | Per Ludvig Skjerven | 3 | 03:12 🎫 | 11.3 | 402 | . | Janne Hougen | 2 | 01:20 | 8.2 | 198 | . | Erlend Bø | 1 | 00:49 | 8.2 | 29 | . | Sven Bruun | 1 | 00:23 | 1.8 | 19 | . | Even Espelid | 2 | 01:17 | 0.0 | 0 | . ",
     "url": "/strava-club/CurrentBuild/",
     
     "relUrl": "/"
@@ -29,7 +29,7 @@
   },"4": {
     "doc": "Resultater Alle deltakere",
     "title": "Resultater hele perioden",
-    "content": "| Navn | Aktiviteter | Varighet (t:m) | Lodd | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 14 | 09:49 | 2 | 198.0 | 2163 | . | Øivind Langeland | 14 | 06:07 | 2 | 129.699 | 1260 | . | Bjørn Intelhus | 6 | 05:58 | 2 | 98.5 | 2962 | . | Hans Christian Sundsfjord | 6 | 02:59 | 1 | 35.1 | 360 | . | Jeppe Ugland | 5 | 03:49 | 1 | 34.2 | 544 | . | Jonas Bergan | 2 | 02:47 | 1 | 32.299 | 218 | . | Bjørn Jarle Wiger | 2 | 01:13 | 0 | 23.9 | 298 | . | Thomas Grimeland | 9 | 03:28 | 1 | 20.3 | 260 | . | Ingvar Sørlien | 2 | 01:56 | 0 | 19.1 | 247 | . | Vegard Kvilesjø | 1 | 01:33 | 0 | 16.1 | 0 | . | Janne Hougen | 2 | 01:20 | 0 | 8.2 | 198 | . | Erlend Bø | 1 | 00:49 | 0 | 8.2 | 29 | . | Sven Bruun | 1 | 00:23 | 0 | 1.8 | 19 | . | Even Espelid | 2 | 01:17 | 0 | 0.0 | 0 | . | Per Ludvig Skjerven | 2 | 02:35 | 1 | 0.0 | 229 | . ",
+    "content": "| Navn | Aktiviteter | Varighet (t:m) | Lodd | Distanse (km) | Høydemeter | . | Thomas Rosenlund | 14 | 09:49 | 2 | 198.0 | 2163 | . | Øivind Langeland | 14 | 06:07 | 2 | 129.699 | 1260 | . | Bjørn Intelhus | 6 | 05:58 | 2 | 98.5 | 2962 | . | Jeppe Ugland | 6 | 04:33 | 1 | 42.4 | 591 | . | Hans Christian Sundsfjord | 6 | 02:59 | 1 | 35.1 | 360 | . | Jonas Bergan | 2 | 02:47 | 1 | 32.299 | 218 | . | Anna Naume Solem | 3 | 02:50 | 1 | 29.9 | 326 | . | Bjørn Jarle Wiger | 2 | 01:13 | 0 | 23.9 | 298 | . | Thomas Grimeland | 9 | 03:28 | 1 | 20.3 | 260 | . | Addi K | 2 | 01:35 | 0 | 20.1 | 329 | . | Ingvar Sørlien | 2 | 01:56 | 0 | 19.1 | 247 | . | Vegard Kvilesjø | 1 | 01:33 | 0 | 16.1 | 0 | . | Per Ludvig Skjerven | 3 | 03:12 | 1 | 11.3 | 402 | . | Janne Hougen | 2 | 01:20 | 0 | 8.2 | 198 | . | Erlend Bø | 1 | 00:49 | 0 | 8.2 | 29 | . | Sven Bruun | 1 | 00:23 | 0 | 1.8 | 19 | . | Even Espelid | 2 | 01:17 | 0 | 0.0 | 0 | . ",
     "url": "/strava-club/CurrentBuild/",
     
     "relUrl": "/"
