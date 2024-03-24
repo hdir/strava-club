@@ -69,10 +69,10 @@
     "week_number": 12,
     "athlete_name": "\u00d8ivind Langeland",
     "athlete_id": "133260",
-    "activities": 21,
-    "moving_time": 41460,
-    "distance": 235700,
-    "elevation_gain": 2370,
+    "activities": 23,
+    "moving_time": 45660,
+    "distance": 247500,
+    "elevation_gain": 2485,
     "tickets": 2,
     "team": ""
   },
@@ -146,10 +146,10 @@
     "week_number": 12,
     "athlete_name": "Sven Bruun",
     "athlete_id": "8131027",
-    "activities": 3,
-    "moving_time": 10860,
-    "distance": 21800,
-    "elevation_gain": 198,
+    "activities": 4,
+    "moving_time": 13920,
+    "distance": 24900,
+    "elevation_gain": 214,
     "tickets": 1,
     "team": ""
   },
@@ -179,9 +179,9 @@
     "week_number": 12,
     "athlete_name": "Addi K",
     "athlete_id": "26265081",
-    "activities": 4,
-    "moving_time": 15240,
-    "distance": 32500,
+    "activities": 5,
+    "moving_time": 17880,
+    "distance": 33800,
     "elevation_gain": 329,
     "tickets": 1,
     "team": ""
@@ -239,6 +239,17 @@
     "distance": 11700,
     "elevation_gain": 384,
     "tickets": 0,
+    "team": ""
+  },
+  "12-21261187": {
+    "week_number": 12,
+    "athlete_name": "Tea Elgsh\u00f8en",
+    "athlete_id": "21261187",
+    "activities": 7,
+    "moving_time": 31260,
+    "distance": 67700,
+    "elevation_gain": 871,
+    "tickets": 2,
     "team": ""
   }
 }
