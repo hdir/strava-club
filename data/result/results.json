@@ -251,5 +251,16 @@
     "elevation_gain": 871,
     "tickets": 2,
     "team": ""
+  },
+  "13-53738336": {
+    "week_number": 13,
+    "athlete_name": "Steinar Mathisen",
+    "athlete_id": "53738336",
+    "activities": 1,
+    "moving_time": 1680,
+    "distance": 4400,
+    "elevation_gain": 24,
+    "tickets": 0,
+    "team": ""
   }
 }
