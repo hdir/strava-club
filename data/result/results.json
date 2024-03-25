@@ -135,11 +135,11 @@
     "week_number": 12,
     "athlete_name": "Ingvar S\u00f8rlien",
     "athlete_id": "2407379",
-    "activities": 4,
-    "moving_time": 17940,
-    "distance": 56700,
-    "elevation_gain": 761,
-    "tickets": 0,
+    "activities": 5,
+    "moving_time": 25380,
+    "distance": 66100,
+    "elevation_gain": 835,
+    "tickets": 2,
     "team": ""
   },
   "12-8131027": {
@@ -399,10 +399,21 @@
     "week_number": 13,
     "athlete_name": "\u00d8ivind Langeland",
     "athlete_id": "133260",
+    "activities": 2,
+    "moving_time": 4620,
+    "distance": 19600,
+    "elevation_gain": 200,
+    "tickets": 0,
+    "team": ""
+  },
+  "13-2407379": {
+    "week_number": 13,
+    "athlete_name": "Ingvar S\u00f8rlien",
+    "athlete_id": "2407379",
     "activities": 1,
-    "moving_time": 1020,
-    "distance": 5600,
-    "elevation_gain": 12,
+    "moving_time": 3840,
+    "distance": 14600,
+    "elevation_gain": 274,
     "tickets": 0,
     "team": ""
   }
