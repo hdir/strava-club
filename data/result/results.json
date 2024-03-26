@@ -300,11 +300,11 @@
     "week_number": 13,
     "athlete_name": "Even Espelid",
     "athlete_id": "4778110",
-    "activities": 2,
-    "moving_time": 7380,
+    "activities": 3,
+    "moving_time": 13980,
     "distance": 49900,
     "elevation_gain": 559,
-    "tickets": 0,
+    "tickets": 1,
     "team": ""
   },
   "13-131861201": {
@@ -399,11 +399,11 @@
     "week_number": 13,
     "athlete_name": "\u00d8ivind Langeland",
     "athlete_id": "133260",
-    "activities": 4,
-    "moving_time": 6900,
-    "distance": 31000,
-    "elevation_gain": 297,
-    "tickets": 0,
+    "activities": 7,
+    "moving_time": 14100,
+    "distance": 73000,
+    "elevation_gain": 748,
+    "tickets": 1,
     "team": ""
   },
   "13-2407379": {
@@ -432,10 +432,21 @@
     "week_number": 13,
     "athlete_name": "Sven Bruun",
     "athlete_id": "8131027",
-    "activities": 1,
-    "moving_time": 1800,
-    "distance": 0,
-    "elevation_gain": 0,
+    "activities": 2,
+    "moving_time": 7320,
+    "distance": 9900,
+    "elevation_gain": 107,
+    "tickets": 0,
+    "team": ""
+  },
+  "13-26265081": {
+    "week_number": 13,
+    "athlete_name": "Addi K",
+    "athlete_id": "26265081",
+    "activities": 2,
+    "moving_time": 3060,
+    "distance": 4600,
+    "elevation_gain": 6,
     "tickets": 0,
     "team": ""
   }
