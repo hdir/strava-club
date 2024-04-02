@@ -482,5 +482,181 @@
     "elevation_gain": 438,
     "tickets": 2,
     "team": ""
+  },
+  "14-288479": {
+    "week_number": 14,
+    "athlete_name": "Thomas Rosenlund",
+    "athlete_id": "288479",
+    "activities": 4,
+    "moving_time": 15540,
+    "distance": 68000,
+    "elevation_gain": 823,
+    "tickets": 1,
+    "team": ""
+  },
+  "14-8849482": {
+    "week_number": 14,
+    "athlete_name": "\u00d8rjan Stene",
+    "athlete_id": "8849482",
+    "activities": 1,
+    "moving_time": 13260,
+    "distance": 103500,
+    "elevation_gain": 1216,
+    "tickets": 1,
+    "team": ""
+  },
+  "14-133260": {
+    "week_number": 14,
+    "athlete_name": "\u00d8ivind Langeland",
+    "athlete_id": "133260",
+    "activities": 2,
+    "moving_time": 10140,
+    "distance": 60300,
+    "elevation_gain": 709,
+    "tickets": 1,
+    "team": ""
+  },
+  "14-4040211": {
+    "week_number": 14,
+    "athlete_name": "Jonas Bergan",
+    "athlete_id": "4040211",
+    "activities": 2,
+    "moving_time": 9780,
+    "distance": 40900,
+    "elevation_gain": 414,
+    "tickets": 1,
+    "team": ""
+  },
+  "14-2407379": {
+    "week_number": 14,
+    "athlete_name": "Ingvar S\u00f8rlien",
+    "athlete_id": "2407379",
+    "activities": 1,
+    "moving_time": 7320,
+    "distance": 18400,
+    "elevation_gain": 156,
+    "tickets": 0,
+    "team": ""
+  },
+  "14-21261187": {
+    "week_number": 14,
+    "athlete_name": "Tea Elgsh\u00f8en",
+    "athlete_id": "21261187",
+    "activities": 1,
+    "moving_time": 6900,
+    "distance": 21100,
+    "elevation_gain": 201,
+    "tickets": 0,
+    "team": ""
+  },
+  "14-8131027": {
+    "week_number": 14,
+    "athlete_name": "Sven Bruun",
+    "athlete_id": "8131027",
+    "activities": 1,
+    "moving_time": 5940,
+    "distance": 4000,
+    "elevation_gain": 0,
+    "tickets": 0,
+    "team": ""
+  },
+  "14-3905395": {
+    "week_number": 14,
+    "athlete_name": "Erlend B\u00f8",
+    "athlete_id": "3905395",
+    "activities": 1,
+    "moving_time": 5220,
+    "distance": 31000,
+    "elevation_gain": 308,
+    "tickets": 0,
+    "team": ""
+  },
+  "14-9396005": {
+    "week_number": 14,
+    "athlete_name": "Bj\u00f8rn Intelhus",
+    "athlete_id": "9396005",
+    "activities": 2,
+    "moving_time": 4080,
+    "distance": 29400,
+    "elevation_gain": 332,
+    "tickets": 0,
+    "team": ""
+  },
+  "14-16855015": {
+    "week_number": 14,
+    "athlete_name": "Jeppe Ugland",
+    "athlete_id": "16855015",
+    "activities": 1,
+    "moving_time": 3720,
+    "distance": 12300,
+    "elevation_gain": 160,
+    "tickets": 0,
+    "team": ""
+  },
+  "14-131861201": {
+    "week_number": 14,
+    "athlete_name": "Anna Naume Solem",
+    "athlete_id": "131861201",
+    "activities": 1,
+    "moving_time": 3420,
+    "distance": 10000,
+    "elevation_gain": 277,
+    "tickets": 0,
+    "team": ""
+  },
+  "14-133271544": {
+    "week_number": 14,
+    "athlete_name": "Vegard Kvilesj\u00f8",
+    "athlete_id": "133271544",
+    "activities": 1,
+    "moving_time": 3060,
+    "distance": 10200,
+    "elevation_gain": 53,
+    "tickets": 0,
+    "team": ""
+  },
+  "14-15951168": {
+    "week_number": 14,
+    "athlete_name": "Thomas Grimeland",
+    "athlete_id": "15951168",
+    "activities": 1,
+    "moving_time": 2520,
+    "distance": 4000,
+    "elevation_gain": 73,
+    "tickets": 0,
+    "team": ""
+  },
+  "14-53738336": {
+    "week_number": 14,
+    "athlete_name": "Steinar Mathisen",
+    "athlete_id": "53738336",
+    "activities": 1,
+    "moving_time": 2340,
+    "distance": 7000,
+    "elevation_gain": 76,
+    "tickets": 0,
+    "team": ""
+  },
+  "14-26265081": {
+    "week_number": 14,
+    "athlete_name": "Addi K",
+    "athlete_id": "26265081",
+    "activities": 1,
+    "moving_time": 2160,
+    "distance": 7000,
+    "elevation_gain": 107,
+    "tickets": 0,
+    "team": ""
+  },
+  "14-21496061": {
+    "week_number": 14,
+    "athlete_name": "Bj\u00f8rn Jarle Wiger",
+    "athlete_id": "21496061",
+    "activities": 1,
+    "moving_time": 1980,
+    "distance": 11900,
+    "elevation_gain": 113,
+    "tickets": 0,
+    "team": ""
   }
 }
