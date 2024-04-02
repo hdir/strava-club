@@ -88,7 +88,7 @@ class Transformer:
     def calculate_tickets(self, moving_time_seconds):
         """Method to translate activity minutes into tickets"""
         try:
-            if moving_time_seconds/60 in range(150, 299):
+            if moving_time_seconds/60 in range(150, 300):
                 tickets = 1
             elif moving_time_seconds/60 >= 300:
                 tickets = 2
