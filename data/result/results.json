@@ -586,10 +586,10 @@
     "week_number": 14,
     "athlete_name": "Jeppe Ugland",
     "athlete_id": "16855015",
-    "activities": 3,
-    "moving_time": 9540,
-    "distance": 26100,
-    "elevation_gain": 286,
+    "activities": 4,
+    "moving_time": 13080,
+    "distance": 31100,
+    "elevation_gain": 393,
     "tickets": 1,
     "team": ""
   },
@@ -679,6 +679,17 @@
     "distance": 71800,
     "elevation_gain": 621,
     "tickets": 1,
+    "team": ""
+  },
+  "14-134470352": {
+    "week_number": 14,
+    "athlete_name": "\u00d8yvin Jakobsen",
+    "athlete_id": "134470352",
+    "activities": 2,
+    "moving_time": 5640,
+    "distance": 20500,
+    "elevation_gain": 0,
+    "tickets": 0,
     "team": ""
   }
 }
