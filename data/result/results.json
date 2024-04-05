@@ -509,10 +509,10 @@
     "week_number": 14,
     "athlete_name": "\u00d8ivind Langeland",
     "athlete_id": "133260",
-    "activities": 12,
-    "moving_time": 25320,
-    "distance": 133000,
-    "elevation_gain": 1428,
+    "activities": 13,
+    "moving_time": 26220,
+    "distance": 138700,
+    "elevation_gain": 1440,
     "tickets": 2,
     "team": ""
   },
@@ -586,11 +586,11 @@
     "week_number": 14,
     "athlete_name": "Jeppe Ugland",
     "athlete_id": "16855015",
-    "activities": 6,
-    "moving_time": 16920,
-    "distance": 33600,
-    "elevation_gain": 437,
-    "tickets": 1,
+    "activities": 7,
+    "moving_time": 19920,
+    "distance": 37700,
+    "elevation_gain": 535,
+    "tickets": 2,
     "team": ""
   },
   "14-131861201": {
@@ -777,6 +777,50 @@
     "moving_time": 2580,
     "distance": 700,
     "elevation_gain": 3,
+    "tickets": 0,
+    "team": ""
+  },
+  "13-16726353": {
+    "week_number": 13,
+    "athlete_name": "Kirsti Strand",
+    "athlete_id": "16726353",
+    "activities": 4,
+    "moving_time": 24840,
+    "distance": 61200,
+    "elevation_gain": 1519,
+    "tickets": 2,
+    "team": ""
+  },
+  "13-49187612": {
+    "week_number": 13,
+    "athlete_name": "Linda Nisja",
+    "athlete_id": "49187612",
+    "activities": 4,
+    "moving_time": 24480,
+    "distance": 91600,
+    "elevation_gain": 1747,
+    "tickets": 2,
+    "team": ""
+  },
+  "14-16726353": {
+    "week_number": 14,
+    "athlete_name": "Kirsti Strand",
+    "athlete_id": "16726353",
+    "activities": 2,
+    "moving_time": 8400,
+    "distance": 19900,
+    "elevation_gain": 420,
+    "tickets": 0,
+    "team": ""
+  },
+  "14-49187612": {
+    "week_number": 14,
+    "athlete_name": "Linda Nisja",
+    "athlete_id": "49187612",
+    "activities": 1,
+    "moving_time": 4740,
+    "distance": 22500,
+    "elevation_gain": 284,
     "tickets": 0,
     "team": ""
   }
