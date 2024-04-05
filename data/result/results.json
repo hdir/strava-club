@@ -487,10 +487,10 @@
     "week_number": 14,
     "athlete_name": "Thomas Rosenlund",
     "athlete_id": "288479",
-    "activities": 14,
-    "moving_time": 36540,
-    "distance": 159500,
-    "elevation_gain": 2306,
+    "activities": 15,
+    "moving_time": 38640,
+    "distance": 173100,
+    "elevation_gain": 2392,
     "tickets": 2,
     "team": ""
   },
@@ -685,9 +685,9 @@
     "week_number": 14,
     "athlete_name": "\u00d8yvin Jakobsen",
     "athlete_id": "134470352",
-    "activities": 4,
-    "moving_time": 9840,
-    "distance": 44500,
+    "activities": 5,
+    "moving_time": 11940,
+    "distance": 56500,
     "elevation_gain": 0,
     "tickets": 1,
     "team": ""
@@ -707,11 +707,11 @@
     "week_number": 13,
     "athlete_name": "Eirik Riiser",
     "athlete_id": "77487903",
-    "activities": 4,
-    "moving_time": 8400,
-    "distance": 18200,
+    "activities": 5,
+    "moving_time": 13680,
+    "distance": 18800,
     "elevation_gain": 340,
-    "tickets": 0,
+    "tickets": 1,
     "team": ""
   },
   "14-77487903": {
@@ -723,6 +723,61 @@
     "distance": 14300,
     "elevation_gain": 118,
     "tickets": 1,
+    "team": ""
+  },
+  "13-68356466": {
+    "week_number": 13,
+    "athlete_name": "Idunn L\u00f8vseth Kavlie",
+    "athlete_id": "68356466",
+    "activities": 6,
+    "moving_time": 86040,
+    "distance": 132900,
+    "elevation_gain": 4305,
+    "tickets": 2,
+    "team": ""
+  },
+  "13-65995567": {
+    "week_number": 13,
+    "athlete_name": "Kenneth Birkeli",
+    "athlete_id": "65995567",
+    "activities": 6,
+    "moving_time": 25200,
+    "distance": 55300,
+    "elevation_gain": 1048,
+    "tickets": 2,
+    "team": ""
+  },
+  "14-65995567": {
+    "week_number": 14,
+    "athlete_name": "Kenneth Birkeli",
+    "athlete_id": "65995567",
+    "activities": 4,
+    "moving_time": 10920,
+    "distance": 21700,
+    "elevation_gain": 82,
+    "tickets": 1,
+    "team": ""
+  },
+  "14-68356466": {
+    "week_number": 14,
+    "athlete_name": "Idunn L\u00f8vseth Kavlie",
+    "athlete_id": "68356466",
+    "activities": 1,
+    "moving_time": 3600,
+    "distance": 6500,
+    "elevation_gain": 0,
+    "tickets": 0,
+    "team": ""
+  },
+  "14-1810801": {
+    "week_number": 14,
+    "athlete_name": "Janne Hougen",
+    "athlete_id": "1810801",
+    "activities": 2,
+    "moving_time": 2580,
+    "distance": 700,
+    "elevation_gain": 3,
+    "tickets": 0,
     "team": ""
   }
 }
