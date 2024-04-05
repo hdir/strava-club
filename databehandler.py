@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
 """Module to process data from Strava web scraper"""
 
+import configparser
+import os
 import csv
 import json
 from datetime import datetime
-
-# Configuration of global variables
-CSV_FILE = "data/skrap/club_leaderboard.csv"
-RESULTS_FILE = "data/result/results.json"
-CAMPAIGN_WEEK_START = 12
-CAMPAIGN_WEEK_STOP = 13
 
 
 class Transformer:
@@ -80,7 +76,7 @@ class Transformer:
             del self.datastore[key]
 
         print(f'{records_before_purge - len(self.datastore)}'
-              f' were outside campaign period and have been deleted')
+              f' were outside campaign period and have been omitted')
 
     def get_week_number(self, date_str):
         """Method to translate weekday to week number"""
@@ -92,7 +88,7 @@ class Transformer:
     def calculate_tickets(self, moving_time_seconds):
         """Method to translate activity minutes into tickets"""
         try:
-            if moving_time_seconds/60 in range(150, 299):
+            if moving_time_seconds/60 in range(150, 300):
                 tickets = 1
             elif moving_time_seconds/60 >= 300:
                 tickets = 2
@@ -108,6 +104,17 @@ class Transformer:
 
 if __name__ == "__main__":
 
+    # Configuration of global variables
+    config = configparser.ConfigParser()
+    config.read(os.path.join(os.getcwd(), 'settings', 'config.ini'),
+                encoding='utf-8')
+
+    CSV_FILE = config['CAMPAIGN'].get('CSV_FILE')
+    RESULTS_FILE = config['CAMPAIGN'].get('RESULTS_FILE')
+    CAMPAIGN_WEEK_START = config['CAMPAIGN'].getint('CAMPAIGN_WEEK_START')
+    CAMPAIGN_WEEK_STOP = config['CAMPAIGN'].getint('CAMPAIGN_WEEK_STOP')
+
+    # Program run
     transformer = Transformer()
     transformer.read_datastore()
     transformer.process_csv()
