@@ -1054,5 +1054,27 @@
     "elevation_gain": 81,
     "tickets": 0,
     "team": ""
+  },
+  "14-1781965": {
+    "week_number": 14,
+    "athlete_name": "Per-Christian Wand\u00e5s",
+    "athlete_id": "1781965",
+    "activities": 5,
+    "moving_time": 9420,
+    "distance": 11200,
+    "elevation_gain": 76,
+    "tickets": 1,
+    "team": ""
+  },
+  "14-75217469": {
+    "week_number": 14,
+    "athlete_name": "Marie Hagle",
+    "athlete_id": "75217469",
+    "activities": 4,
+    "moving_time": 8460,
+    "distance": 15900,
+    "elevation_gain": 274,
+    "tickets": 0,
+    "team": ""
   }
 }
