@@ -1076,5 +1076,16 @@
     "elevation_gain": 274,
     "tickets": 0,
     "team": ""
+  },
+  "14-7840662": {
+    "week_number": 14,
+    "athlete_name": "Linda Haugen",
+    "athlete_id": "7840662",
+    "activities": 1,
+    "moving_time": 6960,
+    "distance": 13200,
+    "elevation_gain": 267,
+    "tickets": 0,
+    "team": ""
   }
 }
