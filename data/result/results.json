@@ -1098,5 +1098,38 @@
     "elevation_gain": 0,
     "tickets": 1,
     "team": ""
+  },
+  "14-132994973": {
+    "week_number": 14,
+    "athlete_name": "Eli \u00c5sg\u00e5rd",
+    "athlete_id": "132994973",
+    "activities": 15,
+    "moving_time": 41100,
+    "distance": 23900,
+    "elevation_gain": 558,
+    "tickets": 2,
+    "team": ""
+  },
+  "14-133020535": {
+    "week_number": 14,
+    "athlete_name": "Guro Smedshaug",
+    "athlete_id": "133020535",
+    "activities": 2,
+    "moving_time": 18660,
+    "distance": 47600,
+    "elevation_gain": 993,
+    "tickets": 2,
+    "team": ""
+  },
+  "14-939211": {
+    "week_number": 14,
+    "athlete_name": "Martha Hynne",
+    "athlete_id": "939211",
+    "activities": 4,
+    "moving_time": 7260,
+    "distance": 14000,
+    "elevation_gain": 290,
+    "tickets": 0,
+    "team": ""
   }
 }
