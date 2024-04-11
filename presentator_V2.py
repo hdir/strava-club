@@ -208,7 +208,7 @@ class Template():
                     <img src="assets/images/norge.jpg" style="height: 30px;">
                     {round(int(self.results.aggregated_summary['distance'])/2318, 1)} ganger Lindesnes - Nordkapp&nbsp&nbsp&nbsp&nbsp
                     <img src="assets/images/verden.png" style="height: 25px;">
-                    {round(int(self.results.aggregated_summary['distance'])/40075, 1)} ganger Rundt jorden
+                    {round(int(self.results.aggregated_summary['distance'])/40075, 1)} ganger rundt jorden
                     </td></tr>
             </table>"""
 
