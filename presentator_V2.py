@@ -203,6 +203,8 @@ class Template():
                     <td>📏 {round(self.results.aggregated_summary['distance'], 1)} km</td>
                     <td>🧗 {self.results.aggregated_summary['elevation_gain']} høydemeter</td>
                     <td>🌱 {self.results.aggregated_summary['co2_saved']} kg CO2 spart</td></tr>
+                <tr>
+                    <td colspan="3" style="text-align: center">Tekst</td></tr>
             </table>"""
 
         return aggregated_results_table
