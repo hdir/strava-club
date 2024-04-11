@@ -1169,10 +1169,10 @@
     "week_number": 15,
     "athlete_name": "\u00d8ivind Langeland",
     "athlete_id": "133260",
-    "activities": 11,
-    "moving_time": 21600,
-    "distance": 129699,
-    "elevation_gain": 1412,
+    "activities": 12,
+    "moving_time": 22380,
+    "distance": 135200,
+    "elevation_gain": 1424,
     "tickets": 2,
     "team": ""
   },
@@ -1411,10 +1411,10 @@
     "week_number": 15,
     "athlete_name": "Vegard Nore",
     "athlete_id": "1807355",
-    "activities": 1,
-    "moving_time": 4260,
-    "distance": 22500,
-    "elevation_gain": 565,
+    "activities": 4,
+    "moving_time": 8100,
+    "distance": 43900,
+    "elevation_gain": 864,
     "tickets": 0,
     "team": ""
   },
@@ -1558,6 +1558,17 @@
     "moving_time": 1200,
     "distance": 3100,
     "elevation_gain": 51,
+    "tickets": 0,
+    "team": ""
+  },
+  "15-16726353": {
+    "week_number": 15,
+    "athlete_name": "Kirsti Strand",
+    "athlete_id": "16726353",
+    "activities": 1,
+    "moving_time": 3780,
+    "distance": 6800,
+    "elevation_gain": 197,
     "tickets": 0,
     "team": ""
   }
