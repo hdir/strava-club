@@ -82,7 +82,7 @@ class Datastore():
         with open(RESULTS_FILE, 'r', encoding='utf-8') as file:
             self.master_data = json.load(file)
 
-        self.master_data = toolbox.sort_dictionary(self.master_data, "distance")
+        self.master_data = toolbox.sort_dictionary(self.master_data, "moving_time")
 
 
 class Results():
@@ -125,7 +125,7 @@ class Results():
             athlete_summary[athlete_name]['elevation_gain'] += value['elevation_gain']
             athlete_summary[athlete_name]['tickets'] += value['tickets']
 
-        athlete_summary = toolbox.sort_dictionary(athlete_summary, "distance")
+        athlete_summary = toolbox.sort_dictionary(athlete_summary, "moving_time")
 
         return athlete_summary
 

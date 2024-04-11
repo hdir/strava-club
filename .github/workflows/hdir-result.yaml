@@ -14,7 +14,7 @@ env:
 on:
   # Runs every day at 10, 17 and 23
   schedule:
-    - cron: '0 08,10,17,23 * * *'
+    - cron: '0 07,09,16,22 * * *'
     #- cron: '7 10,18,23 * * *'
     #  - cron: "30 20 * * MON,THU"
 
@@ -102,7 +102,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-          destination_dir: ./CurrentBuild
+          destination_dir: ./vaar24
 
 #      - name: Deploy gh-pages
 #        uses: peaceiris/actions-gh-pages@v3
