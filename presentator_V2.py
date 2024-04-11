@@ -204,7 +204,12 @@ class Template():
                     <td>🧗 {self.results.aggregated_summary['elevation_gain']} høydemeter</td>
                     <td>🌱 {self.results.aggregated_summary['co2_saved']} kg CO2 spart</td></tr>
                 <tr>
-                    <td colspan="3" style="text-align: center">Tekst</td></tr>
+                    <td colspan="3" style="text-align: center; font-size: 19px">
+                    <img src="assets/images/norge.jpg" style="height: 30px;">
+                    {round(int(self.results.aggregated_summary['distance'])/2318, 1)} ganger Lindesnes - Nordkapp&nbsp&nbsp&nbsp&nbsp
+                    <img src="assets/images/verden.png" style="height: 25px;">
+                    {round(int(self.results.aggregated_summary['distance'])/40075, 1)} ganger Rundt jorden
+                    </td></tr>
             </table>"""
 
         return aggregated_results_table
