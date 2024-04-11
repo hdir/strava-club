@@ -200,9 +200,9 @@ class Template():
                     <td>🏁 {self.results.aggregated_summary['activities']} aktiviteter</td>
                     <td>⏳ {toolbox.format_duration(self.results.aggregated_summary['moving_time'])} (t:m)</td></tr>
                 <tr>
-                    <td>📏 {round(self.results.aggregated_summary['distance'], 1)} km</td>
+                    <td>📏 {int(self.results.aggregated_summary['distance'])} km</td>
                     <td>🧗 {self.results.aggregated_summary['elevation_gain']} høydemeter</td>
-                    <td>🌱 {self.results.aggregated_summary['co2_saved']} kg CO2 spart</td></tr>
+                    <td>🌱 {int(self.results.aggregated_summary['co2_saved'])} kg CO2 spart</td></tr>
                 <tr>
                     <td colspan="3" style="text-align: center; font-size: 19px">
                     <img src="assets/images/norge.jpg" style="height: 30px;">
