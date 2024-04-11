@@ -10,7 +10,7 @@ Informasjon om aktivitetskampanjen i helsedirektoratet Vår 2024.
 
 ## Informasjon om kampanjen
 
-Kampanjen starter 15. april 2024 og avsluttes 9. juni 2024. Det blir trekning av premier underveis.
+Kampanjen starter 15. april 2024 og avsluttes 9. juni 2024. Det blir trekning av premier underveis. Resultatsiden oppdateres fire ganger i døgnet (kl 09, 11, 18 og 00) fra Strava.
 
 1. Bli medlem i [Helsedirektoratets klubb](https://www.strava.com/clubs/754665) på Strava.
 2. Registrere aktiviteter i Strava, enten automatisk eller manuelt i Strava appen(*).
