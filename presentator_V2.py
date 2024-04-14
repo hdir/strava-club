@@ -206,10 +206,8 @@ class Template():
                 <tr>
                     <td colspan="3" style="text-align: center; font-size: 19px">
                     <img src="assets/images/norge.jpg" style="height: 30px;">
-                    {round(int(self.results.aggregated_summary['distance'])/2318, 1)} ganger Lindesnes - Nordkapp&nbsp&nbsp&nbsp&nbsp
-                    <img src="assets/images/verden.png" style="height: 25px;">
-                    {round(int(self.results.aggregated_summary['distance'])/40075, 1)} ganger rundt jorden
-                    </td></tr>
+                    <tr> <td colspan="2" style="text-align: center; font-size: 19px"> <img src="assets/images/norge.jpg" style="height: 30px;"> {round(int(self.results.aggregated_summary['distance'])/2318, 1)} x Lindesnes - Nordkapp</td>
+                    <td style="text-align: center; font-size: 19px"> <img src="assets/images/verden.png" style="height: 25px;"> {round(int(self.results.aggregated_summary['distance'])/40075, 1)} x rundt jorden </td></tr>
             </table>"""
 
         return aggregated_results_table
