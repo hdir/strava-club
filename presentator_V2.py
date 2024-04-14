@@ -204,8 +204,8 @@ class Template():
                     <td colspan="2">🧗 {self.results.aggregated_summary['elevation_gain']} høydemeter</td>
                     <td colspan="2">🌱 {int(self.results.aggregated_summary['co2_saved'])} kg CO2 spart</td></tr>
                 <tr>
-                    <td colspan="3"><img src="assets/images/norge.jpg" style="height: 16px;"> {round(int(self.results.aggregated_summary['distance'])/2318, 1)} x Lindesnes - Nordkapp</td>
-                    <td colspan="3"><img src="assets/images/verden.png" style="height: 16px;"> {round(int(self.results.aggregated_summary['distance'])/40075, 1)} x rundt jorden </td></tr>
+                    <td colspan="3"><img src="assets/images/norge.jpg" style="height: 20px;"> {round(int(self.results.aggregated_summary['distance'])/2318, 1)} x Lindesnes - Nordkapp</td>
+                    <td colspan="3"><img src="assets/images/verden.png" style="height: 20px;"> {round(int(self.results.aggregated_summary['distance'])/40075, 1)} x rundt jorden </td></tr>
             </table>"""
 
         return aggregated_results_table
