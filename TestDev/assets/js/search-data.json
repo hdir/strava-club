@@ -8,7 +8,7 @@
   },"1": {
     "doc": "Resultater Alle deltakere",
     "title": "Aggregerte data",
-    "content": "| 👥 0 kolleger | 🏁 0 aktiviteter | ⏳ 00:00 (t:m) | . | 📏 0 km | 🧗 0 høydemeter | 🌱 0.0 kg CO2 spart | . ",
+    "content": "| 👥 0 kolleger | 🏁 0 aktiviteter | ⏳ 00:00 (t:m) | . | 📏 0 km | 🧗 0 høydemeter | 🌱 0 kg CO2 spart | . | 0.0 x Lindesnes - Nordkapp | 0.0 x rundt jorden | . &lt;/table&gt; &lt;/div&gt; ",
     "url": "/strava-club/vaar24/",
     
     "relUrl": "/"
@@ -29,7 +29,7 @@
   },"4": {
     "doc": "Resultater Alle deltakere",
     "title": "Resultater hele perioden",
-    "content": "| Navn | Aktiviteter | Varighet (t:m) | Lodd | Distanse (km) | Høydemeter | . ",
+    "content": "| Navn | Aktiviteter | Varighet (t:m) | Lodd | Distanse (km) | Høydemeter | . | . ",
     "url": "/strava-club/vaar24/",
     
     "relUrl": "/"
