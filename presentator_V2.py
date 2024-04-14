@@ -196,16 +196,16 @@ class Template():
         """Method to create html table for aggregated results"""
         aggregated_results_table = f"""<table class='table-aggregated'>
                 <tr>
-                    <td>👥 {self.results.aggregated_summary['athletes']} kolleger</td>
-                    <td>🏁 {self.results.aggregated_summary['activities']} aktiviteter</td>
-                    <td>⏳ {toolbox.format_duration(self.results.aggregated_summary['moving_time'])} (t:m)</td></tr>
+                    <td colspan="2">👥 {self.results.aggregated_summary['athletes']} kolleger</td>
+                    <td colspan="2">🏁 {self.results.aggregated_summary['activities']} aktiviteter</td>
+                    <td colspan="2">⏳ {toolbox.format_duration(self.results.aggregated_summary['moving_time'])} (t:m)</td></tr>
                 <tr>
-                    <td>📏 {int(self.results.aggregated_summary['distance'])} km</td>
-                    <td>🧗 {self.results.aggregated_summary['elevation_gain']} høydemeter</td>
-                    <td>🌱 {int(self.results.aggregated_summary['co2_saved'])} kg CO2 spart</td></tr>
+                    <td colspan="2">📏 {int(self.results.aggregated_summary['distance'])} km</td>
+                    <td colspan="2">🧗 {self.results.aggregated_summary['elevation_gain']} høydemeter</td>
+                    <td colspan="2">🌱 {int(self.results.aggregated_summary['co2_saved'])} kg CO2 spart</td></tr>
                 <tr>
-                    <td colspan="2" style="text-align: center; font-size: 19px"> <img src="assets/images/norge.jpg" style="height: 30px;"> {round(int(self.results.aggregated_summary['distance'])/2318, 1)} x Lindesnes - Nordkapp</td>
-                    <td style="text-align: center; font-size: 19px"> <img src="assets/images/verden.png" style="height: 25px;"> {round(int(self.results.aggregated_summary['distance'])/40075, 1)} x rundt jorden </td></tr>
+                    <td colspan="3"><img src="assets/images/norge.jpg" style="height: 16px;"> {round(int(self.results.aggregated_summary['distance'])/2318, 1)} x Lindesnes - Nordkapp</td>
+                    <td colspan="3"><img src="assets/images/verden.png" style="height: 16px;"> {round(int(self.results.aggregated_summary['distance'])/40075, 1)} x rundt jorden </td></tr>
             </table>"""
 
         return aggregated_results_table
