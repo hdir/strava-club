@@ -1,1 +1,167 @@
-{}
+{
+  "16-40992955": {
+    "week_number": 16,
+    "athlete_name": "Sara Jovic",
+    "athlete_id": "40992955",
+    "activities": 1,
+    "moving_time": 3000,
+    "distance": 13300,
+    "elevation_gain": 214,
+    "tickets": 0,
+    "team": ""
+  },
+  "16-134617349": {
+    "week_number": 16,
+    "athlete_name": "Kine Markman",
+    "athlete_id": "134617349",
+    "activities": 1,
+    "moving_time": 2880,
+    "distance": 17000,
+    "elevation_gain": 172,
+    "tickets": 0,
+    "team": ""
+  },
+  "16-288479": {
+    "week_number": 16,
+    "athlete_name": "Thomas Rosenlund",
+    "athlete_id": "288479",
+    "activities": 1,
+    "moving_time": 2460,
+    "distance": 20300,
+    "elevation_gain": 172,
+    "tickets": 0,
+    "team": ""
+  },
+  "16-939211": {
+    "week_number": 16,
+    "athlete_name": "Martha Hynne",
+    "athlete_id": "939211",
+    "activities": 1,
+    "moving_time": 2400,
+    "distance": 5700,
+    "elevation_gain": 30,
+    "tickets": 0,
+    "team": ""
+  },
+  "16-133020535": {
+    "week_number": 16,
+    "athlete_name": "Guro Smedshaug",
+    "athlete_id": "133020535",
+    "activities": 2,
+    "moving_time": 2220,
+    "distance": 11800,
+    "elevation_gain": 116,
+    "tickets": 0,
+    "team": ""
+  },
+  "16-20108465": {
+    "week_number": 16,
+    "athlete_name": "Heidi Amundsen",
+    "athlete_id": "20108465",
+    "activities": 1,
+    "moving_time": 1980,
+    "distance": 5000,
+    "elevation_gain": 79,
+    "tickets": 0,
+    "team": ""
+  },
+  "16-134470352": {
+    "week_number": 16,
+    "athlete_name": "\u00d8yvin Jakobsen",
+    "athlete_id": "134470352",
+    "activities": 1,
+    "moving_time": 1800,
+    "distance": 12000,
+    "elevation_gain": 139,
+    "tickets": 0,
+    "team": ""
+  },
+  "16-134586378": {
+    "week_number": 16,
+    "athlete_name": "Astrid Bjerk\u00e5s",
+    "athlete_id": "134586378",
+    "activities": 1,
+    "moving_time": 1740,
+    "distance": 9000,
+    "elevation_gain": 87,
+    "tickets": 0,
+    "team": ""
+  },
+  "16-1781965": {
+    "week_number": 16,
+    "athlete_name": "Per-Christian Wand\u00e5s",
+    "athlete_id": "1781965",
+    "activities": 1,
+    "moving_time": 1680,
+    "distance": 0,
+    "elevation_gain": 0,
+    "tickets": 0,
+    "team": ""
+  },
+  "16-15951168": {
+    "week_number": 16,
+    "athlete_name": "Thomas Grimeland",
+    "athlete_id": "15951168",
+    "activities": 1,
+    "moving_time": 1260,
+    "distance": 2500,
+    "elevation_gain": 0,
+    "tickets": 0,
+    "team": ""
+  },
+  "16-1807355": {
+    "week_number": 16,
+    "athlete_name": "Vegard Nore",
+    "athlete_id": "1807355",
+    "activities": 1,
+    "moving_time": 1200,
+    "distance": 6700,
+    "elevation_gain": 110,
+    "tickets": 0,
+    "team": ""
+  },
+  "16-16063771": {
+    "week_number": 16,
+    "athlete_name": "Nina Wavik Ytterstad",
+    "athlete_id": "16063771",
+    "activities": 1,
+    "moving_time": 840,
+    "distance": 5200,
+    "elevation_gain": 61,
+    "tickets": 0,
+    "team": ""
+  },
+  "16-133260": {
+    "week_number": 16,
+    "athlete_name": "\u00d8ivind Langeland",
+    "athlete_id": "133260",
+    "activities": 1,
+    "moving_time": 720,
+    "distance": 5400,
+    "elevation_gain": 12,
+    "tickets": 0,
+    "team": ""
+  },
+  "16-16726353": {
+    "week_number": 16,
+    "athlete_name": "Kirsti Strand",
+    "athlete_id": "16726353",
+    "activities": 1,
+    "moving_time": 600,
+    "distance": 3100,
+    "elevation_gain": 6,
+    "tickets": 0,
+    "team": ""
+  },
+  "16-134856125": {
+    "week_number": 16,
+    "athlete_name": "Anita Lorck",
+    "athlete_id": "134856125",
+    "activities": 1,
+    "moving_time": 480,
+    "distance": 700,
+    "elevation_gain": 18,
+    "tickets": 0,
+    "team": ""
+  }
+}
