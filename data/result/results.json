@@ -185,5 +185,27 @@
     "elevation_gain": 104,
     "tickets": 0,
     "team": ""
+  },
+  "16-8849482": {
+    "week_number": 16,
+    "athlete_name": "\u00d8rjan Stene",
+    "athlete_id": "8849482",
+    "activities": 1,
+    "moving_time": 3720,
+    "distance": 33300,
+    "elevation_gain": 151,
+    "tickets": 0,
+    "team": ""
+  },
+  "16-2094125": {
+    "week_number": 16,
+    "athlete_name": "Annebeth Askevold",
+    "athlete_id": "2094125",
+    "activities": 1,
+    "moving_time": 960,
+    "distance": 4900,
+    "elevation_gain": 35,
+    "tickets": 0,
+    "team": ""
   }
 }
