@@ -163,5 +163,27 @@
     "elevation_gain": 18,
     "tickets": 0,
     "team": ""
+  },
+  "16-58952107": {
+    "week_number": 16,
+    "athlete_name": "Hanne Lehn",
+    "athlete_id": "58952107",
+    "activities": 1,
+    "moving_time": 2940,
+    "distance": 0,
+    "elevation_gain": 0,
+    "tickets": 0,
+    "team": ""
+  },
+  "16-21496061": {
+    "week_number": 16,
+    "athlete_name": "Bj\u00f8rn Jarle Wiger",
+    "athlete_id": "21496061",
+    "activities": 1,
+    "moving_time": 1800,
+    "distance": 11900,
+    "elevation_gain": 104,
+    "tickets": 0,
+    "team": ""
   }
 }
