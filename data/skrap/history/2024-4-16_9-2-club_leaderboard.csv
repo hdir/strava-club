@@ -1,0 +1,89 @@
+club_id,club_name,club_activity_type,club_location,leaderboard_week,leaderboard_date_start,leaderboard_date_end,rank,athlete_id,athlete_name,activities,moving_time,distance,elevation_gain
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,1,4778110,Even Espelid,10,51120.0,329200.0,2853.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,2,288479,Thomas Rosenlund,20,49500.0,269400.0,3243.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,3,133260,Øivind Langeland,18,41220.0,183300.0,2068.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,4,40992955,Sara Jovic,19,37560.0,129500.0,1835.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,5,4040211,Jonas Bergan,8,37140.0,237000.0,1940.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,6,2407379,Ingvar Sørlien,7,29340.0,82300.0,972.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,7,9396005,Bjørn Intelhus,6,28440.0,174200.0,2171.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,8,8849482,Ørjan Stene,2,28320.0,216100.0,2674.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,9,1807355,Vegard Nore,9,27060.0,165800.0,2162.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,10,1781965,Per-Christian Wandås,9,25440.0,30000.0,730.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,11,21261187,Tea Elgshøen,6,25380.0,38800.0,301.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,12,21496061,Bjørn Jarle Wiger,8,24960.0,153800.0,1758.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,13,134856125,Anita Lorck,9,24780.0,4900.0,54.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,14,65995567,Kenneth Birkeli,6,24540.0,59200.0,1089.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,15,16063771,Nina Wavik Ytterstad,3,24120.0,76400.0,880.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,16,16855015,Jeppe Ugland,7,23700.0,56500.0,848.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,17,131861201,Anna Naume Solem,7,20160.0,24800.0,523.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,18,20108465,Heidi Amundsen,8,19140.0,22400.0,351.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,19,15305367,Per Øivind Gaardsrud,2,18900.0,104300.0,1189.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,20,4550556,Knut Jønsrud,2,18240.0,118400.0,1806.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,21,58015292,Vegard Storsul Opdahl,5,18000.0,2500.0,160.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,22,77487903,Eirik Riiser,6,17940.0,30900.0,205.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,23,26265081,Addi K,5,17040.0,35000.0,301.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,24,134617349,Kine Markman,6,16920.0,72000.0,804.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,25,39010145,Maren Jeanette,8,16440.0,19000.0,229.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,26,49187612,Linda Nisja,4,15840.0,29000.0,536.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,27,16726353,Kirsti Strand,3,13260.0,28100.0,591.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,28,71873694,Hans Christian Sundsfjord,5,12480.0,45700.0,498.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,29,53738336,Steinar Mathisen,5,11640.0,25000.0,475.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,30,8131027,Sven Bruun,3,11520.0,34000.0,547.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,31,2094125,Annebeth Askevold,2,10800.0,62700.0,796.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,32,68356466,Idunn Løvseth Kavlie,3,10680.0,18800.0,612.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,33,47193294,Jarle Hersvik,5,9780.0,28700.0,231.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,34,132994973,Eli Åsgård,6,9780.0,6600.0,143.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,35,134594168,Vibeke Herikstad,1,9720.0,0.0,0.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,36,15951168,Thomas Grimeland,7,9660.0,14100.0,173.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,37,7840662,Linda Haugen,1,9480.0,15700.0,387.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,38,3450542,Per Ludvig Skjerven,2,8640.0,23900.0,998.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,39,134470352,Øyvin Jakobsen,4,8280.0,49100.0,609.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,40,134599207,Iryna A.,2,8100.0,4000.0,0.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,41,83867036,Jostein Ven,1,6840.0,35000.0,497.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,42,3905395,Erlend Bø,2,6300.0,6000.0,8.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,43,133271544,Vegard Kvilesjø,2,4920.0,12600.0,271.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,44,75217469,Marie Hagle,2,3960.0,11400.0,176.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,45,105931659,Helene Normann,2,3840.0,9600.0,164.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,46,939211,Martha Hynne,2,3660.0,7700.0,114.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,47,42318335,Sigvor Melve,3,3180.0,9000.0,131.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,48,134586378,Astrid Bjerkås,1,3000.0,4400.0,14.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,49,14908629,Silja Angellsen,2,2340.0,5900.0,42.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-08 to 2024-04-14,2024-04-08,2024-04-14,50,134586802,Håvard Dalheim,2,2340.0,12300.0,82.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,1,8849482,Ørjan Stene,2,12240.0,93600.0,1122.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,2,40992955,Sara Jovic,4,11880.0,39900.0,556.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,3,134617349,Kine Markman,4,11520.0,52100.0,590.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,4,135274801,Kathrine Syse,3,10500.0,19100.0,123.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,5,288479,Thomas Rosenlund,3,7860.0,33900.0,319.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,6,74913472,Nina Nina Bjørlykke,4,7680.0,21200.0,187.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,7,16726353,Kirsti Strand,5,7500.0,13000.0,181.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,8,133020535,Guro Smedshaug,4,7320.0,35800.0,402.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,9,15386291,Bjarte Aksnes,1,7200.0,9400.0,0.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,10,2094125,Annebeth Askevold,5,7080.0,28600.0,306.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,11,4040211,Jonas Bergan,1,6900.0,54100.0,307.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,12,4778110,Even Espelid,1,6780.0,55200.0,454.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,13,134470352,Øyvin Jakobsen,3,6240.0,36800.0,436.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,14,134856125,Anita Lorck,2,6120.0,9100.0,269.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,15,47193294,Jarle Hersvik,3,6060.0,17900.0,71.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,16,21261187,Tea Elgshøen,1,6060.0,18200.0,315.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,17,16063771,Nina Wavik Ytterstad,4,5760.0,16100.000000000002,220.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,18,71873694,Hans Christian Sundsfjord,2,4980.0,12700.0,183.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,19,49187612,Linda Nisja,1,4740.0,23700.0,602.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,20,134586378,Astrid Bjerkås,3,4620.0,21300.0,250.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,21,133260,Øivind Langeland,3,4560.0,24600.0,218.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,22,20108465,Heidi Amundsen,2,4380.0,5000.0,79.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,23,131861201,Anna Naume Solem,1,4200.0,0.0,0.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,24,9396005,Bjørn Intelhus,2,4200.0,29200.0,361.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,25,1781965,Per-Christian Wandås,2,4020.0,6900.0,20.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,26,15951168,Thomas Grimeland,3,3900.0,6600.0,52.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,27,21496061,Bjørn Jarle Wiger,2,3840.0,23800.0,273.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,28,77487903,Eirik Riiser,1,3480.0,10500.0,84.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,29,92573271,Kaja Fjell Jørgensen,1,3000.0,0.0,0.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,30,58952107,Hanne Lehn,1,2940.0,0.0,0.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,31,8131027,Sven Bruun,1,2940.0,5100.0,28.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,32,68356466,Idunn Løvseth Kavlie,2,2700.0,5900.0,211.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,33,26265081,Addi K,1,2460.0,1100.0,6.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,34,39010145,Maren Jeanette,2,2400.0,6000.0,41.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,35,939211,Martha Hynne,1,2400.0,5700.0,30.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,36,53738336,Steinar Mathisen,1,2280.0,6200.0,111.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,37,16855015,Jeppe Ugland,1,2040.0,2200.0,44.0
+754665,Helsedirektoratet,Multisport,"Oslo, Norway",2024-04-15 to 2024-04-21,2024-04-15,2024-04-21,38,1807355,Vegard Nore,1,1200.0,6700.0,110.0
