@@ -58,10 +58,10 @@
     "week_number": 16,
     "athlete_name": "Heidi Amundsen",
     "athlete_id": "20108465",
-    "activities": 5,
-    "moving_time": 9960,
-    "distance": 7700,
-    "elevation_gain": 126,
+    "activities": 6,
+    "moving_time": 12120,
+    "distance": 13500,
+    "elevation_gain": 205,
     "tickets": 1,
     "team": ""
   },
@@ -590,6 +590,17 @@
     "moving_time": 4200,
     "distance": 0,
     "elevation_gain": 0,
+    "tickets": 0,
+    "team": ""
+  },
+  "16-14908629": {
+    "week_number": 16,
+    "athlete_name": "Silja Angellsen",
+    "athlete_id": "14908629",
+    "activities": 1,
+    "moving_time": 7860,
+    "distance": 11200,
+    "elevation_gain": 278,
     "tickets": 0,
     "team": ""
   }
