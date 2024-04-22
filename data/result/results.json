@@ -768,5 +768,82 @@
     "elevation_gain": 12,
     "tickets": 0,
     "team": ""
+  },
+  "17-4550556": {
+    "week_number": 17,
+    "athlete_name": "Knut J\u00f8nsrud",
+    "athlete_id": "4550556",
+    "activities": 1,
+    "moving_time": 3720,
+    "distance": 5400,
+    "elevation_gain": 187,
+    "tickets": 0,
+    "team": ""
+  },
+  "17-131861201": {
+    "week_number": 17,
+    "athlete_name": "Anna Naume Solem",
+    "athlete_id": "131861201",
+    "activities": 1,
+    "moving_time": 3600,
+    "distance": 16900,
+    "elevation_gain": 436,
+    "tickets": 0,
+    "team": ""
+  },
+  "17-135274801": {
+    "week_number": 17,
+    "athlete_name": "Kathrine Syse",
+    "athlete_id": "135274801",
+    "activities": 2,
+    "moving_time": 3180,
+    "distance": 6000,
+    "elevation_gain": 22,
+    "tickets": 0,
+    "team": ""
+  },
+  "17-133020535": {
+    "week_number": 17,
+    "athlete_name": "Guro Smedshaug",
+    "athlete_id": "133020535",
+    "activities": 1,
+    "moving_time": 3120,
+    "distance": 10900,
+    "elevation_gain": 349,
+    "tickets": 0,
+    "team": ""
+  },
+  "17-3905395": {
+    "week_number": 17,
+    "athlete_name": "Erlend B\u00f8",
+    "athlete_id": "3905395",
+    "activities": 1,
+    "moving_time": 1800,
+    "distance": 2800,
+    "elevation_gain": 47,
+    "tickets": 0,
+    "team": ""
+  },
+  "17-16726353": {
+    "week_number": 17,
+    "athlete_name": "Kirsti Strand",
+    "athlete_id": "16726353",
+    "activities": 1,
+    "moving_time": 1620,
+    "distance": 4900,
+    "elevation_gain": 6,
+    "tickets": 0,
+    "team": ""
+  },
+  "17-939211": {
+    "week_number": 17,
+    "athlete_name": "Martha Hynne",
+    "athlete_id": "939211",
+    "activities": 1,
+    "moving_time": 1320,
+    "distance": 1800,
+    "elevation_gain": 87,
+    "tickets": 0,
+    "team": ""
   }
 }
