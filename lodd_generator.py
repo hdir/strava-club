@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Module to create liste of athletes and tickets"""
+"""Module to create list of athletes and tickets"""
 
 import configparser
 import os
