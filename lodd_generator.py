@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Module to process data from Strava web scraper"""
+"""Module to create liste of athletes and tickets"""
 
 import configparser
 import os
