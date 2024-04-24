@@ -938,8 +938,8 @@
     "week_number": 17,
     "athlete_name": "Maren Jeanette",
     "athlete_id": "39010145",
-    "activities": 3,
-    "moving_time": 1800,
+    "activities": 4,
+    "moving_time": 2700,
     "distance": 3000,
     "elevation_gain": 134,
     "tickets": 0,
@@ -971,10 +971,10 @@
     "week_number": 17,
     "athlete_name": "Linda Nisja",
     "athlete_id": "49187612",
-    "activities": 3,
-    "moving_time": 13140,
-    "distance": 55600,
-    "elevation_gain": 805,
+    "activities": 4,
+    "moving_time": 17700,
+    "distance": 78100,
+    "elevation_gain": 1370,
     "tickets": 1,
     "team": ""
   },
@@ -1015,11 +1015,11 @@
     "week_number": 17,
     "athlete_name": "Anita Lorck",
     "athlete_id": "134856125",
-    "activities": 2,
-    "moving_time": 8400,
+    "activities": 3,
+    "moving_time": 13080,
     "distance": 0,
     "elevation_gain": 0,
-    "tickets": 0,
+    "tickets": 1,
     "team": ""
   },
   "17-4040211": {
@@ -1251,6 +1251,17 @@
     "distance": 7600,
     "elevation_gain": 0,
     "tickets": 1,
+    "team": ""
+  },
+  "17-135576506": {
+    "week_number": 17,
+    "athlete_name": "Yvonne Solberg",
+    "athlete_id": "135576506",
+    "activities": 1,
+    "moving_time": 3600,
+    "distance": 0,
+    "elevation_gain": 0,
+    "tickets": 0,
     "team": ""
   }
 }
