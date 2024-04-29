@@ -1290,9 +1290,9 @@
     "week_number": 17,
     "athlete_name": "Iryna A.",
     "athlete_id": "134599207",
-    "activities": 4,
-    "moving_time": 10560,
-    "distance": 13800,
+    "activities": 6,
+    "moving_time": 17760,
+    "distance": 21800,
     "elevation_gain": 0,
     "tickets": 1,
     "team": ""
@@ -1558,6 +1558,39 @@
     "moving_time": 900,
     "distance": 5500,
     "elevation_gain": 20,
+    "tickets": 0,
+    "team": ""
+  },
+  "18-40992955": {
+    "week_number": 18,
+    "athlete_name": "Sara Jovic",
+    "athlete_id": "40992955",
+    "activities": 1,
+    "moving_time": 3000,
+    "distance": 13300,
+    "elevation_gain": 186,
+    "tickets": 0,
+    "team": ""
+  },
+  "18-39010145": {
+    "week_number": 18,
+    "athlete_name": "Maren Jeanette",
+    "athlete_id": "39010145",
+    "activities": 1,
+    "moving_time": 2820,
+    "distance": 4400,
+    "elevation_gain": 180,
+    "tickets": 0,
+    "team": ""
+  },
+  "18-136102084": {
+    "week_number": 18,
+    "athlete_name": "Unni Helgesen",
+    "athlete_id": "136102084",
+    "activities": 1,
+    "moving_time": 1680,
+    "distance": 8100,
+    "elevation_gain": 70,
     "tickets": 0,
     "team": ""
   }
