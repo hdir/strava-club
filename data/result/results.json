@@ -1807,10 +1807,10 @@
     "week_number": 18,
     "athlete_name": "Birgit Johansen",
     "athlete_id": "135722764",
-    "activities": 12,
-    "moving_time": 40980,
-    "distance": 60400,
-    "elevation_gain": 591,
+    "activities": 13,
+    "moving_time": 43560,
+    "distance": 63400,
+    "elevation_gain": 649,
     "tickets": 2,
     "team": ""
   },
@@ -2372,6 +2372,28 @@
     "moving_time": 780,
     "distance": 5500,
     "elevation_gain": 12,
+    "tickets": 0,
+    "team": ""
+  },
+  "18-136924308": {
+    "week_number": 18,
+    "athlete_name": "Hanne Narbuvold",
+    "athlete_id": "136924308",
+    "activities": 2,
+    "moving_time": 6600,
+    "distance": 7000,
+    "elevation_gain": 200,
+    "tickets": 0,
+    "team": ""
+  },
+  "19-16568948": {
+    "week_number": 19,
+    "athlete_name": "Monica S\u00f8rensen",
+    "athlete_id": "16568948",
+    "activities": 1,
+    "moving_time": 1440,
+    "distance": 900,
+    "elevation_gain": 0,
     "tickets": 0,
     "team": ""
   }
