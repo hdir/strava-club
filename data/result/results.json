@@ -2198,5 +2198,181 @@
     "elevation_gain": 40,
     "tickets": 0,
     "team": ""
+  },
+  "18-134594271": {
+    "week_number": 18,
+    "athlete_name": "Charlott Nordstr\u00f8m",
+    "athlete_id": "134594271",
+    "activities": 3,
+    "moving_time": 20400,
+    "distance": 37000,
+    "elevation_gain": 0,
+    "tickets": 2,
+    "team": ""
+  },
+  "19-8849482": {
+    "week_number": 19,
+    "athlete_name": "\u00d8rjan Stene",
+    "athlete_id": "8849482",
+    "activities": 1,
+    "moving_time": 6540,
+    "distance": 52900,
+    "elevation_gain": 353,
+    "tickets": 0,
+    "team": ""
+  },
+  "19-135274801": {
+    "week_number": 19,
+    "athlete_name": "Kathrine Syse",
+    "athlete_id": "135274801",
+    "activities": 1,
+    "moving_time": 4380,
+    "distance": 7900,
+    "elevation_gain": 77,
+    "tickets": 0,
+    "team": ""
+  },
+  "19-3450542": {
+    "week_number": 19,
+    "athlete_name": "Per Ludvig Skjerven",
+    "athlete_id": "3450542",
+    "activities": 1,
+    "moving_time": 3660,
+    "distance": 23400,
+    "elevation_gain": 254,
+    "tickets": 0,
+    "team": ""
+  },
+  "19-47193294": {
+    "week_number": 19,
+    "athlete_name": "Jarle Hersvik",
+    "athlete_id": "47193294",
+    "activities": 1,
+    "moving_time": 2880,
+    "distance": 19500,
+    "elevation_gain": 130,
+    "tickets": 0,
+    "team": ""
+  },
+  "19-288479": {
+    "week_number": 19,
+    "athlete_name": "Thomas Rosenlund",
+    "athlete_id": "288479",
+    "activities": 1,
+    "moving_time": 2700,
+    "distance": 21200,
+    "elevation_gain": 175,
+    "tickets": 0,
+    "team": ""
+  },
+  "19-71873694": {
+    "week_number": 19,
+    "athlete_name": "Hans Christian Sundsfjord",
+    "athlete_id": "71873694",
+    "activities": 1,
+    "moving_time": 2400,
+    "distance": 12700,
+    "elevation_gain": 167,
+    "tickets": 0,
+    "team": ""
+  },
+  "19-135365177": {
+    "week_number": 19,
+    "athlete_name": "Gunnhild Solli Haukaas",
+    "athlete_id": "135365177",
+    "activities": 1,
+    "moving_time": 2400,
+    "distance": 5400,
+    "elevation_gain": 115,
+    "tickets": 0,
+    "team": ""
+  },
+  "19-134470352": {
+    "week_number": 19,
+    "athlete_name": "\u00d8yvin Jakobsen",
+    "athlete_id": "134470352",
+    "activities": 1,
+    "moving_time": 2100,
+    "distance": 12300,
+    "elevation_gain": 152,
+    "tickets": 0,
+    "team": ""
+  },
+  "19-20108465": {
+    "week_number": 19,
+    "athlete_name": "Heidi Amundsen",
+    "athlete_id": "20108465",
+    "activities": 1,
+    "moving_time": 1800,
+    "distance": 0,
+    "elevation_gain": 0,
+    "tickets": 0,
+    "team": ""
+  },
+  "19-74913472": {
+    "week_number": 19,
+    "athlete_name": "Nina Nina Bj\u00f8rlykke",
+    "athlete_id": "74913472",
+    "activities": 1,
+    "moving_time": 1740,
+    "distance": 8100,
+    "elevation_gain": 34,
+    "tickets": 0,
+    "team": ""
+  },
+  "19-21496061": {
+    "week_number": 19,
+    "athlete_name": "Bj\u00f8rn Jarle Wiger",
+    "athlete_id": "21496061",
+    "activities": 1,
+    "moving_time": 1680,
+    "distance": 11800,
+    "elevation_gain": 118,
+    "tickets": 0,
+    "team": ""
+  },
+  "19-1781965": {
+    "week_number": 19,
+    "athlete_name": "Per-Christian Wand\u00e5s",
+    "athlete_id": "1781965",
+    "activities": 1,
+    "moving_time": 1680,
+    "distance": 0,
+    "elevation_gain": 0,
+    "tickets": 0,
+    "team": ""
+  },
+  "19-56779866": {
+    "week_number": 19,
+    "athlete_name": "Caroline H\u00f8gsnes",
+    "athlete_id": "56779866",
+    "activities": 2,
+    "moving_time": 1200,
+    "distance": 1400,
+    "elevation_gain": 0,
+    "tickets": 0,
+    "team": ""
+  },
+  "19-39010145": {
+    "week_number": 19,
+    "athlete_name": "Maren Jeanette",
+    "athlete_id": "39010145",
+    "activities": 1,
+    "moving_time": 1020,
+    "distance": 5200,
+    "elevation_gain": 89,
+    "tickets": 0,
+    "team": ""
+  },
+  "19-133260": {
+    "week_number": 19,
+    "athlete_name": "\u00d8ivind Langeland",
+    "athlete_id": "133260",
+    "activities": 1,
+    "moving_time": 780,
+    "distance": 5500,
+    "elevation_gain": 12,
+    "tickets": 0,
+    "team": ""
   }
 }
