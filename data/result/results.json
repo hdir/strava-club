@@ -3160,10 +3160,10 @@
     "week_number": 20,
     "athlete_name": "Henriette \u00d8ien",
     "athlete_id": "12411265",
-    "activities": 1,
-    "moving_time": 900,
-    "distance": 900,
-    "elevation_gain": 25,
+    "activities": 2,
+    "moving_time": 1680,
+    "distance": 5900,
+    "elevation_gain": 94,
     "tickets": 0,
     "team": ""
   },
@@ -3208,6 +3208,17 @@
     "moving_time": 600,
     "distance": 3400,
     "elevation_gain": 5,
+    "tickets": 0,
+    "team": ""
+  },
+  "20-136102084": {
+    "week_number": 20,
+    "athlete_name": "Unni Helgesen",
+    "athlete_id": "136102084",
+    "activities": 1,
+    "moving_time": 1920,
+    "distance": 9100,
+    "elevation_gain": 72,
     "tickets": 0,
     "team": ""
   }
