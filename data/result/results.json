@@ -3160,10 +3160,10 @@
     "week_number": 20,
     "athlete_name": "Henriette \u00d8ien",
     "athlete_id": "12411265",
-    "activities": 6,
-    "moving_time": 6720,
-    "distance": 15900,
-    "elevation_gain": 212,
+    "activities": 7,
+    "moving_time": 7500,
+    "distance": 20900,
+    "elevation_gain": 279,
     "tickets": 0,
     "team": ""
   },
@@ -3215,11 +3215,11 @@
     "week_number": 20,
     "athlete_name": "Unni Helgesen",
     "athlete_id": "136102084",
-    "activities": 3,
-    "moving_time": 8220,
-    "distance": 19100,
-    "elevation_gain": 72,
-    "tickets": 0,
+    "activities": 4,
+    "moving_time": 10140,
+    "distance": 28400,
+    "elevation_gain": 149,
+    "tickets": 1,
     "team": ""
   },
   "20-3450542": {
@@ -3516,6 +3516,17 @@
     "moving_time": 2220,
     "distance": 16500,
     "elevation_gain": 121,
+    "tickets": 0,
+    "team": ""
+  },
+  "20-4797829": {
+    "week_number": 20,
+    "athlete_name": "Sigrid Beitland",
+    "athlete_id": "4797829",
+    "activities": 1,
+    "moving_time": 2460,
+    "distance": 7700,
+    "elevation_gain": 60,
     "tickets": 0,
     "team": ""
   }
