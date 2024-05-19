@@ -3138,10 +3138,10 @@
     "week_number": 20,
     "athlete_name": "Caroline H\u00f8gsnes",
     "athlete_id": "56779866",
-    "activities": 14,
-    "moving_time": 26100,
-    "distance": 21700,
-    "elevation_gain": 367,
+    "activities": 15,
+    "moving_time": 27240,
+    "distance": 23100,
+    "elevation_gain": 381,
     "tickets": 2,
     "team": ""
   },
@@ -3325,10 +3325,10 @@
     "week_number": 20,
     "athlete_name": "Eirik Riiser",
     "athlete_id": "77487903",
-    "activities": 4,
-    "moving_time": 10140,
-    "distance": 24000,
-    "elevation_gain": 149,
+    "activities": 5,
+    "moving_time": 13200,
+    "distance": 33000,
+    "elevation_gain": 242,
     "tickets": 1,
     "team": ""
   },
@@ -3479,10 +3479,10 @@
     "week_number": 20,
     "athlete_name": "\u00d8ystein Maurud Holm",
     "athlete_id": "136688617",
-    "activities": 4,
-    "moving_time": 9180,
-    "distance": 16100,
-    "elevation_gain": 380,
+    "activities": 5,
+    "moving_time": 13260,
+    "distance": 27400,
+    "elevation_gain": 404,
     "tickets": 1,
     "team": ""
   },
@@ -3671,6 +3671,17 @@
     "distance": 107700,
     "elevation_gain": 1011,
     "tickets": 1,
+    "team": ""
+  },
+  "20-92573271": {
+    "week_number": 20,
+    "athlete_name": "Kaja Fjell J\u00f8rgensen",
+    "athlete_id": "92573271",
+    "activities": 1,
+    "moving_time": 3480,
+    "distance": 0,
+    "elevation_gain": 0,
+    "tickets": 0,
     "team": ""
   }
 }
