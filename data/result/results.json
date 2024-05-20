@@ -3149,10 +3149,10 @@
     "week_number": 20,
     "athlete_name": "\u00d8ivind Langeland",
     "athlete_id": "133260",
-    "activities": 22,
-    "moving_time": 59880,
-    "distance": 312100,
-    "elevation_gain": 3098,
+    "activities": 23,
+    "moving_time": 61800,
+    "distance": 322600,
+    "elevation_gain": 3202,
     "tickets": 2,
     "team": ""
   },
@@ -3747,6 +3747,50 @@
     "moving_time": 3600,
     "distance": 0,
     "elevation_gain": 0,
+    "tickets": 0,
+    "team": ""
+  },
+  "21-135274801": {
+    "week_number": 21,
+    "athlete_name": "Kathrine Syse",
+    "athlete_id": "135274801",
+    "activities": 1,
+    "moving_time": 4980,
+    "distance": 9100,
+    "elevation_gain": 69,
+    "tickets": 0,
+    "team": ""
+  },
+  "21-47193294": {
+    "week_number": 21,
+    "athlete_name": "Jarle Hersvik",
+    "athlete_id": "47193294",
+    "activities": 1,
+    "moving_time": 3180,
+    "distance": 10300,
+    "elevation_gain": 133,
+    "tickets": 0,
+    "team": ""
+  },
+  "21-12411265": {
+    "week_number": 21,
+    "athlete_name": "Henriette \u00d8ien",
+    "athlete_id": "12411265",
+    "activities": 1,
+    "moving_time": 2100,
+    "distance": 2500,
+    "elevation_gain": 36,
+    "tickets": 0,
+    "team": ""
+  },
+  "21-56779866": {
+    "week_number": 21,
+    "athlete_name": "Caroline H\u00f8gsnes",
+    "athlete_id": "56779866",
+    "activities": 1,
+    "moving_time": 900,
+    "distance": 1100,
+    "elevation_gain": 27,
     "tickets": 0,
     "team": ""
   }
