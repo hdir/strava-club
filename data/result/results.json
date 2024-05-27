@@ -4475,5 +4475,148 @@
     "elevation_gain": 328,
     "tickets": 1,
     "team": ""
+  },
+  "22-135274801": {
+    "week_number": 22,
+    "athlete_name": "Kathrine Syse",
+    "athlete_id": "135274801",
+    "activities": 1,
+    "moving_time": 4380,
+    "distance": 8000,
+    "elevation_gain": 107,
+    "tickets": 0,
+    "team": ""
+  },
+  "22-40992955": {
+    "week_number": 22,
+    "athlete_name": "Sara Jovic",
+    "athlete_id": "40992955",
+    "activities": 1,
+    "moving_time": 3120,
+    "distance": 13300,
+    "elevation_gain": 191,
+    "tickets": 0,
+    "team": ""
+  },
+  "22-20108465": {
+    "week_number": 22,
+    "athlete_name": "Heidi Amundsen",
+    "athlete_id": "20108465",
+    "activities": 1,
+    "moving_time": 3060,
+    "distance": 7600,
+    "elevation_gain": 118,
+    "tickets": 0,
+    "team": ""
+  },
+  "22-16063771": {
+    "week_number": 22,
+    "athlete_name": "Nina Wavik Ytterstad",
+    "athlete_id": "16063771",
+    "activities": 2,
+    "moving_time": 3000,
+    "distance": 5800,
+    "elevation_gain": 67,
+    "tickets": 0,
+    "team": ""
+  },
+  "22-4550556": {
+    "week_number": 22,
+    "athlete_name": "Knut J\u00f8nsrud",
+    "athlete_id": "4550556",
+    "activities": 1,
+    "moving_time": 3000,
+    "distance": 18000,
+    "elevation_gain": 220,
+    "tickets": 0,
+    "team": ""
+  },
+  "22-47193294": {
+    "week_number": 22,
+    "athlete_name": "Jarle Hersvik",
+    "athlete_id": "47193294",
+    "activities": 1,
+    "moving_time": 2820,
+    "distance": 19600,
+    "elevation_gain": 128,
+    "tickets": 0,
+    "team": ""
+  },
+  "22-288479": {
+    "week_number": 22,
+    "athlete_name": "Thomas Rosenlund",
+    "athlete_id": "288479",
+    "activities": 1,
+    "moving_time": 2160,
+    "distance": 17800,
+    "elevation_gain": 115,
+    "tickets": 0,
+    "team": ""
+  },
+  "22-134470352": {
+    "week_number": 22,
+    "athlete_name": "\u00d8yvin Jakobsen",
+    "athlete_id": "134470352",
+    "activities": 1,
+    "moving_time": 1800,
+    "distance": 12200,
+    "elevation_gain": 141,
+    "tickets": 0,
+    "team": ""
+  },
+  "22-23275093": {
+    "week_number": 22,
+    "athlete_name": "Helen Eriksen",
+    "athlete_id": "23275093",
+    "activities": 1,
+    "moving_time": 1680,
+    "distance": 2200,
+    "elevation_gain": 24,
+    "tickets": 0,
+    "team": ""
+  },
+  "22-12411265": {
+    "week_number": 22,
+    "athlete_name": "Henriette \u00d8ien",
+    "athlete_id": "12411265",
+    "activities": 2,
+    "moving_time": 1560,
+    "distance": 5900,
+    "elevation_gain": 84,
+    "tickets": 0,
+    "team": ""
+  },
+  "22-1807355": {
+    "week_number": 22,
+    "athlete_name": "Vegard Nore",
+    "athlete_id": "1807355",
+    "activities": 1,
+    "moving_time": 1440,
+    "distance": 8600,
+    "elevation_gain": 149,
+    "tickets": 0,
+    "team": ""
+  },
+  "22-16568948": {
+    "week_number": 22,
+    "athlete_name": "Monica S\u00f8rensen",
+    "athlete_id": "16568948",
+    "activities": 1,
+    "moving_time": 1440,
+    "distance": 800,
+    "elevation_gain": 0,
+    "tickets": 0,
+    "team": ""
+  },
+  "22-133260": {
+    "week_number": 22,
+    "athlete_name": "\u00d8ivind Langeland",
+    "athlete_id": "133260",
+    "activities": 1,
+    "moving_time": 660,
+    "distance": 5400,
+    "elevation_gain": 12,
+    "tickets": 0,
+    "team": ""
   }
 }
