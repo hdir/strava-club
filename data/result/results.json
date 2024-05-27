@@ -4601,9 +4601,9 @@
     "week_number": 22,
     "athlete_name": "Monica S\u00f8rensen",
     "athlete_id": "16568948",
-    "activities": 1,
-    "moving_time": 1440,
-    "distance": 800,
+    "activities": 2,
+    "moving_time": 2820,
+    "distance": 2200,
     "elevation_gain": 0,
     "tickets": 0,
     "team": ""
@@ -4616,6 +4616,39 @@
     "moving_time": 660,
     "distance": 5400,
     "elevation_gain": 12,
+    "tickets": 0,
+    "team": ""
+  },
+  "22-8849482": {
+    "week_number": 22,
+    "athlete_name": "\u00d8rjan Stene",
+    "athlete_id": "8849482",
+    "activities": 1,
+    "moving_time": 3060,
+    "distance": 9000,
+    "elevation_gain": 103,
+    "tickets": 0,
+    "team": ""
+  },
+  "22-133020535": {
+    "week_number": 22,
+    "athlete_name": "Guro Smedshaug",
+    "athlete_id": "133020535",
+    "activities": 1,
+    "moving_time": 2040,
+    "distance": 8900,
+    "elevation_gain": 74,
+    "tickets": 0,
+    "team": ""
+  },
+  "22-2094125": {
+    "week_number": 22,
+    "athlete_name": "Annebeth Askevold",
+    "athlete_id": "2094125",
+    "activities": 1,
+    "moving_time": 780,
+    "distance": 4700,
+    "elevation_gain": 31,
     "tickets": 0,
     "team": ""
   }
