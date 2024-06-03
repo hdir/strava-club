@@ -5173,11 +5173,11 @@
     "week_number": 22,
     "athlete_name": "\u00d8ystein Maurud Holm",
     "athlete_id": "136688617",
-    "activities": 1,
-    "moving_time": 7140,
-    "distance": 20200,
-    "elevation_gain": 496,
-    "tickets": 0,
+    "activities": 2,
+    "moving_time": 11460,
+    "distance": 24400,
+    "elevation_gain": 576,
+    "tickets": 1,
     "team": ""
   },
   "22-53738336": {
@@ -5222,6 +5222,171 @@
     "distance": 155700,
     "elevation_gain": 1757,
     "tickets": 2,
+    "team": ""
+  },
+  "23-135274801": {
+    "week_number": 23,
+    "athlete_name": "Kathrine Syse",
+    "athlete_id": "135274801",
+    "activities": 1,
+    "moving_time": 4620,
+    "distance": 8200,
+    "elevation_gain": 73,
+    "tickets": 0,
+    "team": ""
+  },
+  "23-3905395": {
+    "week_number": 23,
+    "athlete_name": "Erlend B\u00f8",
+    "athlete_id": "3905395",
+    "activities": 1,
+    "moving_time": 2940,
+    "distance": 22000,
+    "elevation_gain": 205,
+    "tickets": 0,
+    "team": ""
+  },
+  "23-40992955": {
+    "week_number": 23,
+    "athlete_name": "Sara Jovic",
+    "athlete_id": "40992955",
+    "activities": 1,
+    "moving_time": 2880,
+    "distance": 13300,
+    "elevation_gain": 190,
+    "tickets": 0,
+    "team": ""
+  },
+  "23-4550556": {
+    "week_number": 23,
+    "athlete_name": "Knut J\u00f8nsrud",
+    "athlete_id": "4550556",
+    "activities": 1,
+    "moving_time": 2820,
+    "distance": 18000,
+    "elevation_gain": 205,
+    "tickets": 0,
+    "team": ""
+  },
+  "23-16063771": {
+    "week_number": 23,
+    "athlete_name": "Nina Wavik Ytterstad",
+    "athlete_id": "16063771",
+    "activities": 2,
+    "moving_time": 2700,
+    "distance": 5500,
+    "elevation_gain": 67,
+    "tickets": 0,
+    "team": ""
+  },
+  "23-20108465": {
+    "week_number": 23,
+    "athlete_name": "Heidi Amundsen",
+    "athlete_id": "20108465",
+    "activities": 2,
+    "moving_time": 2400,
+    "distance": 0,
+    "elevation_gain": 0,
+    "tickets": 0,
+    "team": ""
+  },
+  "23-135061504": {
+    "week_number": 23,
+    "athlete_name": "Siw Helene Myhrer",
+    "athlete_id": "135061504",
+    "activities": 1,
+    "moving_time": 2280,
+    "distance": 16400,
+    "elevation_gain": 121,
+    "tickets": 0,
+    "team": ""
+  },
+  "23-71873694": {
+    "week_number": 23,
+    "athlete_name": "Hans Christian Sundsfjord",
+    "athlete_id": "71873694",
+    "activities": 1,
+    "moving_time": 2220,
+    "distance": 12700,
+    "elevation_gain": 191,
+    "tickets": 0,
+    "team": ""
+  },
+  "23-133020535": {
+    "week_number": 23,
+    "athlete_name": "Guro Smedshaug",
+    "athlete_id": "133020535",
+    "activities": 1,
+    "moving_time": 2220,
+    "distance": 11300,
+    "elevation_gain": 116,
+    "tickets": 0,
+    "team": ""
+  },
+  "23-288479": {
+    "week_number": 23,
+    "athlete_name": "Thomas Rosenlund",
+    "athlete_id": "288479",
+    "activities": 1,
+    "moving_time": 2160,
+    "distance": 18400,
+    "elevation_gain": 119,
+    "tickets": 0,
+    "team": ""
+  },
+  "23-134470352": {
+    "week_number": 23,
+    "athlete_name": "\u00d8yvin Jakobsen",
+    "athlete_id": "134470352",
+    "activities": 1,
+    "moving_time": 1680,
+    "distance": 11700,
+    "elevation_gain": 130,
+    "tickets": 0,
+    "team": ""
+  },
+  "23-56779866": {
+    "week_number": 23,
+    "athlete_name": "Caroline H\u00f8gsnes",
+    "athlete_id": "56779866",
+    "activities": 1,
+    "moving_time": 1260,
+    "distance": 1300,
+    "elevation_gain": 21,
+    "tickets": 0,
+    "team": ""
+  },
+  "23-133260": {
+    "week_number": 23,
+    "athlete_name": "\u00d8ivind Langeland",
+    "athlete_id": "133260",
+    "activities": 1,
+    "moving_time": 840,
+    "distance": 5300,
+    "elevation_gain": 12,
+    "tickets": 0,
+    "team": ""
+  },
+  "23-12411265": {
+    "week_number": 23,
+    "athlete_name": "Henriette \u00d8ien",
+    "athlete_id": "12411265",
+    "activities": 1,
+    "moving_time": 780,
+    "distance": 900,
+    "elevation_gain": 14,
+    "tickets": 0,
+    "team": ""
+  },
+  "23-16726353": {
+    "week_number": 23,
+    "athlete_name": "Kirsti Strand",
+    "athlete_id": "16726353",
+    "activities": 1,
+    "moving_time": 360,
+    "distance": 2200,
+    "elevation_gain": 20,
+    "tickets": 0,
     "team": ""
   }
 }
