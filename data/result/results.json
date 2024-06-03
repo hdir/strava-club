@@ -5371,10 +5371,10 @@
     "week_number": 23,
     "athlete_name": "Henriette \u00d8ien",
     "athlete_id": "12411265",
-    "activities": 1,
-    "moving_time": 780,
-    "distance": 900,
-    "elevation_gain": 14,
+    "activities": 2,
+    "moving_time": 1620,
+    "distance": 5900,
+    "elevation_gain": 79,
     "tickets": 0,
     "team": ""
   },
@@ -5386,6 +5386,50 @@
     "moving_time": 360,
     "distance": 2200,
     "elevation_gain": 20,
+    "tickets": 0,
+    "team": ""
+  },
+  "23-47193294": {
+    "week_number": 23,
+    "athlete_name": "Jarle Hersvik",
+    "athlete_id": "47193294",
+    "activities": 1,
+    "moving_time": 2820,
+    "distance": 19400,
+    "elevation_gain": 120,
+    "tickets": 0,
+    "team": ""
+  },
+  "23-4797829": {
+    "week_number": 23,
+    "athlete_name": "Sigrid Beitland",
+    "athlete_id": "4797829",
+    "activities": 1,
+    "moving_time": 2760,
+    "distance": 8400,
+    "elevation_gain": 86,
+    "tickets": 0,
+    "team": ""
+  },
+  "23-16855015": {
+    "week_number": 23,
+    "athlete_name": "Jeppe Ugland",
+    "athlete_id": "16855015",
+    "activities": 1,
+    "moving_time": 2340,
+    "distance": 3000,
+    "elevation_gain": 42,
+    "tickets": 0,
+    "team": ""
+  },
+  "23-136102084": {
+    "week_number": 23,
+    "athlete_name": "Unni Helgesen",
+    "athlete_id": "136102084",
+    "activities": 1,
+    "moving_time": 2100,
+    "distance": 9500,
+    "elevation_gain": 77,
     "tickets": 0,
     "team": ""
   }
