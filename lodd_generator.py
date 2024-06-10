@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     RESULTS_FILE = config['CAMPAIGN'].get('RESULTS_FILE')
     TICKET_FILE = "lodd.txt"
-    TICKET_WEEKS = [16, 17]
+    TICKET_WEEKS = [16, 17, 18, 19, 20, 21, 22, 23]
 
     with open(RESULTS_FILE, 'r', encoding='utf-8') as file:
         datastore = json.load(file)

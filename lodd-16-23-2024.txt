@@ -1,0 +1,722 @@
+1 - Sara Jovic
+2 - Sara Jovic
+3 - Kine Markman
+4 - Kine Markman
+5 - Thomas Rosenlund
+6 - Thomas Rosenlund
+7 - Martha Hynne
+8 - Guro Smedshaug
+9 - Guro Smedshaug
+10 - Heidi Amundsen
+11 - Øyvin Jakobsen
+12 - Astrid Bjerkås
+13 - Per-Christian Wandås
+14 - Per-Christian Wandås
+15 - Thomas Grimeland
+16 - Vegard Nore
+17 - Vegard Nore
+18 - Nina Wavik Ytterstad
+19 - Nina Wavik Ytterstad
+20 - Øivind Langeland
+21 - Øivind Langeland
+22 - Kirsti Strand
+23 - Kirsti Strand
+24 - Anita Lorck
+25 - Anita Lorck
+26 - Bjørn Jarle Wiger
+27 - Bjørn Jarle Wiger
+28 - Ørjan Stene
+29 - Ørjan Stene
+30 - Annebeth Askevold
+31 - Annebeth Askevold
+32 - Bjarte Aksnes
+33 - Bjarte Aksnes
+34 - Bjørn Intelhus
+35 - Bjørn Intelhus
+36 - Kathrine Syse
+37 - Kathrine Syse
+38 - Eirik Riiser
+39 - Sven Bruun
+40 - Sven Bruun
+41 - Hans Christian Sundsfjord
+42 - Hans Christian Sundsfjord
+43 - Addi K
+44 - Jeppe Ugland
+45 - Jeppe Ugland
+46 - Nina Nina Bjørlykke
+47 - Maren Jeanette
+48 - Maren Jeanette
+49 - Jarle Hersvik
+50 - Jonas Bergan
+51 - Jonas Bergan
+52 - Even Espelid
+53 - Even Espelid
+54 - Tea Elgshøen
+55 - Tea Elgshøen
+56 - Linda Nisja
+57 - Linda Nisja
+58 - Anna Naume Solem
+59 - Anna Naume Solem
+60 - Kaja Fjell Jørgensen
+61 - Idunn Løvseth Kavlie
+62 - Idunn Løvseth Kavlie
+63 - Steinar Mathisen
+64 - Iryna A.
+65 - Per Ludvig Skjerven
+66 - Per Ludvig Skjerven
+67 - Ingvar Sørlien
+68 - Ingvar Sørlien
+69 - Knut Jønsrud
+70 - Knut Jønsrud
+71 - Erlend Bø
+72 - Erlend Bø
+73 - Gunnhild Solli Haukaas
+74 - Gunnhild Solli Haukaas
+75 - Caroline Høgsnes
+76 - Caroline Høgsnes
+77 - Linda Haugen
+78 - Helene Normann
+79 - Silja Angellsen
+80 - Birgit Johansen
+81 - Birgit Johansen
+82 - Per Øivind Gaardsrud
+83 - Nina Wavik Ytterstad
+84 - Nina Wavik Ytterstad
+85 - Kine Markman
+86 - Kine Markman
+87 - Thomas Rosenlund
+88 - Thomas Rosenlund
+89 - Hans Christian Sundsfjord
+90 - Hans Christian Sundsfjord
+91 - Heidi Amundsen
+92 - Per-Christian Wandås
+93 - Per-Christian Wandås
+94 - Øyvin Jakobsen
+95 - Vegard Nore
+96 - Vegard Nore
+97 - Thomas Grimeland
+98 - Øivind Langeland
+99 - Øivind Langeland
+100 - Knut Jønsrud
+101 - Knut Jønsrud
+102 - Anna Naume Solem
+103 - Anna Naume Solem
+104 - Kathrine Syse
+105 - Kathrine Syse
+106 - Guro Smedshaug
+107 - Guro Smedshaug
+108 - Erlend Bø
+109 - Erlend Bø
+110 - Kirsti Strand
+111 - Kirsti Strand
+112 - Martha Hynne
+113 - Martha Hynne
+114 - Linda Haugen
+115 - Linda Haugen
+116 - Bjørn Intelhus
+117 - Bjørn Intelhus
+118 - Tea Elgshøen
+119 - Tea Elgshøen
+120 - Jeppe Ugland
+121 - Jeppe Ugland
+122 - Kaja Fjell Jørgensen
+123 - Caroline Høgsnes
+124 - Caroline Høgsnes
+125 - Sara Jovic
+126 - Sara Jovic
+127 - Maren Jeanette
+128 - Maren Jeanette
+129 - Ørjan Stene
+130 - Ørjan Stene
+131 - Linda Nisja
+132 - Linda Nisja
+133 - Ragnhild Holst
+134 - Jarle Hersvik
+135 - Vegard Storsul Opdahl
+136 - Vegard Storsul Opdahl
+137 - Anita Lorck
+138 - Anita Lorck
+139 - Jonas Bergan
+140 - Jonas Bergan
+141 - Birgit Johansen
+142 - Birgit Johansen
+143 - Idunn Løvseth Kavlie
+144 - Idunn Løvseth Kavlie
+145 - Addi K
+146 - Steinar Mathisen
+147 - Gunnhild Solli Haukaas
+148 - Gunnhild Solli Haukaas
+149 - Ingvar Sørlien
+150 - Ingvar Sørlien
+151 - Per Ludvig Skjerven
+152 - Astrid Bjerkås
+153 - Even Espelid
+154 - Even Espelid
+155 - Bjarte Aksnes
+156 - Bjarte Aksnes
+157 - Annebeth Askevold
+158 - Annebeth Askevold
+159 - Monica Sørensen
+160 - Monica Sørensen
+161 - Yvonne Solberg
+162 - Anders Eggum
+163 - Monica Sørensen
+164 - Monica Sørensen
+165 - Eirik Riiser
+166 - Iryna A.
+167 - Kenneth Birkeli
+168 - Bjørn Jarle Wiger
+169 - Bjørn Jarle Wiger
+170 - Unni Helgesen
+171 - Unni Helgesen
+172 - Henriette Øien
+173 - Sven Bruun
+174 - Unni Helgesen
+175 - Per Øivind Gaardsrud
+176 - Kathrine Syse
+177 - Kathrine Syse
+178 - Monica Sørensen
+179 - Monica Sørensen
+180 - Jarle Hersvik
+181 - Jarle Hersvik
+182 - Thomas Rosenlund
+183 - Thomas Rosenlund
+184 - Hans Christian Sundsfjord
+185 - Guro Smedshaug
+186 - Guro Smedshaug
+187 - Heidi Amundsen
+188 - Per-Christian Wandås
+189 - Henriette Øien
+190 - Henriette Øien
+191 - Thomas Grimeland
+192 - Caroline Høgsnes
+193 - Caroline Høgsnes
+194 - Øivind Langeland
+195 - Øivind Langeland
+196 - Bjørn Jarle Wiger
+197 - Bjørn Jarle Wiger
+198 - Nina Nina Bjørlykke
+199 - Sara Jovic
+200 - Sara Jovic
+201 - Maren Jeanette
+202 - Maren Jeanette
+203 - Unni Helgesen
+204 - Unni Helgesen
+205 - Jeppe Ugland
+206 - Jeppe Ugland
+207 - Tea Elgshøen
+208 - Tea Elgshøen
+209 - Knut Jønsrud
+210 - Knut Jønsrud
+211 - Linda Haugen
+212 - Linda Haugen
+213 - Steinar Mathisen
+214 - Bjarte Aksnes
+215 - Bjarte Aksnes
+216 - Ørjan Stene
+217 - Ørjan Stene
+218 - Annebeth Askevold
+219 - Annebeth Askevold
+220 - Even Espelid
+221 - Even Espelid
+222 - Anita Lorck
+223 - Anita Lorck
+224 - Jonas Bergan
+225 - Jonas Bergan
+226 - Ingrid Pedersen
+227 - Addi K
+228 - Addi K
+229 - Kirsti Strand
+230 - Kirsti Strand
+231 - Linda Nisja
+232 - Ingvar Sørlien
+233 - Ingvar Sørlien
+234 - Anna Naume Solem
+235 - Birgit Johansen
+236 - Birgit Johansen
+237 - Bjørn Intelhus
+238 - Bjørn Intelhus
+239 - Yvonne Solberg
+240 - Yvonne Solberg
+241 - Martha Hynne
+242 - Sven Bruun
+243 - Sven Bruun
+244 - Idunn Løvseth Kavlie
+245 - Idunn Løvseth Kavlie
+246 - Eirik Riiser
+247 - Gunnhild Solli Haukaas
+248 - Kenneth Birkeli
+249 - Erlend Bø
+250 - Erlend Bø
+251 - Vegard Nore
+252 - Vegard Nore
+253 - Per Ludvig Skjerven
+254 - Per Ludvig Skjerven
+255 - Per Øivind Gaardsrud
+256 - Per Øivind Gaardsrud
+257 - Sigrid Beitland
+258 - Sigrid Beitland
+259 - Sigrid Beitland
+260 - Sigrid Beitland
+261 - Øystein Maurud Holm
+262 - Øystein Maurud Holm
+263 - Nina Wavik Ytterstad
+264 - Nina Wavik Ytterstad
+265 - Silja Angellsen
+266 - Hege Wang
+267 - Charlott Nordstrøm
+268 - Charlott Nordstrøm
+269 - Ørjan Stene
+270 - Ørjan Stene
+271 - Kathrine Syse
+272 - Kathrine Syse
+273 - Per Ludvig Skjerven
+274 - Jarle Hersvik
+275 - Jarle Hersvik
+276 - Thomas Rosenlund
+277 - Thomas Rosenlund
+278 - Hans Christian Sundsfjord
+279 - Gunnhild Solli Haukaas
+280 - Øyvin Jakobsen
+281 - Heidi Amundsen
+282 - Nina Nina Bjørlykke
+283 - Bjørn Jarle Wiger
+284 - Bjørn Jarle Wiger
+285 - Per-Christian Wandås
+286 - Per-Christian Wandås
+287 - Caroline Høgsnes
+288 - Caroline Høgsnes
+289 - Maren Jeanette
+290 - Maren Jeanette
+291 - Øivind Langeland
+292 - Øivind Langeland
+293 - Monica Sørensen
+294 - Monica Sørensen
+295 - Guro Smedshaug
+296 - Guro Smedshaug
+297 - Linda Haugen
+298 - Linda Haugen
+299 - Jeppe Ugland
+300 - Jeppe Ugland
+301 - Unni Helgesen
+302 - Unni Helgesen
+303 - Bjarte Aksnes
+304 - Bjarte Aksnes
+305 - Ingvar Sørlien
+306 - Ingvar Sørlien
+307 - Kenneth Birkeli
+308 - Kenneth Birkeli
+309 - Vegard Nore
+310 - Vegard Nore
+311 - Steinar Mathisen
+312 - Steinar Mathisen
+313 - Addi K
+314 - Addi K
+315 - Birgit Johansen
+316 - Birgit Johansen
+317 - Nina Wavik Ytterstad
+318 - Nina Wavik Ytterstad
+319 - Henriette Øien
+320 - Henriette Øien
+321 - Anita Lorck
+322 - Anita Lorck
+323 - Ingrid Pedersen
+324 - Anna Naume Solem
+325 - Anna Naume Solem
+326 - Sara Jovic
+327 - Sara Jovic
+328 - Vegard Storsul Opdahl
+329 - Tea Elgshøen
+330 - Tea Elgshøen
+331 - Linda Nisja
+332 - Linda Nisja
+333 - Even Espelid
+334 - Even Espelid
+335 - Sven Bruun
+336 - Kirsti Strand
+337 - Kirsti Strand
+338 - Jonas Bergan
+339 - Jonas Bergan
+340 - Kaja Fjell Jørgensen
+341 - Erlend Bø
+342 - Sigrid Beitland
+343 - Sigrid Beitland
+344 - Bjørn Intelhus
+345 - Bjørn Intelhus
+346 - Eirik Riiser
+347 - Eirik Riiser
+348 - Martha Hynne
+349 - Idunn Løvseth Kavlie
+350 - Idunn Løvseth Kavlie
+351 - Øystein Maurud Holm
+352 - Øystein Maurud Holm
+353 - Silja Angellsen
+354 - Asbjørn Steiro
+355 - Asbjørn Steiro
+356 - Yvonne Solberg
+357 - Hanne Narbuvold
+358 - Knut Jønsrud
+359 - Per Øivind Gaardsrud
+360 - Per Øivind Gaardsrud
+361 - Annebeth Askevold
+362 - Annebeth Askevold
+363 - Kathrine Syse
+364 - Kathrine Syse
+365 - Sara Jovic
+366 - Sara Jovic
+367 - Knut Jønsrud
+368 - Knut Jønsrud
+369 - Anna Naume Solem
+370 - Anna Naume Solem
+371 - Thomas Rosenlund
+372 - Thomas Rosenlund
+373 - Guro Smedshaug
+374 - Guro Smedshaug
+375 - Hans Christian Sundsfjord
+376 - Hans Christian Sundsfjord
+377 - Astrid Bjerkås
+378 - Øyvin Jakobsen
+379 - Per-Christian Wandås
+380 - Per-Christian Wandås
+381 - Vegard Nore
+382 - Vegard Nore
+383 - Caroline Høgsnes
+384 - Caroline Høgsnes
+385 - Øivind Langeland
+386 - Øivind Langeland
+387 - Henriette Øien
+388 - Henriette Øien
+389 - Nina Wavik Ytterstad
+390 - Nina Wavik Ytterstad
+391 - Maren Jeanette
+392 - Maren Jeanette
+393 - Ragnhild Holst
+394 - Kirsti Strand
+395 - Kirsti Strand
+396 - Unni Helgesen
+397 - Unni Helgesen
+398 - Per Ludvig Skjerven
+399 - Per Ludvig Skjerven
+400 - Even Espelid
+401 - Even Espelid
+402 - Linda Haugen
+403 - Linda Haugen
+404 - Bjørn Intelhus
+405 - Bjørn Intelhus
+406 - Jostein Ven
+407 - Jostein Ven
+408 - Monica Sørensen
+409 - Monica Sørensen
+410 - Anita Lorck
+411 - Anita Lorck
+412 - Bjarte Aksnes
+413 - Bjarte Aksnes
+414 - Eirik Riiser
+415 - Jeppe Ugland
+416 - Jeppe Ugland
+417 - Martha Hynne
+418 - Annebeth Askevold
+419 - Annebeth Askevold
+420 - Tea Elgshøen
+421 - Jarle Hersvik
+422 - Jarle Hersvik
+423 - Steinar Mathisen
+424 - Steinar Mathisen
+425 - Linda Nisja
+426 - Linda Nisja
+427 - Birgit Johansen
+428 - Birgit Johansen
+429 - Jonas Bergan
+430 - Sven Bruun
+431 - Sven Bruun
+432 - Øystein Maurud Holm
+433 - Erlend Bø
+434 - Erlend Bø
+435 - Heidi Amundsen
+436 - Heidi Amundsen
+437 - Siw Helene Myhrer
+438 - Sigrid Beitland
+439 - Ingvar Sørlien
+440 - Addi K
+441 - Addi K
+442 - Asbjørn Steiro
+443 - Asbjørn Steiro
+444 - Ingrid Pedersen
+445 - Yvonne Solberg
+446 - Yvonne Solberg
+447 - Ørjan Stene
+448 - Ørjan Stene
+449 - Thomas Grimeland
+450 - Per Øivind Gaardsrud
+451 - Monica Sørensen
+452 - Monica Sørensen
+453 - Heidi Amundsen
+454 - Heidi Amundsen
+455 - Kathrine Syse
+456 - Kathrine Syse
+457 - Jarle Hersvik
+458 - Jarle Hersvik
+459 - Henriette Øien
+460 - Henriette Øien
+461 - Caroline Høgsnes
+462 - Caroline Høgsnes
+463 - Bjørn Jarle Wiger
+464 - Bjørn Jarle Wiger
+465 - Thomas Rosenlund
+466 - Thomas Rosenlund
+467 - Nina Wavik Ytterstad
+468 - Nina Wavik Ytterstad
+469 - Asbjørn Steiro
+470 - Asbjørn Steiro
+471 - Even Espelid
+472 - Even Espelid
+473 - Linda Nisja
+474 - Linda Nisja
+475 - Vibeke Herikstad
+476 - Silja Angellsen
+477 - Silja Angellsen
+478 - Jonas Bergan
+479 - Jonas Bergan
+480 - Idunn Løvseth Kavlie
+481 - Idunn Løvseth Kavlie
+482 - Knut Jønsrud
+483 - Knut Jønsrud
+484 - Bjørn Intelhus
+485 - Bjørn Intelhus
+486 - Eirik Riiser
+487 - Eirik Riiser
+488 - Sven Bruun
+489 - Sven Bruun
+490 - Ørjan Stene
+491 - Ørjan Stene
+492 - Addi K
+493 - Addi K
+494 - Maren Jeanette
+495 - Thomas Grimeland
+496 - Thomas Grimeland
+497 - Martha Hynne
+498 - Jeppe Ugland
+499 - Jeppe Ugland
+500 - Unni Helgesen
+501 - Unni Helgesen
+502 - Bjarte Aksnes
+503 - Bjarte Aksnes
+504 - Steinar Mathisen
+505 - Per-Christian Wandås
+506 - Per-Christian Wandås
+507 - Per Ludvig Skjerven
+508 - Hans Christian Sundsfjord
+509 - Kirsti Strand
+510 - Kirsti Strand
+511 - Sara Jovic
+512 - Sara Jovic
+513 - Per Øivind Gaardsrud
+514 - Per Øivind Gaardsrud
+515 - Øivind Langeland
+516 - Øivind Langeland
+517 - Annebeth Askevold
+518 - Annebeth Askevold
+519 - Anita Lorck
+520 - Anita Lorck
+521 - Vegard Nore
+522 - Vegard Nore
+523 - Yvonne Solberg
+524 - Yvonne Solberg
+525 - Kenneth Birkeli
+526 - Kenneth Birkeli
+527 - Ingvar Sørlien
+528 - Ingvar Sørlien
+529 - Ragnhild Holst
+530 - Anna Naume Solem
+531 - Sigrid Beitland
+532 - Sigrid Beitland
+533 - Øystein Maurud Holm
+534 - Erlend Bø
+535 - Erlend Bø
+536 - Guro Smedshaug
+537 - Guro Smedshaug
+538 - Øyvin Jakobsen
+539 - Tea Elgshøen
+540 - Birgit Johansen
+541 - Jostein Ven
+542 - Hanne Narbuvold
+543 - Hanne Narbuvold
+544 - Marius Nord Jøntvedt
+545 - Vegard Storsul Opdahl
+546 - Ingrid Pedersen
+547 - Kathrine Syse
+548 - Kathrine Syse
+549 - Sara Jovic
+550 - Sara Jovic
+551 - Heidi Amundsen
+552 - Heidi Amundsen
+553 - Nina Wavik Ytterstad
+554 - Nina Wavik Ytterstad
+555 - Knut Jønsrud
+556 - Knut Jønsrud
+557 - Jarle Hersvik
+558 - Jarle Hersvik
+559 - Thomas Rosenlund
+560 - Thomas Rosenlund
+561 - Øyvin Jakobsen
+562 - Helen Eriksen
+563 - Henriette Øien
+564 - Henriette Øien
+565 - Vegard Nore
+566 - Vegard Nore
+567 - Monica Sørensen
+568 - Monica Sørensen
+569 - Øivind Langeland
+570 - Øivind Langeland
+571 - Ørjan Stene
+572 - Guro Smedshaug
+573 - Guro Smedshaug
+574 - Annebeth Askevold
+575 - Annebeth Askevold
+576 - Bjørn Intelhus
+577 - Bjørn Intelhus
+578 - Ingvar Sørlien
+579 - Ingvar Sørlien
+580 - Per Ludvig Skjerven
+581 - Per Ludvig Skjerven
+582 - Jostein Ven
+583 - Jostein Ven
+584 - Jeppe Ugland
+585 - Jeppe Ugland
+586 - Eirik Riiser
+587 - Eirik Riiser
+588 - Tea Elgshøen
+589 - Tea Elgshøen
+590 - Even Espelid
+591 - Even Espelid
+592 - Caroline Høgsnes
+593 - Caroline Høgsnes
+594 - Anita Lorck
+595 - Anita Lorck
+596 - Linda Nisja
+597 - Linda Nisja
+598 - Anna Naume Solem
+599 - Anna Naume Solem
+600 - Jonas Bergan
+601 - Jonas Bergan
+602 - Kirsti Strand
+603 - Kirsti Strand
+604 - Addi K
+605 - Addi K
+606 - Bjarte Aksnes
+607 - Bjarte Aksnes
+608 - Gunnhild Solli Haukaas
+609 - Erlend Bø
+610 - Erlend Bø
+611 - Siw Helene Myhrer
+612 - Siw Helene Myhrer
+613 - Hans Christian Sundsfjord
+614 - Per-Christian Wandås
+615 - Bjørn Jarle Wiger
+616 - Bjørn Jarle Wiger
+617 - Birgit Johansen
+618 - Linda Haugen
+619 - Linda Haugen
+620 - Kaja Fjell Jørgensen
+621 - Yvonne Solberg
+622 - Sigrid Beitland
+623 - Sigrid Beitland
+624 - Bendik Kvingan
+625 - Kenneth Birkeli
+626 - Thomas Grimeland
+627 - Thomas Grimeland
+628 - Unni Helgesen
+629 - Asbjørn Steiro
+630 - Asbjørn Steiro
+631 - Maren Jeanette
+632 - Ragnhild Holst
+633 - Hanne Narbuvold
+634 - Anders Eggum
+635 - Anders Eggum
+636 - Anders Eggum
+637 - Marius Nord Jøntvedt
+638 - Øystein Maurud Holm
+639 - Per Øivind Gaardsrud
+640 - Per Øivind Gaardsrud
+641 - Kathrine Syse
+642 - Kathrine Syse
+643 - Erlend Bø
+644 - Sara Jovic
+645 - Sara Jovic
+646 - Knut Jønsrud
+647 - Nina Wavik Ytterstad
+648 - Nina Wavik Ytterstad
+649 - Heidi Amundsen
+650 - Heidi Amundsen
+651 - Siw Helene Myhrer
+652 - Siw Helene Myhrer
+653 - Hans Christian Sundsfjord
+654 - Guro Smedshaug
+655 - Guro Smedshaug
+656 - Thomas Rosenlund
+657 - Thomas Rosenlund
+658 - Øyvin Jakobsen
+659 - Øyvin Jakobsen
+660 - Caroline Høgsnes
+661 - Caroline Høgsnes
+662 - Øivind Langeland
+663 - Øivind Langeland
+664 - Henriette Øien
+665 - Henriette Øien
+666 - Kirsti Strand
+667 - Kirsti Strand
+668 - Sigrid Beitland
+669 - Sigrid Beitland
+670 - Jeppe Ugland
+671 - Jeppe Ugland
+672 - Unni Helgesen
+673 - Unni Helgesen
+674 - Thomas Grimeland
+675 - Maren Jeanette
+676 - Monica Sørensen
+677 - Monica Sørensen
+678 - Bjørn Intelhus
+679 - Bjørn Intelhus
+680 - Bjørn Jarle Wiger
+681 - Bjørn Jarle Wiger
+682 - Vegard Kvilesjø
+683 - Anna Naume Solem
+684 - Anna Naume Solem
+685 - Anders Eggum
+686 - Eirik Riiser
+687 - Eirik Riiser
+688 - Tea Elgshøen
+689 - Tea Elgshøen
+690 - Even Espelid
+691 - Even Espelid
+692 - Linda Haugen
+693 - Gunnhild Solli Haukaas
+694 - Anita Lorck
+695 - Anita Lorck
+696 - Vegard Nore
+697 - Vegard Nore
+698 - Øystein Maurud Holm
+699 - Addi K
+700 - Addi K
+701 - Sven Bruun
+702 - Kenneth Birkeli
+703 - Bjarte Aksnes
+704 - Bjarte Aksnes
+705 - Steinar Mathisen
+706 - Per-Christian Wandås
+707 - Yvonne Solberg
+708 - Yvonne Solberg
+709 - Jonas Bergan
+710 - Jonas Bergan
+711 - Idunn Løvseth Kavlie
+712 - Idunn Løvseth Kavlie
+713 - Asbjørn Steiro
+714 - Asbjørn Steiro
+715 - Ingvar Sørlien
+716 - Ingvar Sørlien
+717 - Ørjan Stene
+718 - Ørjan Stene
+719 - Marius Nord Jøntvedt
+720 - Birgit Johansen
+721 - Annebeth Askevold
+722 - Annebeth Askevold
