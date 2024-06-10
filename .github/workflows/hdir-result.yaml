@@ -13,10 +13,8 @@ env:
 # Controls on when the workflow will run
 on:
   # Runs every day at 10, 17 and 23
-  schedule:
-    - cron: '0 07,09,16,22 * * *'
-    #- cron: '7 10,18,23 * * *'
-    #  - cron: "30 20 * * MON,THU"
+  # schedule:
+    # - cron: '0 07,09,16,22 * * *'
 
   workflow_dispatch:
 
