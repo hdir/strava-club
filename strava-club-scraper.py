@@ -57,7 +57,8 @@ if sys.platform in {'win32', 'darwin'}:
 # Required: config['GENERAL']['DATE_MIN'], config['GENERAL']['DATE_MAX'], config['GENERAL']['TIMEZONE'], config['STRAVA']['LOGIN'], config['STRAVA']['PASSWORD'], config['STRAVA']['CLUB_IDS']
 # Optional: config['GENERAL']['ACTIVITIES_TYPE'], config['STRAVA']['CLUB_MEMBERS_TEAMS'], config['GOOGLE_DOCS']['SHEET_ID']
 config = configparser.ConfigParser()
-config.read(filenames=os.path.join(os.path.expanduser('~'), 'Documents', 'Documents', 'Projects', 'strava-club-scraper', 'settings', 'config.ini'), encoding='utf-8')
+# config.read(filenames=os.path.join(os.path.expanduser('~'), 'Documents', 'Documents', 'Projects', 'strava-club-scraper', 'settings', 'config.ini'), encoding='utf-8')
+config.read(os.path.join(os.getcwd(), 'settings', 'config.ini'), encoding='utf-8') #aktivitetsaksjonen
 
 ## Google API
 google_api_key = os.path.join(os.path.expanduser('~'), 'Documents', 'Documents', 'Projects', 'strava-club-scraper', 'settings', 'keys.json')
