@@ -210,6 +210,13 @@ def strava_authentication(strava_user, strava_password): #aktivitetsaksjon
         time.sleep(2)
         field_login.send_keys(Keys.ENTER)
 
+        # Use password instead of two factor  aktivitetsaksjonen
+        time.sleep(2)
+        try:
+            driver.find_element(by=By.XPATH, value='//*[@id="__next"]/div/div[2]/div[1]/div[1]/div/div[5]/button').click() 
+        except NoSuchElementException:
+            pass
+
         time.sleep(2)
 
         # Password
