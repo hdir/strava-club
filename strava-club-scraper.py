@@ -23,6 +23,7 @@ import os
 import re
 import sys
 import time
+from datetime import datetime #aktivitetsaksjonen
 
 from dateutil import parser, relativedelta
 from geopy.extra.rate_limiter import RateLimiter
@@ -40,8 +41,23 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
+# aktivitetsaksjonen start
+directory=r"data/skrap"
+## If folder doesn't exists, create it ##
+if not os.path.isdir(directory):
+    os.mkdirs(directory)
+
+directory= r"data/skrap/history"
+## If folder doesn't exists, create it ##
+if not os.path.isdir(directory):
+    os.mkdirs(directory)
+# aktivitetsaksjonen stop
 
 # Settings
+
+## Secrets Strava password and strava user aktivitetsaksjonen
+strava_password = os.environ['STRAVA_PASSWORD'] #aktivitetsaksjonen
+strava_user = os.environ['STRAVA_USER'] #aktivitetsaksjonen
 
 ## Set working directory
 if sys.platform in {'win32', 'darwin'}:
@@ -150,7 +166,8 @@ def selenium_webdriver(*, web_browser='chrome'):
     return driver
 
 
-def strava_authentication(*, strava_login, strava_password):
+#def strava_authentication(*, strava_login, strava_password):
+def strava_authentication(strava_user, strava_password): #aktivitetsaksjon
     # Load Selenium WebDriver
     if 'driver' in vars():
         if driver.service.is_connectable() is True:
@@ -185,7 +202,8 @@ def strava_authentication(*, strava_login, strava_password):
 
         # Login
         field_login = next(element for element in driver.find_elements(by=By.XPATH, value='.//*[@data-cy="email"]') if element.is_displayed())
-        field_login.send_keys(strava_login)
+        #field_login.send_keys(strava_login)
+        field_login.send_keys(strava_user) #aktivitetsaksjonen
         time.sleep(2)
         field_login.send_keys(Keys.ENTER)
 
@@ -204,7 +222,8 @@ def strava_authentication(*, strava_login, strava_password):
         return driver
 
 
-def strava_club_activities(*, strava_login, strava_password, club_ids, filter_activities_type, filter_date_min, filter_date_max, timezone='UTC'):
+def strava_club_activities(*, strava_user, strava_password, club_ids, filter_activities_type, filter_date_min, filter_date_max, timezone='UTC'):#aktivitetsaksjonen
+#def strava_club_activities(*, strava_login, strava_password, club_ids, filter_activities_type, filter_date_min, filter_date_max, timezone='UTC'):
     """
     Scraps and imports activities belonging to one or multiple Strava Club(s) (public activities or activities that the account that is scraping the data has access to) to a dataset.
 
@@ -220,7 +239,8 @@ def strava_club_activities(*, strava_login, strava_password, club_ids, filter_ac
     filter_date_max = parser.parse(filter_date_max)
 
     # Strava login
-    driver = strava_authentication(strava_login=strava_login, strava_password=strava_password)
+    #driver = strava_authentication(strava_login=strava_login, strava_password=strava_password)
+    driver = strava_authentication(strava_login=strava_user, strava_password=strava_password) #aktivitetsaksjonen
 
     data = []
 
@@ -662,10 +682,12 @@ def strava_club_activities(*, strava_login, strava_password, club_ids, filter_ac
     return club_activities_df
 
 
-def strava_export_activities(*, strava_login, strava_password, activities_id, file_type='.gpx'):
+#def strava_export_activities(*, strava_login, strava_password, activities_id, file_type='.gpx'):
+def strava_export_activities(*, strava_user, strava_password, activities_id, file_type='.gpx'): #aktivitetsaksjonen
     """Given a list of activity_id, export it to .gpx."""
     # Strava login
-    driver = strava_authentication(strava_login=strava_login, strava_password=strava_password)
+    #driver = strava_authentication(strava_login=strava_login, strava_password=strava_password)
+    driver = strava_authentication(strava_login=strava_user, strava_password=strava_password) #aktivitetsaksjonen
 
     # Export activity as .gpx
     if file_type == '.gpx':
@@ -692,14 +714,16 @@ def strava_export_activities(*, strava_login, strava_password, activities_id, fi
                 pass
 
 
-def strava_club_members(*, strava_login, strava_password, club_ids, club_members_teams=None, timezone='UTC'):
+#def strava_club_members(*, strava_login, strava_password, club_ids, club_members_teams=None, timezone='UTC'):
+def strava_club_members(*, strava_user, strava_password, club_ids, club_members_teams=None, timezone='UTC'): #aktivitetsaksjonen
     """Scraps and imports members of one or multiple Strava Club(s) to a dataset."""
     # Settings and variables
     geolocator = Nominatim(user_agent='strava-club-scraper')
     geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
 
     # Strava login
-    driver = strava_authentication(strava_login=strava_login, strava_password=strava_password)
+    #driver = strava_authentication(strava_login=strava_login, strava_password=strava_password)
+    driver = strava_authentication(strava_login=strava_user, strava_password=strava_password) #aktivitetsaksjonen
 
     data = []
 
@@ -856,7 +880,8 @@ def strava_club_members(*, strava_login, strava_password, club_ids, club_members
     return club_members_df
 
 
-def strava_club_leaderboard(*, strava_login, strava_password, club_ids, filter_date_min, filter_date_max, timezone='UTC'):
+#def strava_club_leaderboard(*, strava_login, strava_password, club_ids, filter_date_min, filter_date_max, timezone='UTC'):
+def strava_club_leaderboard(*, strava_user, strava_password, club_ids, filter_date_min, filter_date_max, timezone='UTC'): #aktivitetsaksjonen
     """
     Scraps and imports leaderboard of one or multiple Strava Club(s) to a dataset.
 
@@ -869,7 +894,8 @@ def strava_club_leaderboard(*, strava_login, strava_password, club_ids, filter_d
     filter_date_max = parser.parse(filter_date_max)
 
     # Strava login
-    driver = strava_authentication(strava_login=strava_login, strava_password=strava_password)
+    # driver = strava_authentication(strava_login=strava_login, strava_password=strava_password)
+    driver = strava_authentication(strava_login=strava_user, strava_password=strava_password) #aktivitetsaksjonen
 
     club_leaderboard_df = pd.DataFrame(data=None, index=None, dtype='str')
 
@@ -1553,8 +1579,9 @@ def execution_time_to_google_sheets(*, sheet_id, sheet_name, timezone='UTC'):
 
 # Get data (via web-scraping)
 club_members_df = strava_club_members(
-    strava_login=config['STRAVA']['LOGIN'],
-    strava_password=config['STRAVA']['PASSWORD'],
+#    strava_login=config['STRAVA']['LOGIN'],
+    strava_user=os.environ['STRAVA_USER'], #aktivitetsaksjonen
+    strava_password=os.environ['STRAVA_PASSWORD'], #aktivitetsaksjonen
     club_ids=config['STRAVA']['CLUB_IDS'].split(sep=', '),
     club_members_teams=club_members_teams,
     timezone=config['GENERAL']['TIMEZONE'],
@@ -1570,27 +1597,36 @@ print(
     .sort_values(by=['athlete_team', 'athlete_name'], ignore_index=True),
 )
 
-# Update Google Sheets sheet
-if google_api_key is not None:
-    club_members_df = strava_club_to_google_sheets(df=club_members_df, club_members_df=club_members_df, sheet_id=config['GOOGLE_DOCS']['SHEET_ID'], sheet_name='Members')
-
+# Update Google Sheets sheet 
+#tatt bort i aktivitetsaksjonen
+#if google_api_key is not None:
+#    club_members_df = strava_club_to_google_sheets(df=club_members_df, club_members_df=club_members_df, sheet_id=config['GOOGLE_DOCS']['SHEET_ID'], sheet_name='Members')
+club_members_df.to_csv(path_or_buf='data/skrap/club_members.csv', sep=',', na_rep='', header=True, index=False, index_label=None, encoding='utf-8') #aktivitetsaksjonen
 
 ## Club leaderboard
 
 # Get data (via web-scraping)
 club_leaderboard_df = strava_club_leaderboard(
-    strava_login=config['STRAVA']['LOGIN'],
-    strava_password=config['STRAVA']['PASSWORD'],
+#    strava_login=config['STRAVA']['LOGIN'],
+    strava_user=os.environ['STRAVA_USER'], #aktivitetsaksjonen
+    strava_password=os.environ['STRAVA_PASSWORD'], #aktivitetsaksjonen
     club_ids=config['STRAVA']['CLUB_IDS'].split(sep=', '),
     filter_date_min=config['GENERAL']['DATE_MIN'],
     filter_date_max=config['GENERAL']['DATE_MAX'],
     timezone=config['GENERAL']['TIMEZONE'],
 )
 
-# Update Google Sheets sheet
-if google_api_key is not None:
-    strava_club_to_google_sheets(df=club_leaderboard_df, club_members_df=club_members_df, sheet_id=config['GOOGLE_DOCS']['SHEET_ID'], sheet_name='Leaderboard')
+now = datetime.now() #aktivitetsaksjonen
+folder_time = "{}-{}-{}_{}-{}".format(now.year, now.month, now.day, now.hour, now.minute) #aktivitetsaksjonen
+folder_to_save_files = r'data/skrap/history/' + folder_time + '-club_leaderboard.csv' #aktivitetsaksjonen
 
+# Update Google Sheets sheet
+# tatt bort i aktivitetsaksjone
+#if google_api_key is not None:
+#    strava_club_to_google_sheets(df=club_leaderboard_df, club_members_df=club_members_df, sheet_id=config['GOOGLE_DOCS']['SHEET_ID'], sheet_name='Leaderboard')
+club_leaderboard_df.to_csv(path_or_buf='data/skrap/club_leaderboard.csv', sep=',', na_rep='', header=True, index=False, index_label=None, encoding='utf-8') #aktivitetsaksjonen
+# Skrive historikk
+club_leaderboard_df.to_csv(path_or_buf=folder_to_save_files, sep=',', na_rep='', header=True, index=False, index_label=None, encoding='utf-8') #aktivitetsaksjonen
 
 ## Club activities
 if config['GENERAL'].getboolean('SCRAP_CLUB_ACTIVITIES') is True:
@@ -1630,8 +1666,9 @@ if config['GENERAL'].getboolean('SCRAP_CLUB_ACTIVITIES') is True:
 ## Store execution time in Google Sheets
 
 # Update Google Sheets sheet
-if google_api_key is not None:
-    execution_time_to_google_sheets(sheet_id=config['GOOGLE_DOCS']['SHEET_ID'], sheet_name='Execution Time', timezone=config['GENERAL']['TIMEZONE'])
+# tatt bort i aktivitetsaksjonen
+#if google_api_key is not None:
+#    execution_time_to_google_sheets(sheet_id=config['GOOGLE_DOCS']['SHEET_ID'], sheet_name='Execution Time', timezone=config['GENERAL']['TIMEZONE'])
 
 
 # Quit WebDriver
