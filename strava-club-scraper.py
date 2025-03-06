@@ -41,17 +41,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
-# aktivitetsaksjonen start
-directory=r"data/skrap"
-## If folder doesn't exists, create it ##
-if not os.path.isdir(directory):
-    os.mkdirs(directory)
 
-directory= r"data/skrap/history"
-## If folder doesn't exists, create it ##
-if not os.path.isdir(directory):
-    os.mkdirs(directory)
-# aktivitetsaksjonen stop
 
 # Settings
 
@@ -80,6 +70,18 @@ if os.path.exists(google_api_key) is False:
 
 #else:
 #    club_members_teams = None
+
+# aktivitetsaksjonen start
+directory=r"data/skrap"
+## If folder doesn't exists, create it ##
+if not os.path.isdir(directory):
+    os.mkdirs(directory)
+
+directory= r"data/skrap/history"
+## If folder doesn't exists, create it ##
+if not os.path.isdir(directory):
+    os.mkdirs(directory)
+# aktivitetsaksjonen stop
 
 ## Copy-on-Write (will be enabled by default in version 3.0)
 if pd.__version__ >= '1.5.0' and pd.__version__ < '3.0.0':
