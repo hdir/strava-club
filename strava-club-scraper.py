@@ -75,11 +75,11 @@ if os.path.exists(google_api_key) is False:
     google_api_key = None
 
 ## Club members teams
-if 'CLUB_MEMBERS_TEAMS' in config['STRAVA']:
-    club_members_teams = pd.DataFrame.from_dict(data=dict(item.split(sep=': ') for item in config['STRAVA']['CLUB_MEMBERS_TEAMS'].split(sep='; ')), orient='index', dtype='str', columns=['athlete_id'])
+#if 'CLUB_MEMBERS_TEAMS' in config['STRAVA']:
+#    club_members_teams = pd.DataFrame.from_dict(data=dict(item.split(sep=': ') for item in config['STRAVA']['CLUB_MEMBERS_TEAMS'].split(sep='; ')), orient='index', dtype='str', columns=['athlete_id'])
 
-else:
-    club_members_teams = None
+#else:
+#    club_members_teams = None
 
 ## Copy-on-Write (will be enabled by default in version 3.0)
 if pd.__version__ >= '1.5.0' and pd.__version__ < '3.0.0':
