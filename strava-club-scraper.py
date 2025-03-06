@@ -220,7 +220,8 @@ def strava_authentication(strava_user, strava_password): #aktivitetsaksjon
         time.sleep(2)
 
         # Password
-        field_password = next(element for element in driver.find_elements(by=By.XPATH, value='.//*[@data-cy="password"]') if element.is_displayed())
+        #field_password = next(element for element in driver.find_elements(by=By.XPATH, value='.//*[@data-cy="password"]') if element.is_displayed()) 
+        field_password = next(element for element in driver.find_elements(by=By.XPATH, value='//*[@id="__next"]/div/div[2]/div[1]/div[1]/div/form/div[1]/div[2]/div/input') if element.is_displayed())
         field_password.send_keys(strava_password)
         time.sleep(2)
         field_password.send_keys(Keys.ENTER)
