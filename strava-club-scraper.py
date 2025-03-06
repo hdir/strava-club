@@ -243,7 +243,7 @@ def strava_club_activities(*, strava_user, strava_password, club_ids, filter_act
 
     # Strava login
     #driver = strava_authentication(strava_login=strava_login, strava_password=strava_password)
-    driver = strava_authentication(strava_login=strava_user, strava_password=strava_password) #aktivitetsaksjonen
+    driver = strava_authentication(strava_user=strava_user, strava_password=strava_password) #aktivitetsaksjonen
 
     data = []
 
@@ -690,7 +690,7 @@ def strava_export_activities(*, strava_user, strava_password, activities_id, fil
     """Given a list of activity_id, export it to .gpx."""
     # Strava login
     #driver = strava_authentication(strava_login=strava_login, strava_password=strava_password)
-    driver = strava_authentication(strava_login=strava_user, strava_password=strava_password) #aktivitetsaksjonen
+    driver = strava_authentication(strava_user=strava_user, strava_password=strava_password) #aktivitetsaksjonen
 
     # Export activity as .gpx
     if file_type == '.gpx':
@@ -726,7 +726,7 @@ def strava_club_members(*, strava_user, strava_password, club_ids, club_members_
 
     # Strava login
     #driver = strava_authentication(strava_login=strava_login, strava_password=strava_password)
-    driver = strava_authentication(strava_login=strava_user, strava_password=strava_password) #aktivitetsaksjonen
+    driver = strava_authentication(strava_user=strava_user, strava_password=strava_password) #aktivitetsaksjonen
 
     data = []
 
@@ -898,7 +898,7 @@ def strava_club_leaderboard(*, strava_user, strava_password, club_ids, filter_da
 
     # Strava login
     # driver = strava_authentication(strava_login=strava_login, strava_password=strava_password)
-    driver = strava_authentication(strava_login=strava_user, strava_password=strava_password) #aktivitetsaksjonen
+    driver = strava_authentication(strava_user=strava_user, strava_password=strava_password) #aktivitetsaksjonen
 
     club_leaderboard_df = pd.DataFrame(data=None, index=None, dtype='str')
 
@@ -1608,10 +1608,10 @@ club_members_df.to_csv(path_or_buf='data/skrap/club_members.csv', sep=',', na_re
 ## Club leaderboard
 
 # Get data (via web-scraping)
+#endret to første linjer aktivitetsaksjonen
 club_leaderboard_df = strava_club_leaderboard(
-#    strava_login=config['STRAVA']['LOGIN'],
-    strava_user=os.environ['STRAVA_USER'], #aktivitetsaksjonen
-    strava_password=os.environ['STRAVA_PASSWORD'], #aktivitetsaksjonen
+    strava_user=os.environ['STRAVA_USER'], 
+    strava_password=os.environ['STRAVA_PASSWORD'], 
     club_ids=config['STRAVA']['CLUB_IDS'].split(sep=', '),
     filter_date_min=config['GENERAL']['DATE_MIN'],
     filter_date_max=config['GENERAL']['DATE_MAX'],
@@ -1634,7 +1634,7 @@ club_leaderboard_df.to_csv(path_or_buf=folder_to_save_files, sep=',', na_rep='',
 if config['GENERAL'].getboolean('SCRAP_CLUB_ACTIVITIES') is True:
     # Get data (via web-scraping)
     club_activities_df = strava_club_activities(
-        strava_login=config['STRAVA']['LOGIN'],
+        strava_user=config['STRAVA']['LOGIN'],
         strava_password=config['STRAVA']['PASSWORD'],
         club_ids=config['STRAVA']['CLUB_IDS'].split(sep=', '),
         filter_activities_type=None,
