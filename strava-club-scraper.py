@@ -170,7 +170,7 @@ def selenium_webdriver(*, web_browser='chrome'):
 
 
 #def strava_authentication(*, strava_login, strava_password):
-def strava_authentication(strava_user, strava_password): #aktivitetsaksjon
+def strava_authentication(*, strava_user, strava_password):
     # Load Selenium WebDriver
     if 'driver' in vars():
         if driver.service.is_connectable() is True:
@@ -205,23 +205,15 @@ def strava_authentication(strava_user, strava_password): #aktivitetsaksjon
 
         # Login
         field_login = next(element for element in driver.find_elements(by=By.XPATH, value='.//*[@data-cy="email"]') if element.is_displayed())
-        #field_login.send_keys(strava_login)
-        field_login.send_keys(strava_user) #aktivitetsaksjonen
+        field_login.send_keys(strava_user)
         time.sleep(2)
         field_login.send_keys(Keys.ENTER)
-
-        # Use password instead of two factor  aktivitetsaksjonen
-        time.sleep(2)
-        try:
-            driver.find_element(by=By.XPATH, value='//*[@id="__next"]/div/div[2]/div[1]/div[1]/div/div[5]/button').click() 
-        except NoSuchElementException:
-            pass
 
         time.sleep(2)
 
         # Password
-        field_password = next(element for element in driver.find_elements(by=By.XPATH, value='.//*[@data-cy="password"]') if element.is_displayed()) 
-        #field_password = next(element for element in driver.find_elements(by=By.XPATH, value='//*[@id="__next"]/div/div[2]/div[1]/div[1]/div/form/div[1]/div[2]/div/input') if element.is_displayed())
+        driver.find_element(by=By.XPATH, value='//button[text()="Use password instead"]').click()
+        field_password = next(element for element in driver.find_elements(by=By.XPATH, value='.//*[@data-cy="password"]') if element.is_displayed())
         field_password.send_keys(strava_password)
         time.sleep(2)
         field_password.send_keys(Keys.ENTER)
