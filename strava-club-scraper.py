@@ -33,6 +33,7 @@ from googleapiclient.discovery import build
 from janitor import clean_names
 import lxml.html as lh
 from natsort import natsorted, ns
+from bs4 import BeautifulSoup
 
 # import numpy as np
 import pandas as pd
@@ -210,6 +211,16 @@ def strava_authentication(*, strava_user, strava_password):
         field_login.send_keys(Keys.ENTER)
 
         time.sleep(2)
+
+        # send side til tekstfil
+        html_content = driver.page_source  # Getting the html from the webpage
+        soup = BeautifulSoup(html_content, 'html.parser') # creates a beautiful soup object 'soup'.
+
+        html_save_path = "data/skrap/login-page.html"
+
+        with open(html_save_path, 'wt', encoding='utf-8') as html_file:
+            for line in soup.prettify():
+                html_file.write(line)
 
         # Password
         next(element for element in driver.find_elements(by=By.XPATH, value='.//button[text()="Use password instead"]') if element.is_displayed()).click()
